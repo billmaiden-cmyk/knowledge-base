@@ -66,9 +66,25 @@ Bill manages four concurrent initiatives across fragmented channels. This briefi
 - Read the most recent `wiki/synthesis/briefing-*.md` — for continuity and tracking carry-over items
 - Read recent `wiki/coaching/` sessions — for patterns the coach has noticed
 
+**Wiki Activity Since Last Briefing:**
+
+Run: `git log --since="yesterday" --name-only --pretty=format: -- wiki/` from the working directory to get every wiki file changed since the previous briefing.
+
+For each changed file:
+1. Read the file
+2. Extract: what changed, any action items resolved, any new action items or decisions created
+3. Cross-reference against open action items from the previous briefing — if a wiki change addresses an open item, mark it resolved
+
+Key patterns to look for:
+- A new `wiki/synthesis/trading-sync-*.md` → read it, update Trading Program section, mark any resolved Antonella divergences
+- A new `wiki/coaching/*.md` → extract coach flag for the Energy Check section
+- Updates to `wiki/concepts/antonella-trading-program-status.md` → override the Trading Program section with current state
+- Updates to any `wiki/comms/` file → check if CRITICAL/HIGH items from earlier in the day have been resolved
+- Updates to `wiki/synthesis/` strategic pages → note any milestone changes for Wealth Plan Health
+
 **Action Item Carry-Over:**
 - Pull open action items from the previous briefing
-- Check if any have been resolved (look for evidence in new comms or wiki updates)
+- Cross-reference against wiki changes — mark any resolved by today's wiki activity
 - Flag items that are now overdue
 
 ### Step 2: Triage All New Communications
@@ -179,11 +195,21 @@ sources:
 | Liberty pipeline | Ongoing | {status} | {deal count, revenue} |
 | Investment policy | 90-day sprint | {status} | {detail} |
 
+## Wiki Activity Today
+
+{Only include this section if wiki files were changed since the last briefing. If nothing changed, omit the section entirely.}
+
+| File | What Changed | Action Items Resolved | New Action Items |
+|------|-------------|----------------------|-----------------|
+| {wiki/path/file.md} | {brief description of change} | {resolved item or —} | {new item or —} |
+
+**Net effect on open items:** {e.g. "3 Antonella divergences resolved by trading-sync-2026-04-06. 1 new item added: Kiet SQL walkthrough still pending."}
+
 ## Trading Program Update
 
-{Summary from latest trading sync, or note that a sync is needed}
+{Always read wiki/concepts/antonella-trading-program-status.md and the most recent wiki/synthesis/trading-sync-*.md for current state. If a trading sync was published today, use that as the authoritative source — do not rely on yesterday's briefing status.}
 - Antonella's focus: {brief}
-- Key divergences: {count and top issue}
+- Key divergences: {count and top issue — 0 if resolved today}
 - Kiet blockers: {count}
 - Next decision needed: {brief}
 

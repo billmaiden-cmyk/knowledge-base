@@ -2,7 +2,7 @@
 title: "Slack Digest — MTS — 30 Mar to 6 Apr 2026"
 created: 2026-04-06
 updated: 2026-04-06
-tags: [comms, slack, mts, operations, hiring, accounting, vietnam]
+tags: [comms, slack, mts, operations, hiring, accounting, vietnam, stratamax, onboarding]
 sources:
   - Slack MCP: morethanstratagroup.slack.com
 source_date: 2026-03-30 to 2026-04-06
@@ -168,3 +168,40 @@ Heavy DM activity (70+ messages). Primary topics:
 - [[mts-organisation-structure]] — New hires (Vy, Toan) expanding Vietnam office footprint
 - [[mts-committee-report-automation]] — Committee report agent channel silent — check build status
 - [[bill-maiden-generational-wealth-plan]] — VN hiring + revenue leakage focus aligns with AI margin proof critical dependency
+
+---
+
+## Update — 6 Apr 2026 ~13:30 AEST
+
+*(Updated 2026-04-06 ~13:30 AEST, scheduled slack-ingest run)*
+
+### New Action Item: Create Vy's StrataMax Login — HIGH priority
+
+Keira messaged Bill at 13:27 AEST flagging that **Vy cannot log in to StrataMax** — she has the application installed but no account credentials. Andrew Tang does not have admin access to create them. Keira confirmed that only Bill can provision StrataMax user accounts (precedent: he did this for Linh previously).
+
+> *"Another thing that I need your help with is that Andrew cannot create Ms.Vy's credentials for StrataMax login… Currently, she logged in to mine acc to explore Stratamax."* — Keira, 13:27 AEST
+
+Status as of 13:29: **OPEN**. Bill acknowledged (*"ok"*) but no action taken yet. Vy is using Keira's credentials as a workaround.
+
+**Action required:** Bill to create Vy's StrataMax login when available.
+
+### Toan's First Day Confirmed
+
+Toan started in-office today (6 Apr). Keira welcomed him, introduced him to the team, and took him to "Strata World." Gino is in office today (Keira: *"Gino is working today (yayyy)"*) and will walk Keira and Toan through the invoice entry process together. Keira has asked Gino to list his tasks so Toan can review them.
+
+### Gino Handover Document
+
+Bill created a Gino handover document and shared it with Keira at ~13:23 AEST. Bill: *"I don't think this is perfect but it's better than anything else I think we can produce."* Keira requested Vy also be given access — Bill agreed: *"Absolutely."*
+
+### Channels with Activity (6 Apr)
+
+- **#general / #daily-digest-bot:** Daily Digest Bot posted PDFs for business date 2026-04-03 (by Strata Plan + by Assignee) at 00:16–00:33 AEST — routine
+- **Multiple channels:** Toan joined #urgent-tasks, #general, #new-business, #accounting, #standup-action-list at 12:09 AEST (onboarding channel access)
+- **DM Bill × Keira:** 12 messages (13:12–13:29 AEST) — Toan onboarding, handover doc, Vy StrataMax credentials (see above)
+
+### Updated Action Items
+
+| # | Owner | Action | Category | Priority | Status |
+|---|-------|--------|----------|----------|--------|
+| 7 | **Bill** | **Create Vy's StrataMax user credentials** | TECHNOLOGY | **HIGH** | **OPEN** |
+| 8 | Keira/Gino | Gino to walk Keira + Toan through invoice entry process (today, 6 Apr) | PEOPLE | MEDIUM | IN PROGRESS |

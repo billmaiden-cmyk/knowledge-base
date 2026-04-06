@@ -68,6 +68,19 @@ For each HIGH and MEDIUM channel:
 
 **Skip channels with no messages in the time range.**
 
+### Step 2b: Discover Unknown Channels (Group DMs and new channels)
+
+The channel registry above only covers known channels. New Group DMs and channels created after the registry was last updated will be missed. After reading the known channels, run a discovery pass:
+
+1. Use `slack_search_public_and_private` with the query `from:Bill` and a time-bounded search to find any messages Bill sent in the time window
+2. Also search `from:Keira` to catch Group DMs she initiated
+3. For each result, extract the channel ID
+4. Compare against the known registry — any channel ID **not** in the registry is a new/unknown channel
+5. Use `slack_read_channel` on each unknown channel ID with the same `oldest` timestamp
+6. Include any with messages in the regular processing pipeline
+
+**Why this matters:** MTS team frequently creates new Group DMs (e.g. Bill + Gino + Keira + Toan + Vy for handover coordination). These are never in the registry and will be missed without this step.
+
 ### Step 3: Identify Topics and Threads
 
 Group messages into distinct topic threads:
@@ -124,6 +137,8 @@ Use `slack_read_channel` with user IDs of key people (Keira: U07SMAN3PJR) to che
 
 ### Step 7: Write Output
 
+If appending to an existing digest (today's file already exists from an earlier run): add new activity as a new dated section at the bottom, AND update the **"Needs Bill's Attention"** table at the top to include any new CRITICAL or HIGH items. The top table is the single source of truth for what needs action — it must always be current regardless of when items were discovered.
+
 Create a synthesis page at `wiki/synthesis/slack-digest-mts-{date}.md`:
 
 ```markdown
@@ -137,17 +152,19 @@ sources:
 source_date: {date range covered}
 ---
 
+## ⚠️ CRITICAL & HIGH — Needs Bill's Attention
+
+**This section is always rewritten on every update to reflect the current complete list of unresolved CRITICAL and HIGH items across the entire digest, not just the latest batch.**
+
+{If any CRITICAL or HIGH items exist anywhere in this digest (new or carried from earlier sections), list them here. Mark resolved items as ~~strikethrough~~. If nothing urgent, say "Nothing requiring immediate attention."}
+
+| # | Channel | From | Summary | Priority | Status |
+|---|---------|------|---------|----------|--------|
+| 1 | {channel} | {person} | {what they need} | CRITICAL/HIGH | OPEN/RESOLVED |
+
 ## Summary
 
 {2-3 sentence overview: how many channels had activity, how many messages, key themes, anything requiring Bill's attention}
-
-## Needs Bill's Attention
-
-{Items where Bill was tagged, asked to decide, or that represent escalations. If none, say "Nothing requiring immediate attention."}
-
-| # | Channel | From | Summary | Priority |
-|---|---------|------|---------|----------|
-| 1 | {channel} | {person} | {what they need} | {priority} |
 
 ## Channel Summaries
 

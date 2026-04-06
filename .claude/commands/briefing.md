@@ -22,11 +22,24 @@ Bill manages four concurrent initiatives across fragmented channels. This briefi
 - Use `outlook_calendar_search` to check today's and tomorrow's meetings
 - Classify each email by initiative (MTS, Liberty, ABGF, Trading, Personal)
 - This is the primary business email — flag anything from clients, board, Keira, suppliers, legal
+- **EXCLUDE — do not include in briefing:**
+  - Auto-forwards from tim@morethanstrata.com.au where the original sender is a system/noreply address (Zendesk suspended tickets, Bing mailings, GoDaddy quarantine lists, Microsoft notifications)
+  - Automated reminders from no-reply@box.com (Box document signature reminders)
+  - Domain/product marketing from GoDaddy, Godaddy renewals
+  - Any noreply/automated sender unless the content requires Bill's decision
 
 **Gmail (personal/Liberty — last 24 hours unless otherwise specified):**
 - Use `gmail_search_messages` to pull recent emails
 - For important threads, use `gmail_read_message` or `gmail_read_thread` for full context
 - Classify each email by initiative — Liberty deal flow, trading, personal matters
+- **EXCLUDE — do not include in briefing:**
+  - Trading newsletters and subscriptions (DannyTrades/Patreon, MacroEdge, TMAD/Substack, any Substack/Patreon sender)
+  - Promotional emails (CATEGORY_PROMOTIONS label — Netflix, IMDb, Flippa, etc.)
+  - Weather/lifestyle subscriptions
+  - SEEK job recommendations
+  - Anthropic receipts (billing, routine)
+  - ChatGPT task update notifications
+  - Any CATEGORY_UPDATES email from a non-human sender unless actionable
 
 **Slack (MTS Workspace — live via MCP):**
 - Pull last 24h from HIGH priority channels using `slack_read_channel`:

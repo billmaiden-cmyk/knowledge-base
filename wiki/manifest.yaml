@@ -1,0 +1,737 @@
+pages:
+
+  # ─── Entities ───────────────────────────────────────────────────────────────
+
+  - path: wiki/entities/bill-maiden.md
+    title: Bill Maiden
+    type: entity
+    tags: [person, founder, private-equity, strata, recovery, psychology]
+    sources:
+      - raw/text 2.txt
+      - raw/Complete_Wealth_Plan_Final.md
+    source_date: 2026-04        # both sources are April 2026 conversation/plan
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/entities/more-than-strata.md
+    title: MTS (More Than Strata)
+    type: entity
+    tags: [business, strata-management, ai-operations, sydney, 100%-owned, wealth-creation]
+    sources:
+      - raw/text 2.txt
+      - raw/Complete_Wealth_Plan_Final.md
+      - raw/More Than Strata - Board Presentation - Feb 2023.pdf
+    source_date: 2023-02 to 2026-04   # board deck Feb 2023 → current-state docs Apr 2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/entities/liberty-corporate-finance.md
+    title: Liberty Corporate Finance
+    type: entity
+    tags: [business, corporate-finance, private-equity, investment-banking, bill-maiden, wealth-creation]
+    sources:
+      - raw/Complete_Wealth_Plan_Final.md
+    source_date: 2026-04
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/entities/solaft.md
+    title: Solaft (Albany Filtration Technologies)
+    type: entity
+    tags: [business, industrial, private-equity, anz-pe, psychological-wound, bill-maiden]
+    sources:
+      - raw/text 2.txt
+      - raw/Complete_Wealth_Plan_Final.md
+    source_date: 2026-04        # retrospective account written in 2026; events span 2009–2015
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/entities/block.md
+    title: Block (MTS — Michael Teys Scenario)
+    type: entity
+    tags: [business, strata, roll-up, ai-operations, mts-concept, mts-scenario, bill-maiden, wealth-creation]
+    sources:
+      - raw/text 2.txt
+      - raw/Complete_Wealth_Plan_Final.md
+      - raw/CONFIDENTIAL MTS_SE AI Acqusuition Platform Discussion Paper_.docx
+    source_date: 2025 to 2026-04    # acquisition paper ~2025; wealth plan Apr 2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── Concepts: Psychology & Personal Development ─────────────────────────────
+
+  - path: wiki/concepts/achievement-based-self-worth.md
+    title: Achievement-Based Self-Worth
+    type: concept
+    tags: [psychology, self-worth, trauma, identity, bill-maiden, personal-development]
+    sources:
+      - raw/text 2.txt
+      - raw/Complete_Wealth_Plan_Final.md
+    source_date: 2026-04        # both sources April 2026; describes lifelong pattern
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/influencing-framework.md
+    title: Sterling Insights — Influencing Framework
+    type: concept
+    tags: [leadership, communication, influencing, frameworks, sterling-insights, skills, professional-development]
+    sources:
+      - raw/Sterling Insights - Influencing vF.pdf
+    source_date: undated        # source document carries no date
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── Concepts: Wealth & Finance ──────────────────────────────────────────────
+
+  - path: wiki/concepts/compounding-wealth-architecture.md
+    title: Compounding Wealth Architecture
+    type: concept
+    tags: [wealth, strategy, compounding, portfolio, asset-allocation, bill-maiden, wealth-creation]
+    sources:
+      - raw/Complete_Wealth_Plan_Final.md
+    source_date: 2026-04
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/strata-acquisition-arbitrage.md
+    title: Strata Acquisition Arbitrage
+    type: concept
+    tags: [strategy, acquisitions, strata-management, arbitrage, valuation, bill-maiden, roll-up, mts-concept, wealth-creation]
+    sources:
+      - raw/Complete_Wealth_Plan_Final.md
+      - raw/Business Plan_ Leveraging MTS AI to Transform Real Estate Service Businesses.pdf
+    source_date: 2024 to 2026-04    # business plan ~2024; wealth plan Apr 2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── Concepts: MTS AI & Technology ───────────────────────────────────────────
+
+  - path: wiki/concepts/ai-enabled-strata-operations.md
+    title: AI-Enabled Strata Operations
+    type: concept
+    tags: [ai, automation, strata-management, operations, cost-structure, bill-maiden, mts-concept]
+    sources:
+      - raw/text 2.txt
+      - raw/Complete_Wealth_Plan_Final.md
+      - raw/PRD_ Automated Monthly Committee Reports for More Than Strata.pdf
+      - raw/ai_cmo_agent_architecture.pdf
+      - raw/updated_architecture_integration.pdf
+      - raw/World Model Operating Substrate_v.03.docx
+      - raw/Repairs and Maintenance Agent Spec for Refining.docx
+      - raw/CONFIDENTIAL MTS_SE AI Acqusuition Platform Discussion Paper_.docx
+    source_date: 2024 to 2026-04    # earliest specs ~2024; current-state docs Apr 2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/mts-ai-agent-architecture.md
+    title: MTS AI Agent Swarm Architecture
+    type: concept
+    tags: [technology, ai, agent-swarm, architecture, multi-tenant, langgraph, mts, executive-ai, mts-concept]
+    sources:
+      - raw/MTS-September-Outcomes.pdf
+      - raw/More Than Strata AI Agent Swarm Strategy.pdf
+      - raw/ai_cmo_agent_architecture.pdf
+      - raw/updated_architecture_integration.pdf
+    source_date: 2023-09 to 2025    # Sep 2023 outcomes baseline → 2025 integration update
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/mts-operating-substrate.md
+    title: MTS Operating Substrate (World Model)
+    type: concept
+    tags: [technology, architecture, world-model, data, postgres, ai, mts, strata-management, mts-concept]
+    sources:
+      - raw/World Model Operating Substrate_v.03.docx
+      - raw/World Model Evidence and Meaning Layers - Agents.docx
+      - raw/Strata World Model Procedures and Workflow.docx
+      - raw/Azure Postgres DB.docx
+      - raw/Repairs and Maintenance Agent Spec for Refining.docx
+      - raw/Truth Hierarchy.docx
+    source_date: 2025               # all working docs dated ~2025; Truth Hierarchy undated
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/mts-repairs-maintenance-agent.md
+    title: MTS Repairs & Maintenance Agent
+    type: concept
+    tags: [mts, ai, agents, repairs-maintenance, automation, zendesk, strata, mts-concept]
+    sources:
+      - raw/Repairs and Maintenance Agent Spec for Refining.docx
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/mts-committee-report-automation.md
+    title: MTS Automated Committee Reporting
+    type: concept
+    tags: [mts, ai, reporting, committee, automation, prd, strata-management, mts-concept]
+    sources:
+      - raw/PRD_ Automated Monthly Committee Reports for More Than Strata.pdf
+      - raw/PRD_ Automated Monthly Committee Reports for More Than Strata 2.pdf
+    source_date: 2024               # PRD documents dated ~2024
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/mts-technology-roadmap.md
+    title: MTS Technology Roadmap (2025–2026)
+    type: concept
+    tags: [mts, technology, roadmap, ai, automation, zendesk, langchain, n8n, more-than-strata, mts-concept]
+    sources:
+      - raw/Technology Roadmap_Unformatted.docx
+      - raw/AI-Driven Content Marketing Workflow with n8n for More Than Strata.pdf
+    source_date: 2025               # roadmap written ~2025; covers Q2 2025 – Q2 2026
+    stale: true                     # ⚠️ Q2–Q4 2025 and Q1 2026 milestones are now past
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/mts-langchain-agent-implementations.md
+    title: MTS LangChain Agent Implementations
+    type: concept
+    tags: [mts, langchain, ai, agents, code, campaign-strategist, content-strategist, more-than-strata, mts-concept]
+    sources:
+      - raw/langchain_implementation_examples.pdf
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/strata-tokenization.md
+    title: Strata Tokenization (SUI NextERP)
+    type: concept
+    tags: [blockchain, tokenization, strata, sui, nexterp, defi, smart-contracts, mts-concept]
+    sources:
+      - raw/Integrating SUI NextERP with a Tokenized Strata Management Platform.pdf
+    source_date: 2024 to 2025       # exploratory doc dated ~2024–2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/mts-business-strategy.md
+    title: MTS Business Strategy (Core)
+    type: concept
+    tags: [mts, strategy, mission, vision, goals, growth, ai, strata-management, mts-concept]
+    sources:
+      - raw/MTS Business Strategy.docx
+      - raw/MTS AI Swarm Business Strategy.docx
+      - raw/One Page Plan_2026.pdf
+    source_date: 2026-03              # One Page Plan dated early 2026 (March priorities table)
+    created: 2026-04-05
+    updated: 2026-04-06
+
+  - path: wiki/concepts/mts-organisation-structure.md
+    title: MTS Organisation Structure (2025)
+    type: concept
+    tags: [mts, organisation, team, roles, structure, specialist-model, operations, rasci, mts-concept]
+    sources:
+      - raw/Organisation Structure_20250701.pdf
+    source_date: 2025-07
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  - path: wiki/concepts/mts-keira-role.md
+    title: Keira — Business Systems & Operations Lead (Strata OS)
+    type: concept
+    tags: [mts, team, roles, keira, operations, strata-os, vietnam, chief-of-staff, mts-concept]
+    sources:
+      - raw/Keira Role.docx
+    source_date: 2026-04              # written ~early 2026
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  - path: wiki/concepts/mts-individual-conversation-form.md
+    title: MTS Individual Conversation Form (Annual Performance)
+    type: concept
+    tags: [mts, team, people, performance, development, hr, annual-review, mts-concept]
+    sources:
+      - raw/Individual Conversation Form_MTS.docx
+    source_date: undated
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  # ─── Concepts: Liberty Perennial Platform ─────────────────────────────────────
+
+  - path: wiki/concepts/liberty-perennial-platform.md
+    title: Liberty Perennial — Principal-Advisory Platform
+    type: concept
+    tags: [liberty, perennial, wealth-management, principal-advisory, pe-fund, listed-equities, antonella, trust-wedge, wealth-creation]
+    sources:
+      - Coaching session 2026-04-05 (session 002)
+      - wiki/entities/a16z-perennial.md
+    source_date: 2026-04
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── Concepts: Trading & Investing ───────────────────────────────────────────
+
+  - path: wiki/concepts/ai-trading-system.md
+    title: AI-Driven Trading System (Multi-Strategy Hedge Fund)
+    type: concept
+    tags: [trading, investing, ai, hedge-fund, crypto, options, langchain, langgraph, bill-maiden, copy-trading, wealth-creation]
+    sources:
+      - raw/AI-Driven Trading Cockpit and Copy Trading Workflow Design.pdf
+      - raw/__AI Agent Swarm & Multi-Strategy Hedge Fund – Strategy Briefing__.pdf
+    source_date: 2025               # implementation roadmap starting Aug 2025
+    stale: true                     # ⚠️ Dec 15 2025 "full launch" target is now 4 months past
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/leaps-options-strategy.md
+    title: LEAPS Options Strategy (SirBews Method)
+    type: concept
+    tags: [trading, options, leaps, sirbews, strategy, deep-itm, premium-capture, bill-maiden, wealth-creation]
+    sources:
+      - raw/Phil Breaks Down Sirbews Leaps Strategy.pdf
+      - raw/Sng1987 - SirBews LEAPS Strategy.pdf
+    source_date: 2025               # community writeups ~2025; strategy itself is timeless
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/trading-alpha-indicators.md
+    title: Trading Alpha™ Indicators
+    type: concept
+    tags: [trading, indicators, tradingview, technical-analysis, alpha-trend, john-wick, crypto]
+    sources:
+      - raw/Trading Alpha™ Instruction Manual _ Trading Alpha Guide.pdf
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/trading-reference-materials.md
+    title: Trading Reference Materials
+    type: concept
+    tags: [trading, education, reference, crypto, technical-analysis, risk-management, fundamentals]
+    sources:
+      - raw/World of Trading.pdf
+      - raw/Crypto Strategy Guide.pdf
+    source_date: undated            # both source documents carry no date
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── Concepts: Personal Brand & Ventures ─────────────────────────────────────
+
+  - path: wiki/concepts/bill-maiden-public-brand-strategy.md
+    title: Bill Maiden — Public Brand & AI Positioning Strategy
+    type: concept
+    tags: [personal-brand, thought-leadership, ai, strategy, bill-maiden, consulting, proptech, ventures-brand, professional-development]
+    sources:
+      - raw/Monetisation and Public Positioning Strategy for an Australian AI Executive.pdf
+      - raw/Strategy for AI-Driven Value Creation and Personal Brand Elevation.pdf
+    source_date: 2024               # both described as ~2024 ChatGPT-assisted strategy outputs
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/ai-leadership-consulting-platform.md
+    title: AI Leadership Consulting Platform
+    type: concept
+    tags: [ai, consulting, leadership, pitch-deck, venture, yc-framework, bill-maiden, coaching, ventures-brand]
+    sources:
+      - raw/Pitch Deck Strategy for an AI-Powered Leadership Consulting Platform.pdf
+      - raw/Y Combinator Pitch Deck Template Guide.pdf
+    source_date: 2026-01-02         # both documents explicitly dated January 2, 2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── Concepts: Macro & Market Intelligence ───────────────────────────────────
+
+  - path: wiki/concepts/context-graphs-ai-systems-of-record.md
+    title: Context Graphs — AI's Next Trillion-Dollar Systems of Record
+    type: concept
+    tags: [ai, context-graphs, systems-of-record, agents, enterprise-software, foundation-capital, architecture]
+    sources:
+      - "raw/AI\u2019s trillion-dollar opportunity- Context graphs - Foundation Capital.pdf"
+    source_date: 2025-12-22         # Foundation Capital publication date
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/gmsr-global-macro-reports.md
+    title: GMSR — Greg Weldon Global Macro Strategic Reports
+    type: concept
+    tags: [macro, markets, trading, usd, bitcoin, gold, stocks, weldon, reference]
+    sources:
+      - raw/GMSR (P) - Trust - Thursday October 2  2025 (P).pdf
+      - raw/GMSR (P) - US Stock Market - Wednesday May 28, 2025 (P).pdf
+    source_date: 2025-05-28 to 2025-10-02   # exact dates in filenames
+    stale: true                             # ⚠️ point-in-time market analysis; now 6–11 months old
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/agi-timeline-and-risk-frameworks.md
+    title: AGI Timeline and Existential Risk Frameworks
+    type: concept
+    tags: [ai, agi, risk, safety, singularity, aschenbrenner, intelligence-explosion, macro-context]
+    sources:
+      - raw/situational_awareness.pdf
+      - raw/Existential_Risk_and_Growth.pdf
+    source_date: 2024-06 to 2025-12   # Situational Awareness Jun 2024; Existential Risk Dec 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/entities/a16z-perennial.md
+    title: a16z Perennial & Liberty Perennial Wealth Management
+    type: entity
+    tags: [wealth-management, multi-family-office, a16z, tax-optimization, portfolio-construction, founder-wealth, ceo-advocacy, liberty, trust-wedge]
+    sources:
+      - raw/Deep Dive_ a16z Perennial Multi-Family Office and the Future of Founder Wealth.md
+    source_date: 2026-04
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/entities/openclaw.md
+    title: OpenClaw
+    type: entity
+    tags: [tool, ai, agents, open-source, messaging, automation]
+    sources: []
+    source_date: 2026-04
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── Coaching ──────────────────────────────────────────────────────────────────
+
+  - path: wiki/coaching/2026-04-05-session-001.md
+    title: "Coaching Session — 2026-04-05"
+    type: coaching
+    tags: [coaching, session, achievement-based-self-worth, rest, claude-code]
+    sources: []
+    source_date: 2026-04-05
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/coaching/2026-04-05-session-002.md
+    title: "Coaching Session — 2026-04-05 (Session 2)"
+    type: coaching
+    tags: [coaching, session, liberty-perennial, strategy, principal-advisory, wealth-creation]
+    sources: []
+    source_date: 2026-04-05
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/coaching/2026-04-06-session-003.md
+    title: "Coaching Session — 2026-04-06"
+    type: coaching
+    tags: [coaching, session, achievement-based-self-worth, shame, rejection, mts, identity, nervous-system]
+    sources: []
+    source_date: 2026-04-06
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  # ─── Synthesis ────────────────────────────────────────────────────────────────
+
+  - path: wiki/synthesis/bill-maiden-generational-wealth-plan.md
+    title: Bill Maiden — Generational Wealth Plan
+    type: synthesis
+    tags: [synthesis, wealth-plan, strategy, bill-maiden, generational-wealth, wealth-creation]
+    sources:
+      - raw/Complete_Wealth_Plan_Final.md
+      - raw/text 2.txt
+    source_date: 2026-04            # plan explicitly anchored to April 2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/synthesis/coaching-app-architecture.md
+    title: "Coaching App Architecture — Delivery Options"
+    type: synthesis
+    tags: [synthesis, coaching, architecture, claude-code, openclaw, dispatch, delivery]
+    sources: []
+    source_date: 2026-04
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/synthesis/mts-one-page-plan-2026.md
+    title: MTS One Page Strategy Plan 2026
+    type: synthesis
+    tags: [synthesis, strategy, mts, growth, gtm, ai-operations, more-than-strata, 2026]
+    sources:
+      - raw/One Page Plan_2026.pdf
+    source_date: 2026-03
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  - path: wiki/synthesis/mts-trading-architecture-parallels.md
+    title: MTS and Trading System Architecture Parallels
+    type: synthesis
+    tags: [synthesis, architecture, mts, trading, agent-swarm, reusability, langchain, langgraph]
+    sources:
+      - raw/text.txt
+    source_date: undated            # text.txt carries no date
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── Antonella Trading Program ───────────────────────────────────────────────
+
+  - path: wiki/concepts/antonella-trading-program-status.md
+    title: Antonella — Trading Program Status (WIP)
+    type: concept
+    tags: [trading, antonella, status, wip, work-plan, three-setups, autoresearch]
+    sources:
+      - OneDrive / AI Hedge Fund / Action Priorities.pdf
+      - OneDrive / AI Hedge Fund / Three_Setups_Framework.docx
+    source_date: 2026-03
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── Antonella Trading Framework ─────────────────────────────────────────────
+
+  - path: wiki/concepts/antonella-trading-framework-overview.md
+    title: Antonella — Trading Framework Overview
+    type: concept
+    tags: [trading, antonella, framework, o-neil, google-sheets, asx, master-score]
+    sources:
+      - Google Drive / Bill and Antonella comms / (all documents)
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-ants-filter.md
+    title: Antonella — ANTS Filter
+    type: concept
+    tags: [trading, antonella, ants, accumulation, google-sheets, screening, o-neil]
+    sources:
+      - Google Drive / Bill and Antonella comms / Ants documentation
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-constructive-base-score.md
+    title: Antonella — Constructive Base Score
+    type: concept
+    tags: [trading, antonella, base-score, short-pressure, google-sheets, o-neil]
+    sources:
+      - Google Drive / Bill and Antonella comms / Improvement to constructive base score
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-short-interest-atr.md
+    title: Antonella — Short Interest & ATR Relationship
+    type: concept
+    tags: [trading, antonella, short-interest, atr, volatility, squeeze]
+    sources:
+      - Google Drive / Bill and Antonella comms / The relationship between short interest and ATR
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-event-driven-opportunities.md
+    title: Antonella — Event-Driven Opportunities
+    type: concept
+    tags: [trading, antonella, event-driven, post-event, master-score, o-neil]
+    sources:
+      - Google Drive / Bill and Antonella comms / Event driven opportunities
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-ascending-base-filter.md
+    title: Antonella — Ascending Base Filter
+    type: concept
+    tags: [trading, antonella, ascending-base, filters, google-sheets, o-neil]
+    sources:
+      - Google Drive / Bill and Antonella comms / Filters
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-short-risk-model.md
+    title: Antonella — Short Risk Model
+    type: concept
+    tags: [trading, antonella, short-selling, bearish, failed-rally, ma-stack]
+    sources:
+      - Google Drive / Bill and Antonella comms / Short Risk documentation
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-market-direction-model.md
+    title: Antonella — Market Direction Model
+    type: concept
+    tags: [trading, antonella, market-direction, regime, o-neil, distribution-days]
+    sources:
+      - Google Drive / Bill and Antonella comms / Market direction model
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-base-labelling.md
+    title: Antonella — Base Labelling
+    type: concept
+    tags: [trading, antonella, base-labelling, o-neil, base-count, google-sheets]
+    sources:
+      - Google Drive / Bill and Antonella comms / Base labelling
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-takeover-target-filter.md
+    title: Antonella — Takeover Target Filter
+    type: concept
+    tags: [trading, antonella, takeover, m-and-a, stealth-accumulation, liquidity-compression]
+    sources:
+      - Google Drive / Bill and Antonella comms / Takeover target filter
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-short-trap-index.md
+    title: Antonella — Short Trap Index & MA Coherence
+    type: concept
+    tags: [trading, antonella, short-trap, ma-coherence, squeeze, regime]
+    sources:
+      - Google Drive / Bill and Antonella comms / Shorted stocks and where shorts relaxed or nervous
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-short-interest-case-study-dmp.md
+    title: Antonella — Short Interest Case Study (DMP)
+    type: concept
+    tags: [trading, antonella, case-study, dmp, dominoes, short-interest, o-neil]
+    sources:
+      - Google Drive / Bill and Antonella comms / Dominoes short interest case study
+    source_date: 2025
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── AI Hedge Fund (local OneDrive folder) ────────────────────────────────────
+
+  - path: wiki/concepts/antonella-constructive-base-detector-spec.md
+    title: Antonella — Constructive Base Detector (Technical Spec)
+    type: concept
+    tags: [trading, antonella, base-detector, technical-spec, python, algorithm]
+    sources:
+      - OneDrive / AI Hedge Fund / Constructive Base Detector.docx
+    source_date: 2026-02        # file date 2/01/2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-three-setups-framework.md
+    title: Antonella — Three-Setups Framework
+    type: concept
+    tags: [trading, antonella, three-setups, vma, kama, autoresearch]
+    sources:
+      - OneDrive / AI Hedge Fund / Three_Setups_Framework.docx
+    source_date: 2026-03        # March 2026 per document
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-bridging-note-v2-to-three-setups.md
+    title: Antonella — Bridging Note (v2 to Three-Setups)
+    type: concept
+    tags: [trading, antonella, three-setups, v2, bridging-note, architecture]
+    sources:
+      - OneDrive / AI Hedge Fund / From_v2_to_Three_Setups_Bridging_Note.docx
+    source_date: 2026-03        # March 2026 per document
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-autoresearch-system.md
+    title: Antonella — Autoresearch System (prepare.py)
+    type: concept
+    tags: [trading, antonella, autoresearch, python, backtesting, evaluation]
+    sources:
+      - OneDrive / AI Hedge Fund / prepare.py
+    source_date: 2026-03        # file dated 29/03/2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-action-priorities.md
+    title: Antonella — Action Priorities
+    type: concept
+    tags: [trading, antonella, action-priorities, kiet, database, roadmap]
+    sources:
+      - OneDrive / AI Hedge Fund / Action Priorities.pdf
+    source_date: 2026-03        # file dated 29/03/2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-autoresearch-agent-instructions.md
+    title: Antonella — Autoresearch Agent Instructions
+    type: concept
+    tags: [trading, antonella, autoresearch, agent, experiments, claude-code]
+    sources:
+      - OneDrive / AI Hedge Fund / Autoresearch Approach.pdf
+    source_date: 2026-03        # file dated 29/03/2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  - path: wiki/concepts/antonella-kama-regime-discussion.md
+    title: "Antonella — Three Setups × KAMA Regime Discussion"
+    type: concept
+    tags: [trading, antonella, three-setups, kama, vma, regime-filter, discussion-paper]
+    sources:
+      - raw/whatsapp/00003354-Discussion_Three_Setups_x_KAMA_Regime.docx
+    source_date: 2026-04
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  - path: wiki/concepts/antonella-dynamic-hedge-ratio.md
+    title: "Antonella — Dynamic Hedge Ratio"
+    type: concept
+    tags: [trading, antonella, hedging, short-interest, atr, risk-management, squeeze]
+    sources:
+      - raw/whatsapp/00003397-Dynamic Hedge Ratio.docx
+    source_date: 2026-04
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  - path: wiki/concepts/antonella-powerbi-queries.md
+    title: Antonella — Power BI Queries
+    type: concept
+    tags: [trading, antonella, power-bi, queries, kiet, three-setups]
+    sources:
+      - OneDrive / AI Hedge Fund / PowerBI Queries.pdf
+    source_date: 2026-03        # file dated 29/03/2026
+    created: 2026-04-05
+    updated: 2026-04-05
+
+  # ─── Communications ──────────────────────────────────────────────────────────
+
+  - path: wiki/synthesis/comms-whatsapp-antonella-2025-04-to-2026-04.md
+    title: "WhatsApp Digest — Antonella — Apr 2025 to Apr 2026"
+    type: synthesis
+    tags: [comms, whatsapp, trading, antonella, mts, liberty, three-setups, autoresearch, kiet]
+    sources:
+      - raw/whatsapp/antonella-2025-04-to-2026-04.txt
+    source_date: 2025-04 to 2026-04
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  - path: wiki/concepts/antonella-kiet-setup1-changes.md
+    title: "Kiet — Setup 1 Query Changes & New Computed Fields"
+    type: concept
+    tags: [trading, kiet, queries, setup-1, vma, sma, fresh-breakout, implementation]
+    sources:
+      - wiki/concepts/antonella-powerbi-queries.md
+      - wiki/concepts/antonella-three-setups-framework.md
+    source_date: 2026-04-06
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  - path: wiki/synthesis/slack-digest-mts-2026-04-06.md
+    title: "Slack Digest — MTS — 30 Mar to 6 Apr 2026"
+    type: synthesis
+    tags: [comms, slack, mts, operations, hiring, accounting, vietnam]
+    sources:
+      - Slack MCP: morethanstratagroup.slack.com
+    source_date: 2026-03-30 to 2026-04-06
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  # ─── Trading Syncs ──────────────────────────────────────────────────────────
+
+  - path: wiki/synthesis/trading-sync-2026-04-06.md
+    title: "Trading Sync — 2026-04-06"
+    type: synthesis
+    tags: [trading, sync, antonella, position-synthesis]
+    sources:
+      - wiki/synthesis/comms-whatsapp-antonella-2025-04-to-2026-04.md
+      - wiki/concepts/antonella-trading-program-status.md
+      - wiki/concepts/antonella-three-setups-framework.md
+      - wiki/concepts/antonella-action-priorities.md
+      - Gmail (antonella, Mar 2026)
+    source_date: 2026-04-06
+    created: 2026-04-06
+    updated: 2026-04-06
+
+  # ─── Unextractable Sources (image-based PDFs) ─────────────────────────────────
+  # raw/The Australian ACCC new rules for mergers etc 2026.pdf  — image PDF, no text extractable
+  # raw/MTS-September-Outcomes.pdf                             — image PDF, no text extractable
+  # raw/Tech_Roadmap_Formatted(4) copy.docx                    — corrupted/non-standard zip; content covered by Technology Roadmap_Unformatted.docx
+  # raw/10-Year Plan to Build a $1 Billion EV Company.pdf      — general roll-up framework; key content covered by strata-acquisition-arbitrage.md

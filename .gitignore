@@ -1,0 +1,15 @@
+# Raw source materials — large PDFs, Word docs, WhatsApp exports
+raw/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude local-only files
+.claude/projects/
+.claude/settings.local*.json
+.claude/scheduled_tasks.lock
+
+# Loose files that belong in raw/
+*.pdf
+*.py

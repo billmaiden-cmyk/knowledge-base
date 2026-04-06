@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-04-06] briefing | 4 Outlook emails (filtered), 2 Gmail actionable, Slack digest (to ~16:00 AEST), trading sync updated. 11 new action items, 5 carried forward, 1 overdue. CRITICAL: Gino/Strata Staff handover blocked (7 days). ABGF screening in progress. Trading: VMA=KAMA closed, Setup 1 queries fixed.
+
 ## [2026-04-06] ingest | Slack MTS update ~16:00 AEST: CRITICAL escalation — Gino/Strata Staff blocking handover training (7 days to April 15 last day). Keira flagged in DM at 15:54–15:57 AEST. 2 new action items added (items #10 & #11). Appended to slack-digest-mts-2026-04-06.md.
 
 ## [2026-04-06] ingest | Slack MTS update ~13:30 AEST: 3 channels active (general, daily-digest-bot, DM Bill×Keira), 1 new HIGH action item (Vy StrataMax credentials), Toan first day confirmed, Gino handover doc created. Appended to slack-digest-mts-2026-04-06.md.

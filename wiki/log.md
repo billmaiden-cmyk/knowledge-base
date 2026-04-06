@@ -6,6 +6,8 @@ Legacy entries (before 2026-04-07) use date-only format.
 
 ---
 
+## [2026-04-07] briefing | 4 Outlook emails (filtered), 2 Gmail actionable, Slack digest (incl. ~16:00 AEST update), trading sync. 10 new action items, 7 carried, 2 overdue. CRITICAL: Gino handover blocked by Strata Staff (6 days to Apr 15). ABGF screening overdue. Oppenheimer meeting today 2:30pm.
+
 ## [2026-04-06 20:53 AEST] briefing | 4 Outlook emails (filtered), 2 Gmail actionable, Slack digest (to ~16:00 AEST), trading sync updated. 11 new action items, 5 carried forward, 1 overdue. CRITICAL: Gino/Strata Staff handover blocked (7 days). ABGF screening in progress. Trading: VMA=KAMA closed, Setup 1 queries fixed.
 
 ## [2026-04-06 16:00 AEST] ingest | Slack MTS update ~16:00 AEST: CRITICAL escalation — Gino/Strata Staff blocking handover training (7 days to April 15 last day). Keira flagged in DM at 15:54–15:57 AEST. 2 new action items added (items #10 & #11). Appended to slack-digest-mts-2026-04-06.md.

@@ -156,6 +156,7 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 
 | Page | Summary |
 |---|---|
+| [Daily Briefing — 7 April 2026](briefings/2026-04-07.md) | First day back. CRITICAL: Gino handover still blocked by Strata Staff (6 days left). ABGF screening overdue. Vy needs StrataMax login. Jignesh Shah / Oppenheimer 2:30pm today |
 | [Daily Briefing — 6 April 2026](briefings/2026-04-06.md) | Easter Monday. ABGF screening overdue (3rd reminder). SP 102232 payment plan default. Gino handover blocked by Strata Staff. Jignesh Shah / Oppenheimer tomorrow |
 
 ---

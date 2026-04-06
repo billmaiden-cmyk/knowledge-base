@@ -199,9 +199,28 @@ Bill created a Gino handover document and shared it with Keira at ~13:23 AEST. B
 - **Multiple channels:** Toan joined #urgent-tasks, #general, #new-business, #accounting, #standup-action-list at 12:09 AEST (onboarding channel access)
 - **DM Bill × Keira:** 12 messages (13:12–13:29 AEST) — Toan onboarding, handover doc, Vy StrataMax credentials (see above)
 
+### Group DM — Gino, Keira Lu, Toan, Vy (C0ARURVAC6L) — 13:35 AEST
+
+Bill sent two Word documents to the group at 13:35:
+
+- **Gino_Handover_Schedule.docx**
+- **Trust_Accounting_Monthly_Task_Schedule.docx** (name truncated)
+
+> *"@channel, pls see attached my documentation of the recurring Trust Accounting Tasks and a structured Handover Schedule for Gino. @Gino, pls review BOTH documents and provide guidance on missing tasks, e.g, strata loan management for 56120, etc which are complex and require support. Pls confirm that this is achievable. Thanks, Bill"*
+
+Keira replied at 13:42:
+> *"Thanks, Bill. As discussed, Gino, we will have a training for me (with Toan joining) at 4:30PM (Sydney's new time). Thank you"*
+
+**Key findings:**
+- Bill has formally documented the Gino handover — two structured docs now exist
+- Gino is asked to confirm the handover is achievable and flag gaps (e.g. strata loan management for SP 56120)
+- Training session confirmed: **Gino → Keira + Toan, today at 4:30PM AEST** on trust accounting tasks
+- This channel was not captured in the earlier automated ingest (Group DM ID not previously indexed)
+
 ### Updated Action Items
 
 | # | Owner | Action | Category | Priority | Status |
 |---|-------|--------|----------|----------|--------|
 | 7 | **Bill** | **Create Vy's StrataMax user credentials** | TECHNOLOGY | **HIGH** | **OPEN** |
-| 8 | Keira/Gino | Gino to walk Keira + Toan through invoice entry process (today, 6 Apr) | PEOPLE | MEDIUM | IN PROGRESS |
+| 8 | **Gino** | **Review Handover Schedule + Trust Accounting Task docs; confirm achievable; flag gaps (e.g. SP 56120 strata loan)** | FINANCIAL | **HIGH** | **OPEN — awaiting Gino response** |
+| 9 | Keira + Toan | Attend Gino handover training at 4:30PM AEST today | PEOPLE | MEDIUM | SCHEDULED |

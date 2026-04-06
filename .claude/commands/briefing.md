@@ -16,10 +16,17 @@ Bill manages four concurrent initiatives across fragmented channels. This briefi
 
 ### Step 1: Gather Inputs
 
-**Gmail (last 24 hours unless otherwise specified):**
+**Outlook — MTS (bmaiden@morethanstrata.com.au):**
+- Use `outlook_email_search` to pull emails from the last 24 hours
+- Use `read_resource` for full email content on important threads
+- Use `outlook_calendar_search` to check today's and tomorrow's meetings
+- Classify each email by initiative (MTS, Liberty, ABGF, Trading, Personal)
+- This is the primary business email — flag anything from clients, board, Keira, suppliers, legal
+
+**Gmail (personal/Liberty — last 24 hours unless otherwise specified):**
 - Use `gmail_search_messages` to pull recent emails
 - For important threads, use `gmail_read_message` or `gmail_read_thread` for full context
-- Classify each email by initiative (MTS, Liberty, ABGF, Trading, Personal)
+- Classify each email by initiative — Liberty deal flow, trading, personal matters
 
 **Slack (MTS Workspace — live via MCP):**
 - Pull last 24h from HIGH priority channels using `slack_read_channel`:
@@ -169,7 +176,9 @@ sources:
 
 ## Time & Energy Check
 
-**Emails processed:** {count by initiative}
+**Outlook emails:** {count, key senders}
+**Gmail emails:** {count by initiative}
+**Calendar today:** {meetings from outlook_calendar_search — flag anything that will consume >2hrs or conflicts with Liberty focus time}
 **Slack activity:** {messages across MTS channels, escalations, Bill mentions}
 **WhatsApp volume:** {if available}
 **Allocation observation:** {e.g. "14 MTS emails vs 2 Liberty — plan says Liberty should be primary focus Tu-Th"}

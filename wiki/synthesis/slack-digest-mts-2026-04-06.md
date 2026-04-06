@@ -1,8 +1,8 @@
 ---
 title: "Slack Digest — MTS — 30 Mar to 6 Apr 2026"
 created: 2026-04-06
-updated: 2026-04-06
-tags: [comms, slack, mts, operations, hiring, accounting, vietnam, stratamax, onboarding]
+updated: 2026-04-06 ~16:00 AEST
+tags: [comms, slack, mts, operations, hiring, accounting, vietnam, stratamax, onboarding, gino-handover]
 sources:
   - Slack MCP: morethanstratagroup.slack.com
 source_date: 2026-03-30 to 2026-04-06
@@ -224,3 +224,36 @@ Keira replied at 13:42:
 | 7 | **Bill** | **Create Vy's StrataMax user credentials** | TECHNOLOGY | **HIGH** | **OPEN** |
 | 8 | **Gino** | **Review Handover Schedule + Trust Accounting Task docs; confirm achievable; flag gaps (e.g. SP 56120 strata loan)** | FINANCIAL | **HIGH** | **OPEN — awaiting Gino response** |
 | 9 | Keira + Toan | Attend Gino handover training at 4:30PM AEST today | PEOPLE | MEDIUM | SCHEDULED |
+
+---
+
+## Update — 6 Apr 2026 ~16:00 AEST
+
+*(Updated 2026-04-06 ~16:00 AEST, scheduled slack-ingest run)*
+
+### CRITICAL: Gino Refusing to Provide Training — Strata Staff Blocking
+
+Keira messaged Bill at 15:54–15:57 AEST with an urgent escalation. The 4:30PM training session scheduled in the earlier update **did not proceed as planned**. Gino told Keira he cannot provide training until his "local manager" approves it:
+
+> *"He can't give me a training either because he said, 'I need to wait for the management's approval before giving the training.' I think Strata Staff is holding this back because they would like you to hire another staff member of theirs. This is quite concerning because we have 7 days left, and he cannot give us training until his 'local manager' approves this. Pls help me with this once you are available."* — Keira, 15:56 AEST
+
+> *"and his last day is 15th Bill"* — Keira, 15:56 AEST
+
+> *"I am so sorry Bill hit you with this news during the holiday, arghh."* — Keira, 15:57 AEST
+
+**Keira's read on the situation:** Strata Staff (the employment agency that sourced Gino) is deliberately withholding training approval to pressure MTS into hiring another one of their staff members.
+
+**Key facts:**
+- Gino's last day: **15 April 2026** (7 working days from today)
+- The handover training with Keira + Toan has not yet started
+- Bill is on holiday and not actively responding
+- The message Keira forwarded from Gino ("please see msg from Gino FYI") has not been read by this agent — it was sent as an image/screenshot in the DM
+
+**Status:** OPEN — needs Bill's attention ASAP.
+
+### Updated Action Items
+
+| # | Owner | Action | Category | Priority | Status |
+|---|-------|--------|----------|----------|--------|
+| 10 | **Bill** | **Engage with Strata Staff / Gino's manager to unblock handover training — 7 days remaining before Gino's last day (15 Apr)** | PEOPLE | **CRITICAL** | **OPEN** |
+| 11 | **Bill** | **Review message from Gino forwarded by Keira** (screenshot in DM, 15:54 AEST) | PEOPLE | HIGH | OPEN |

@@ -131,3 +131,5 @@ Created wiki/synthesis/comms-whatsapp-antonella-2025-04-to-2026-04.md — 12-mon
 ## [2026-04-06] ingest | Slack MTS: 30 Mar – 6 Apr 2026, 6 channels active, ~120 messages, 6 action items
 
 Created wiki/synthesis/slack-digest-mts-2026-04-06.md — First Slack digest. Key themes: Vietnam hiring sprint (Vy onboarded as Financial Controller ex-Deloitte, Toan hired as second accountant, 4 candidates interviewed in 2 days). 3 payment authorisations from Gino (1 still pending). Bill flagged Zendesk ticket spike — Andrew investigating. Camille Deel salary discrepancy unresolved. Keira managing VN ops effectively — 70+ DMs coordinating interviews, equipment, payroll.
+
+## [2026-04-06] briefing | 4 Outlook emails, 1 Gmail actionable, 0 Slack (Easter Monday), 6 new action items (1 overdue: ABGF screening)

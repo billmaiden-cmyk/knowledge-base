@@ -151,6 +151,14 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 
 ---
 
+## Briefings
+
+| Page | Summary |
+|---|---|
+| [Daily Briefing — 6 April 2026](synthesis/briefing-2026-04-06.md) | Easter Monday. 2 HIGH items: ABGF screening (3rd reminder, overdue) + SP 102232 payment plan default. Coogee proposal rejected. Jignesh Shah / Oppenheimer meeting tomorrow. Sprint kick-off 4pm today (tentative) |
+
+---
+
 ## Communications
 
 | Page | Summary |

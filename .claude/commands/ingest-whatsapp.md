@@ -76,7 +76,7 @@ Link each thread to its relevant wiki pages.
 
 ### Step 5: Write Output
 
-Create a synthesis page at `wiki/synthesis/comms-whatsapp-{contact}-{date}.md` where:
+Create a page at `wiki/comms/whatsapp-{contact}-{date}.md` where:
 - `{contact}` is the other participant's name (lowercase, hyphenated)
 - `{date}` is the export date or the date range of messages (YYYY-MM-DD)
 

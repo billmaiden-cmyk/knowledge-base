@@ -152,27 +152,30 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 ---
 
 ## Briefings
+*Daily integrated briefings — open this first each morning*
 
 | Page | Summary |
 |---|---|
-| [Daily Briefing — 6 April 2026](synthesis/briefing-2026-04-06.md) | Easter Monday. 2 HIGH items: ABGF screening (3rd reminder, overdue) + SP 102232 payment plan default. Coogee proposal rejected. Jignesh Shah / Oppenheimer meeting tomorrow. Sprint kick-off 4pm today (tentative) |
+| [Daily Briefing — 6 April 2026](briefings/2026-04-06.md) | Easter Monday. ABGF screening overdue (3rd reminder). SP 102232 payment plan default. Gino handover blocked by Strata Staff. Jignesh Shah / Oppenheimer tomorrow |
 
 ---
 
 ## Communications
+*Raw channel digests — Slack, WhatsApp. Briefing reads these automatically*
 
 | Page | Summary |
 |---|---|
-| [WhatsApp Digest — Antonella — Apr 2025 to Apr 2026](synthesis/comms-whatsapp-antonella-2025-04-to-2026-04.md) | 12-month, 8,076-line WhatsApp digest: stock picks → systematic trading system build → Three Setups Framework + autoresearch engine. 14 open action items. Key blocker: Sebastian-Kiet data infrastructure handoff |
-| [Slack Digest — MTS — 30 Mar to 6 Apr 2026](synthesis/slack-digest-mts-2026-04-06.md) | 7-day MTS Slack: VN hiring sprint (Vy onboarded as FC, Toan hired, 4 candidates interviewed); payment authorisations; ticket spike investigation; Camille Deel salary issue |
-| [Trading Sync — 2026-04-06](synthesis/trading-sync-2026-04-06.md) | First position sync: methodology complete, blocked on Kiet infrastructure (VMA + base numbers). 5 divergences, 5 decisions pending. Sebastian-Kiet walkthrough is critical blocker |
+| [WhatsApp Digest — Antonella — Apr 2025 to Apr 2026](comms/whatsapp-antonella-2025-04-to-2026-04.md) | 12-month, 8,076-line WhatsApp digest: stock picks → Three Setups Framework + autoresearch engine. 14 open action items. Key blocker: Sebastian-Kiet data infrastructure handoff |
+| [Slack Digest — MTS — 30 Mar to 6 Apr 2026](comms/slack-digest-mts-2026-04-06.md) | 7-day MTS Slack: VN hiring sprint (Vy onboarded as FC, Toan hired); Gino handover risk; payment authorisations; ticket spike |
 
 ---
 
 ## Synthesis
+*Analytical work — trading syncs, wealth plan, strategy*
 
 | Page | Summary |
 |---|---|
 | [Bill Maiden — Generational Wealth Plan](synthesis/bill-maiden-generational-wealth-plan.md) | Master synthesis of all three wealth engines, critical dependencies, operating rhythm, risk map, and family legacy plan; $5m → $53m in 5 years |
-| [Coaching App Architecture — Delivery Options](synthesis/coaching-app-architecture.md) | Evaluates four delivery options for daily coaching: Claude Code local (current), Claude Dispatch (watch), OpenClaw (future), Remote Agent (rejected). Includes wiki update rules for coaching sessions. |
-| [MTS and Trading System Architecture Parallels](synthesis/mts-trading-architecture-parallels.md) | Shows MTS agent swarm and hedge fund automation share the same ingest→validate→act→track→report→improve pattern; 96-agent MTS compresses to ~15–20 trading agents |
+| [Trading Sync — 2026-04-06](synthesis/trading-sync-2026-04-06.md) | First position sync: methodology complete, blocked on Kiet infrastructure (VMA + base numbers). 5 divergences, 5 decisions pending. Sebastian-Kiet walkthrough is critical blocker |
+| [Coaching App Architecture — Delivery Options](synthesis/coaching-app-architecture.md) | Evaluates four delivery options for daily coaching: Claude Code local (current), Claude Dispatch (watch), OpenClaw (future), Remote Agent (rejected). |
+| [MTS and Trading System Architecture Parallels](synthesis/mts-trading-architecture-parallels.md) | Shows MTS agent swarm and hedge fund automation share the same ingest→validate→act→track→report→improve pattern |

@@ -119,7 +119,7 @@ Flag anything that's:
 
 ### Step 4: Generate Briefing
 
-Write to `wiki/synthesis/briefing-{today's date}.md`:
+Write to `wiki/briefings/{today's date YYYY-MM-DD}.md`:
 
 ```markdown
 ---
@@ -209,7 +209,7 @@ sources:
 ### Step 5: Update Wiki Infrastructure
 
 1. Update `wiki/manifest.yaml` with the new briefing page
-2. Update `wiki/index.md` — add under a "Briefings" section (create if needed)
+2. Update `wiki/index.md` — add under the "Briefings" section (at the top of that table, most recent first)
 3. Append to `wiki/log.md`:
    ```
    ## [YYYY-MM-DD] briefing | {N} emails, {N} WhatsApp threads, {N} action items ({N} new, {N} carried, {N} overdue)

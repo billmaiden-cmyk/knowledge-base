@@ -683,7 +683,7 @@ pages:
 
   # ─── Communications ──────────────────────────────────────────────────────────
 
-  - path: wiki/synthesis/comms-whatsapp-antonella-2025-04-to-2026-04.md
+  - path: wiki/comms/whatsapp-antonella-2025-04-to-2026-04.md
     title: "WhatsApp Digest — Antonella — Apr 2025 to Apr 2026"
     type: synthesis
     tags: [comms, whatsapp, trading, antonella, mts, liberty, three-setups, autoresearch, kiet]
@@ -704,7 +704,7 @@ pages:
     created: 2026-04-06
     updated: 2026-04-06
 
-  - path: wiki/synthesis/slack-digest-mts-2026-04-06.md
+  - path: wiki/comms/slack-digest-mts-2026-04-06.md
     title: "Slack Digest — MTS — 30 Mar to 6 Apr 2026"
     type: synthesis
     tags: [comms, slack, mts, operations, hiring, accounting, vietnam, stratamax, onboarding]
@@ -714,7 +714,7 @@ pages:
     created: 2026-04-06
     updated: 2026-04-06
 
-  - path: wiki/synthesis/briefing-2026-04-06.md
+  - path: wiki/briefings/2026-04-06.md
     title: "Daily Briefing — 6 April 2026 (Easter Monday)"
     type: synthesis
     tags: [briefing, daily, executive-synthesis, mts, abgf, liberty, trading]
@@ -734,7 +734,7 @@ pages:
     type: synthesis
     tags: [trading, sync, antonella, position-synthesis]
     sources:
-      - wiki/synthesis/comms-whatsapp-antonella-2025-04-to-2026-04.md
+      - wiki/comms/whatsapp-antonella-2025-04-to-2026-04.md
       - wiki/concepts/antonella-trading-program-status.md
       - wiki/concepts/antonella-three-setups-framework.md
       - wiki/concepts/antonella-action-priorities.md

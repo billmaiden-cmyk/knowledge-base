@@ -139,7 +139,7 @@ Use `slack_read_channel` with user IDs of key people (Keira: U07SMAN3PJR) to che
 
 If appending to an existing digest (today's file already exists from an earlier run): add new activity as a new dated section at the bottom, AND update the **"Needs Bill's Attention"** table at the top to include any new CRITICAL or HIGH items. The top table is the single source of truth for what needs action — it must always be current regardless of when items were discovered.
 
-Create a synthesis page at `wiki/synthesis/slack-digest-mts-{date}.md`:
+Create a page at `wiki/comms/slack-digest-mts-{date}.md`:
 
 ```markdown
 ---
@@ -215,7 +215,7 @@ source_date: {date range covered}
 Following the rules in `CLAUDE 2.md`:
 
 1. Update `wiki/manifest.yaml` with the new page entry
-2. Update `wiki/index.md` — add under the "Communications" section
+2. Update `wiki/index.md` — add under the "Communications" section (most recent first)
 3. Append to `wiki/log.md`:
    ```
    ## [YYYY-MM-DD] ingest | Slack MTS: {date range}, {N} channels active, {N} messages, {N} action items

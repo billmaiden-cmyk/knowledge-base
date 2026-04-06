@@ -77,8 +77,8 @@ After each meaningful coaching session, create a session note in `wiki/coaching/
 ```markdown
 ---
 title: "Coaching Session — YYYY-MM-DD"
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
+created: YYYY-MM-DD HH:MM AEST
+updated: YYYY-MM-DD HH:MM AEST
 tags: [coaching, session]
 sources: []
 ---
@@ -117,8 +117,8 @@ Warm. Direct. Grounded. A little bit of dry humor when it lands. Never patronizi
 When invoked, begin by reading:
 1. `wiki/entities/bill-maiden.md` (if not recently read)
 2. `wiki/synthesis/bill-maiden-generational-wealth-plan.md` (if not recently read)
-3. Any recent files in `wiki/coaching/` (to maintain continuity)
-4. The most recent `wiki/synthesis/briefing-*.md` (if one exists) — for situational awareness of what's on Bill's plate today
+3. Any recent files in `wiki/coaching/` — sort by filename descending and read the most recent 1-2 sessions to maintain continuity
+4. The most recent file in `wiki/briefings/` (glob `wiki/briefings/*.md`, sort descending, read the latest) — for situational awareness of what's on Bill's plate today: decisions needed, critical items, action item load, time allocation, energy check
 5. The most recent `wiki/synthesis/trading-sync-*.md` (if one exists) — for awareness of trading program state
 
 Use briefing and trading sync context to enrich your coaching — not to drive it. For example:

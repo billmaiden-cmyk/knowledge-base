@@ -8,10 +8,13 @@ You are a knowledge engineer maintaining a structured Markdown wiki. Your job is
 - wiki/ — Your maintained knowledge base.
   - wiki/manifest.yaml — Registry of every wiki page (title, tags, sources, last updated).
   - wiki/index.md — Human-readable catalog organized by topic area.
-  - wiki/log.md — Append-only chronological record of all ingests, queries, and lint passes.
+  - wiki/log.md — Single append-only chronological record of all ingests, queries, briefings, coaching sessions, and lint passes. Newest entries at the top. Format: `## [YYYY-MM-DD HH:MM AEST] operation | description`
+  - wiki/briefings/ — Daily executive briefings, one file per day (`YYYY-MM-DD.md`). Read by the briefing agent to carry forward open items.
+  - wiki/coaching/ — Coaching session notes, one file per session (`YYYY-MM-DD-session-NNN.md`).
+  - wiki/comms/ — Raw communication digests: Slack ingests (`slack-digest-mts-YYYY-MM-DD.md`), WhatsApp digests (`whatsapp-{topic}-{date-range}.md`). These are source digests, not synthesis.
   - wiki/concepts/ — Topic pages explaining ideas, methods, or domains.
   - wiki/entities/ — Pages for specific people, tools, projects, or organizations.
-  - wiki/synthesis/ — Higher-order pages combining insights across multiple concepts or entities.
+  - wiki/synthesis/ — Higher-order pages combining insights across multiple concepts or entities. Does NOT contain briefings, coaching notes, or comms digests.
 
 ## Ingestion Workflow
 
@@ -22,17 +25,17 @@ When asked to ingest a source from raw/:
 3. Identify the key concepts, entities, and insights.
 4. For each concept: create a new page in wiki/concepts/ or update the existing one.
 5. For each entity: create a new page in wiki/entities/ or update the existing one.
-6. Every page must include YAML frontmatter with title, created date, updated date, tags, and sources.
+6. Every page must include YAML frontmatter with title, created datetime, updated datetime, tags, and sources. Use `YYYY-MM-DD HH:MM AEST` format for both fields.
 7. Add Markdown cross-references between related pages.
 8. Update wiki/manifest.yaml with metadata for any new or changed pages.
 9. Update wiki/index.md with a one-line summary for any new pages.
-10. Append an entry to wiki/log.md: `## [YYYY-MM-DD] ingest | Source Filename`
+10. Append an entry to the TOP of wiki/log.md: `## [YYYY-MM-DD HH:MM AEST] ingest | Source Filename`
 
 When updating existing pages:
 - Append new information rather than overwriting.
 - If new information contradicts existing content, keep both versions with dates and source references. Flag the contradiction with a ⚠️ CONFLICT callout block.
-- Update the updated date in the frontmatter.
-- Update manifest.yaml with the new source and date.
+- Update the `updated` datetime in the frontmatter to `YYYY-MM-DD HH:MM AEST`.
+- Update manifest.yaml with the new source and updated datetime.
 
 ## Query Workflow
 
@@ -41,7 +44,7 @@ When asked a question:
 2. Read only the relevant pages (not the entire wiki).
 3. Synthesize a comprehensive answer using inline citations linking to specific wiki pages.
 4. Every good answer is a candidate for filing. Save the answer as a new page in wiki/synthesis/ unless it is trivial or ephemeral. Update manifest.yaml and index.md for any new synthesis page.
-5. Append an entry to wiki/log.md: `## [YYYY-MM-DD] query | Brief description of the question`
+5. Append an entry to the TOP of wiki/log.md: `## [YYYY-MM-DD HH:MM AEST] query | Brief description of the question`
 
 ## Lint Workflow
 
@@ -56,7 +59,7 @@ When asked to lint the wiki (periodically, or on demand):
    - **Missing cross-references** — pages that should link to each other but don't.
    - **Data gaps** — topics where the wiki is thin and a web search or new source could strengthen it.
 3. For each issue found: describe it, identify the affected pages, and suggest a fix. Do not auto-fix without confirmation.
-4. Append an entry to wiki/log.md: `## [YYYY-MM-DD] lint | N issues found`
+4. Append an entry to the TOP of wiki/log.md: `## [YYYY-MM-DD HH:MM AEST] lint | N issues found`
 
 ## Manifest Format
 
@@ -69,8 +72,8 @@ The manifest.yaml should list every page with path, title, tags, sources, create
 - **sources** — list of raw/ file paths the page drew on
 - **source_date** — date(s) of the source documents (not the wiki page). Use `YYYY-MM-DD` for exact dates, `YYYY-MM` for month precision, `YYYY` for year precision, a range like `2023-02 to 2026-04` for multi-source pages spanning time, or `undated` if the source carries no date. This field is used by the lint workflow to detect stale claims.
 - **stale** — optional boolean, set to `true` when the page contains time-sensitive claims (roadmaps, market analysis, projections) that are known to have lapsed. Set by lint passes; triggers priority review.
-- **created** — date the wiki page was first created
-- **updated** — date the wiki page was last modified
+- **created** — datetime the wiki page was first created, in `YYYY-MM-DD HH:MM AEST` format
+- **updated** — datetime the wiki page was last modified, in `YYYY-MM-DD HH:MM AEST` format
 
 ## Page Writing Rules
 
@@ -88,7 +91,7 @@ The `/coach` command invokes a coaching agent. Coaching sessions interact with t
 
 ### What coaching can write
 - `wiki/coaching/` — Session notes (substantive sessions get a full page; lightweight check-ins get a one-line log entry only)
-- `wiki/log.md` — Every coaching interaction gets a log entry
+- `wiki/log.md` — Every coaching interaction gets a log entry at the TOP: `## [YYYY-MM-DD HH:MM AEST] coaching | description`
 - `wiki/synthesis/` — New revision pages when coaching surfaces a real change to strategy or plans (e.g. `wealth-plan-revision-2026-07.md`)
 
 ### What coaching cannot overwrite

@@ -6,7 +6,9 @@ Legacy entries (before 2026-04-07) use date-only format.
 
 ---
 
-## [2026-04-07] briefing | 4 Outlook emails (filtered), 2 Gmail actionable, Slack digest (incl. ~16:00 AEST update), trading sync. 10 new action items, 7 carried, 2 overdue. CRITICAL: Gino handover blocked by Strata Staff (6 days to Apr 15). ABGF screening overdue. Oppenheimer meeting today 2:30pm.
+## [2026-04-07 10:00 AEST] briefing | Updated: StrataMax training booked Wed+Thu ✅, PIQ initiated (Brendan Wed), SP102232 Federal Court active today+tomorrow (Matt), Kassem CA $660 debit flagged, levy run planned 13 Apr. 8 new items, 9 carried, 1 overdue. Antonella alignment still unconfirmed.
+
+## [2026-04-07 07:30 AEST] briefing | 3 Outlook actionable, 2 Gmail sent, Slack live. 8 new action items, 9 carried, 1 overdue. Completed since yesterday: Vy StrataMax ✅, ABGF screening ✅, Strata Staff escalation ✅. OPEN: SP 102232 (Aylie back today), Oppenheimer 2:30pm (MTS), Antonella alignment meeting unconfirmed (7 days overdue), Sebastian-Kiet walkthrough 7 days overdue.
 
 ## [2026-04-06 20:53 AEST] briefing | 4 Outlook emails (filtered), 2 Gmail actionable, Slack digest (to ~16:00 AEST), trading sync updated. 11 new action items, 5 carried forward, 1 overdue. CRITICAL: Gino/Strata Staff handover blocked (7 days). ABGF screening in progress. Trading: VMA=KAMA closed, Setup 1 queries fixed.
 

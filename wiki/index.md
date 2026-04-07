@@ -156,7 +156,7 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 
 | Page | Summary |
 |---|---|
-| [Daily Briefing — 7 April 2026](briefings/2026-04-07.md) | First day back. Gino training IN PROGRESS. Vy StrataMax DONE. ABGF DONE. Setup 1 query spec sent to Kiet. SP 102232 (Aylie back today), Oppenheimer 2:30pm (MTS), Antonella alignment unconfirmed (7d drift) |
+| [Daily Briefing — 7 April 2026](briefings/2026-04-07.md) | StrataMax training booked Wed+Thu ✅. PIQ pending Wed. SP102232 Federal Court active TODAY+TOMORROW (Matt handling). ATO payment plan: Aylie back. Antonella meeting unconfirmed. Oppenheimer 2:30pm |
 | [Daily Briefing — 6 April 2026](briefings/2026-04-06.md) | Easter Monday. ABGF screening overdue (3rd reminder). SP 102232 payment plan default. Gino handover blocked by Strata Staff. Jignesh Shah / Oppenheimer tomorrow |
 
 ---

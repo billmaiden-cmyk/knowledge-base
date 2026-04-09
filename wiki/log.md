@@ -1,3 +1,7 @@
+## [2026-04-09 07:30 AEST] briefing | 15 Outlook threads, 11 Gmail messages, 3 Slack messages from Bill; 7 action items new, 12 carried, 3 overdue; EQT Partners meeting flagged CRITICAL
+
+## [2026-04-08 13:00 AEST] briefing | Daily briefing generated — ABGF confirmed, Farago consent orders, Chris Thorndyke intro
+
 # Wiki Log
 
 Append-only chronological record of all ingests, queries, briefings, coaching sessions, and lint passes.
@@ -5,6 +9,12 @@ Entry format: `## [YYYY-MM-DD HH:MM AEST] operation | description`
 Legacy entries (before 2026-04-07) use date-only format.
 
 ---
+
+## [2026-04-08 07:30 AEST] coaching | Session 005 — tax fear, "going backwards," achievement-based self-worth in purest financial form; fishing with James
+
+## [2026-04-07 12:15 AEST] kickoff | Coach's read on Tuesday Liberty drift — operator clearing MTS while the scary work waits
+
+## [2026-04-07 11:30 AEST] coaching | Session 004: Background check for PE role — exposure fear, privacy reality (health/Family Court sealed by law), draft HR email, pattern named: trauma response not risk assessment
 
 ## [2026-04-07 10:00 AEST] briefing | Updated: StrataMax training booked Wed+Thu ✅, PIQ initiated (Brendan Wed), SP102232 Federal Court active today+tomorrow (Matt), Kassem CA $660 debit flagged, levy run planned 13 Apr. 8 new items, 9 carried, 1 overdue. Antonella alignment still unconfirmed.
 

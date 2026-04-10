@@ -1,3 +1,5 @@
+## [2026-04-11 09:00 AEST] update | Briefing corrections: Kiet spec marked sent ✅, Chris Thorndyke capture marked done ✅. Action items, Wealth Plan Health, Trading Program section and Overdue table updated accordingly.
+
 ## [2026-04-11 08:30 AEST] ingest | ABGF onboarding agenda PDF ingested (Jason Knott, 10 Apr). Full schedule: Mon 13 Apr (Ghazaleh Lyari + Patrick Verlaine, IT/3rdMill, Peter Jennings Finance, Anthony Healy); Fri 17 Apr (Lucy Bradshaw, Investment Committee); Mon 20 Apr (Mark Massara, iLevel + Valuations + Rayna Toman); TBC sessions (Mandate overview, Compliance, Bonnie Powell). 11 new ABGF contacts identified. Briefing updated.
 
 ## [2026-04-11 07:45 AEST] ingest | Liberty Corporate Finance updated with Tom Anning's inaugural shareholder update (10 Apr 2026): ~$2.5m near-term revenue, >$10m pipeline across 30+ deals, Ty Harbour joined as Manager, Bill joining as Partner 0.5 FTE. ABGF onboarding status captured from Jason Knott email: forms complete, Super Choice form pending, Monday arrival logistics confirmed. Briefing supplemented.

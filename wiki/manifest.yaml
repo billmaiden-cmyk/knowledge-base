@@ -52,8 +52,10 @@ pages:
     tags: [business, corporate-finance, private-equity, investment-banking, bill-maiden, wealth-creation]
     sources:
       - raw/Complete_Wealth_Plan_Final.md
+      - Tom Anning shareholder update, 10 April 2026
     source_date: 2026-04
     created: 2026-04-05
+    updated: 2026-04-11 07:45 AEST
     updated: 2026-04-05
 
   - path: wiki/entities/solaft.md

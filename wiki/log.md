@@ -1,3 +1,5 @@
+## [2026-04-11 07:45 AEST] ingest | Liberty Corporate Finance updated with Tom Anning's inaugural shareholder update (10 Apr 2026): ~$2.5m near-term revenue, >$10m pipeline across 30+ deals, Ty Harbour joined as Manager, Bill joining as Partner 0.5 FTE. ABGF onboarding status captured from Jason Knott email: forms complete, Super Choice form pending, Monday arrival logistics confirmed. Briefing supplemented.
+
 ## [2026-04-11 07:30 AEST] ingest | Chris Thorndyke entity created — new tax accountant at Altus (replacing Jeremy). ATO remission pending. FY2025 likely not material. SP102232 payment plan confirmed compliant by Aylie Brutman (Economos) 7 Apr. ABGF all via Gmail (unavailable); Jason Knott compliance agenda to capture once Gmail restored.
 
 ## [2026-04-11 07:00 AEST] briefing | ~20 Outlook threads, Slack live; Gmail unavailable; 9 new action items, 11 carried, 4 overdue; Khoi Nguyen hired (GTM Specialist), ABGF starts Monday, EQT captured, send Kiet unified spec is single most important trading action

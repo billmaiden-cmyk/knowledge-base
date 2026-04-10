@@ -78,6 +78,54 @@ Salary covers Bill's personal lifestyle overhead. All remaining cash flows into 
 
 The wealth plan explicitly states that even though Bill owns 100% of MTS and only 16% of Liberty, *more of his personal strategic time should go to Liberty*. Liberty scales with far less friction than strata, and Bill does not hate the work. The biggest risk to Liberty is Bill getting re-absorbed into MTS operations — which is why the [[More Than Strata (MTS)]] GM hire is a precondition for Liberty reaching its potential.
 
+## Shareholder Update — April 2026
+
+*(Source: Tom Anning inaugural shareholder update, 10 April 2026. Updated 2026-04-11 AEST.)*
+
+Tom Anning sent the first-ever shareholder update on 10 April 2026. Key data points:
+
+### Sales & Revenue
+- 10 fee-paying engagements signed/completed since early 2024
+- **~$1.75m revenue expected in coming months** from signed deals nearing completion
+- Additional ~$750k from 2 signed mandates in progress (total near-term inflow ~$2.5m)
+- First non-ANZ mandate: Singaporean HQ'd business, SE Asia operations
+- **Pipeline: >$10m potential revenue across >30 deals**
+- Pricing: A$400–600k per transaction
+- Strong referral network from PE, legal, and corporate advisory community
+
+### Marketing
+- External marketing consultant finishing this month; Marnie Anning (Tom's wife) supporting implementation short-term; then marketing administrator on hourly basis
+- Website (www.liberty-cf.asia), LinkedIn page, HubSpot CRM, and 12-month content library now live
+- Goal: marketing-generated dealflow → path to new APAC geographies
+
+### Operations
+- **Ty Harbour** joined as Manager in February 2026 (10+ years: ICG institutional real estate, CBA lending, JLL valuation)
+- **Bill joining next week as Partner, 0.5 FTE.** Looking to become full-time in 6–18 months depending on deal flow.
+- Tom will send a **separate email on the Partner economic model** — watch for this
+- Junior hire expected early next quarter
+- Liberty UK Partners providing execution support, technical expertise, and strategic counsel
+- Alexander van der Laan: co-shareholder, mentor, sounding board
+
+### Cash Flow
+- Cash balance: ~$525k (includes ~$250k unsubmitted invoice from earlier sell-side mandate)
+- Working capital cycle: 6–12 months from signing to cash collection
+- **No dividends yet** — plan to begin distributing next financial year
+- Tom conservative on dividend vs. cash buffer tradeoff
+
+### Wealth Plan Calibration
+
+Comparing actual status (April 2026) against the wealth plan model:
+
+| Metric | Plan (Year 1) | Actual (April 2026) |
+|--------|--------------|---------------------|
+| Deals (run-rate) | 6 | ~10 signed since early 2024; 30+ in pipeline |
+| Revenue (near-term) | $3.6m/year | $1.75m imminent + $750k in-progress |
+| Fee level | ~$600k/deal | $400–600k ✅ holding |
+| Bill's FTE | 0.5 initially | 0.5 FTE confirmed ✅ |
+| Dividends | Year 1 | Deferred to next FY |
+
+Pipeline scale (>30 deals, >$10m) is ahead of the 6-deal Year 1 plan target. The revenue recognition lag (6–12 month working capital cycle) explains the cash position. On trajectory.
+
 ## Related Pages
 
 - [[Bill Maiden]] — owner and partner

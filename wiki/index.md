@@ -14,6 +14,7 @@ _A human-readable catalog of all pages, organized by topic area. Pages connected
 | [[Solaft (Albany Filtration Technologies)]] | Former ANZ PE portfolio company acquired by Bill and Justin; source of a defining psychological wound around tax exposure and insolvent trading fear |
 | [[a16z Perennial & Liberty Perennial]] | a16z's tax-aware multi-family office model + Liberty Perennial strategy: CEO-side capital counsel wedge built on trusted alignment before/during/after liquidity events; product ladder from advocacy → capital office → fund platform |
 | [[OpenClaw]] | Open-source autonomous AI agent (247k GitHub stars); runs locally as persistent daemon; delivers via WhatsApp/Telegram/30+ platforms; skills marketplace; evaluated as coaching delivery option |
+| [[EQT Partners]] | Global PE firm (~$250B AUM). Met Bill 9 Apr 2026 re strata consolidation. Proposed MTS as tech/ops backbone for ~310,000-lot roll-up (PICA, StrataChoice, Jamesons, Neighbourly). $50M USD cheque. CA to be signed. |
 
 ---
 
@@ -47,6 +48,7 @@ _All concepts, architectures, and roadmaps that are components of MTS as a busin
 | [[MTS Automated Committee Reporting]] | AI-generated monthly committee report pipeline; PRD specifying data extraction from PropertyIQ/Zendesk, LLM narrative generation, and human-in-loop approval |
 | [[MTS Technology Roadmap (2025–2026) ⚠️]] | 6-initiative 12-month plan (Q2 2025–Q2 2026): reporting automation, Zendesk/SweetHawk enhancements, R&M triage, outbound marketing factory, self-service chatbot, Box filing — Q1–Q3 milestones now elapsed |
 | [[MTS LangChain Agent Implementations]] | 33-page Python code reference for Campaign Strategist and Content Strategist agents; LangChain/ReAct pattern with tenant-specific configuration |
+| [[Strata Financial Accounting (NSW)]] | Domain knowledge for strata financials — fund structure, levy mechanics, expense categorisation, GST, CWF legislation (s 74), cash vs equity. Shared reference for all MTS financial reporting. |
 | [[Strata Tokenization (SUI NextERP)]] | Longer-horizon thesis: blockchain tokenization of strata lots on the SUI network; tokenized voting, micro-payments, DeFi yield on sinking funds |
 | [[Strata Acquisition Arbitrage]] | Value creation by acquiring strata books at 2.5–4× EBITDA and revaluing on an AI-margin platform at 6–8× EBITDA; base case (2 acquisitions) and institutional model ($240M exit); see also: Wealth & Finance |
 | [[Block (MTS — Michael Teys Scenario)]] | What MTS becomes if Michael Teys invests: renamed "Block", scaled as an AI-powered strata roll-up vehicle; institutional-scale alternative path for the same underlying business |
@@ -172,6 +174,7 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 
 | Page | Summary |
 |---|---|
+| [[Daily Briefing — 11 April 2026]] | Saturday. Khoi Nguyen hired (GTM Specialist, start 13 May). EQT captured. ABGF starts Monday — prep critical. Send Kiet unified query spec (unblocks trading). Chris Thorndyke still uncaptured. Gmail unavailable. |
 | [[Daily Briefing — 10 April 2026]] | Friday pre-ABGF. Rippling intro 9:15am. GTM hire (Khoi) in play. EQT + Thorndyke still uncaptured. Antonella 10 days silent. ABGF Monday prep needed. Gmail unavailable (tool upgrade). |
 | [[Daily Briefing — 9 April 2026]] | EQT Partners (PE firm) meeting 3pm today re Strata — unknown context, flag HIGH. Carol/EQT conflict. StrataMax Session 2 2pm. Rippling 1:30pm. Totality corporate action. Antonella 9 days silent. 5 items from Apr 8 confirmed done. |
 | [[Daily Briefing — 8 April 2026]] | ABGF contract signed ✅. Dr Farago consent orders sent. Chris Thorndyke intro 3pm. StrataMax training Day 1. PIQ follow-up sent. Tax accountant meeting. |

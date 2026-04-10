@@ -1,3 +1,11 @@
+## [2026-04-11 07:00 AEST] briefing | ~20 Outlook threads, Slack live; Gmail unavailable; 9 new action items, 11 carried, 4 overdue; Khoi Nguyen hired (GTM Specialist), ABGF starts Monday, EQT captured, send Kiet unified spec is single most important trading action
+
+## [2026-04-11 14:00 AEST] build | Created wiki/concepts/strata-financial-accounting.md — comprehensive strata financial domain knowledge (fund structure, levy mechanics, expense categorisation, GST, CWF legislation, cash vs equity). Extracted from Committee Report Finance & Accounting Spec development session. Intended as shared reference for all financial reporting across MTS buildings.
+
+## [2026-04-10 10:00 AEST] build | Unified Query Output Spec created — merged Kiet 6 April PDF with Antonella query output form (xlsx). 41 output columns (20 new from Antonella). Query conditions unchanged. Key additions: volume profile, O'Neil sell rule, dist-to-MA, SI change. PDF generated for Kiet. Trading status page updated.
+
+## [2026-04-10 09:00 AEST] ingest | EQT Partners entity page created from 9 Apr meeting debrief. Antonella trading status updated — alignment meeting happened, Queries 1-2 confirmed, Query 3 short squeeze improvements underway, query output form for Kiet pending.
+
 ## [2026-04-10 08:00 AEST] kickoff | Coach's read on ABGF Monday as the one thing; pattern — scaffolding working but achievement alarm silent; Antonella silence the quiet dread
 
 ## [2026-04-10 07:30 AEST] briefing | ~12 Outlook threads, Slack live; Gmail unavailable (tool upgrade); 10 new action items, 11 carried, 5 overdue; ABGF starts Monday, Rippling intro today, Antonella 10 days silent

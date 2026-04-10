@@ -1,3 +1,5 @@
+## [2026-04-10 08:00 AEST] kickoff | Coach's read on ABGF Monday as the one thing; pattern — scaffolding working but achievement alarm silent; Antonella silence the quiet dread
+
 ## [2026-04-10 07:30 AEST] briefing | ~12 Outlook threads, Slack live; Gmail unavailable (tool upgrade); 10 new action items, 11 carried, 5 overdue; ABGF starts Monday, Rippling intro today, Antonella 10 days silent
 
 ## [2026-04-09 10:00 AEST] build | People management pages created — Mary Deguara, Kat Bagust, Matt Wrigley, Quang (new entity pages); Keira role page updated with 1:1 structure. Index updated with Direct Reports section. Part of CEO stack build for part-time management model.

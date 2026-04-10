@@ -15,6 +15,7 @@ _A human-readable catalog of all pages, organized by topic area. Pages connected
 | [[a16z Perennial & Liberty Perennial]] | a16z's tax-aware multi-family office model + Liberty Perennial strategy: CEO-side capital counsel wedge built on trusted alignment before/during/after liquidity events; product ladder from advocacy → capital office → fund platform |
 | [[OpenClaw]] | Open-source autonomous AI agent (247k GitHub stars); runs locally as persistent daemon; delivers via WhatsApp/Telegram/30+ platforms; skills marketplace; evaluated as coaching delivery option |
 | [[EQT Partners]] | Global PE firm (~$250B AUM). Met Bill 9 Apr 2026 re strata consolidation. Proposed MTS as tech/ops backbone for ~310,000-lot roll-up (PICA, StrataChoice, Jamesons, Neighbourly). $50M USD cheque. CA to be signed. |
+| [[Chris Thorndyke]] | Bill's new tax accountant at Altus (replacing Jeremy). Met ~8 Apr 2026. Awaiting ATO remission decision + FY2025 finalisation within weeks. Likely not material liability. |
 
 ---
 

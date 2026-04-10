@@ -1,3 +1,5 @@
+## [2026-04-11 07:30 AEST] ingest | Chris Thorndyke entity created — new tax accountant at Altus (replacing Jeremy). ATO remission pending. FY2025 likely not material. SP102232 payment plan confirmed compliant by Aylie Brutman (Economos) 7 Apr. ABGF all via Gmail (unavailable); Jason Knott compliance agenda to capture once Gmail restored.
+
 ## [2026-04-11 07:00 AEST] briefing | ~20 Outlook threads, Slack live; Gmail unavailable; 9 new action items, 11 carried, 4 overdue; Khoi Nguyen hired (GTM Specialist), ABGF starts Monday, EQT captured, send Kiet unified spec is single most important trading action
 
 ## [2026-04-11 14:00 AEST] build | Created wiki/concepts/strata-financial-accounting.md — comprehensive strata financial domain knowledge (fund structure, levy mechanics, expense categorisation, GST, CWF legislation, cash vs equity). Extracted from Committee Report Finance & Accounting Spec development session. Intended as shared reference for all financial reporting across MTS buildings.

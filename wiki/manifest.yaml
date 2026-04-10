@@ -2,6 +2,16 @@ pages:
 
   # ─── Entities ───────────────────────────────────────────────────────────────
 
+  - path: wiki/entities/chris-thorndyke.md
+    title: Chris Thorndyke
+    type: entity
+    tags: [person, tax, accountant, altus, personal-finance, ato-remission]
+    sources:
+      - Bill Maiden verbal debrief, 11 April 2026
+    source_date: 2026-04-11
+    created: 2026-04-11 07:30 AEST
+    updated: 2026-04-11 07:30 AEST
+
   - path: wiki/entities/eqt-partners.md
     title: EQT Partners
     type: entity

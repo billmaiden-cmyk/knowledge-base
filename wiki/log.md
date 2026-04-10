@@ -1,3 +1,9 @@
+## [2026-04-10 07:30 AEST] briefing | ~12 Outlook threads, Slack live; Gmail unavailable (tool upgrade); 10 new action items, 11 carried, 5 overdue; ABGF starts Monday, Rippling intro today, Antonella 10 days silent
+
+## [2026-04-09 10:00 AEST] build | People management pages created — Mary Deguara, Kat Bagust, Matt Wrigley, Quang (new entity pages); Keira role page updated with 1:1 structure. Index updated with Direct Reports section. Part of CEO stack build for part-time management model.
+
+## [2026-04-09 09:45 AEST] build | index.md migrated from markdown links to [[wikilinks]] (75 links converted). CLAUDE.md updated to mandate wikilinks for all future pages.
+
 ## [2026-04-09 07:30 AEST] briefing | 15 Outlook threads, 11 Gmail messages, 3 Slack messages from Bill; 7 action items new, 12 carried, 3 overdue; EQT Partners meeting flagged CRITICAL
 
 ## [2026-04-08 13:00 AEST] briefing | Daily briefing generated — ABGF confirmed, Farago consent orders, Chris Thorndyke intro

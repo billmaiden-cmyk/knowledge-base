@@ -17,6 +17,20 @@ _A human-readable catalog of all pages, organized by topic area. Pages connected
 
 ---
 
+## MTS — Direct Reports (People Management)
+
+_Per-person management pages for Bill's five direct reports. Each page tracks role outcomes, weekly metrics, 1:1 notes, and open actions. Supports the part-time CEO model._
+
+| Page | Role | Key Focus |
+|---|---|---|
+| [[Mary Deguara]] | Senior Strata Manager (LIC) | Governance, AGMs, committee reporting, outcomes |
+| [[Kat Bagust]] | Operations Manager | Triage, overwatch, R&M, insurance, service responsiveness |
+| [[Matt Wrigley]] | Senior Strata Manager | Fire compliance, defects, special projects |
+| [[Keira — Business Systems & Operations Lead (Strata OS)]] | Chief of Staff / Strata OS | CEO leverage, priorities cadence, Vietnam ops, workflow translation |
+| [[Quang]] | Technology Lead | Platform stability, dev team (Bach, Andrew), Strata OS build |
+
+---
+
 ## MTS — Strategy & Technology
 
 _All concepts, architectures, and roadmaps that are components of MTS as a business. Block is included here as the Michael Teys investment/rename scenario for MTS._
@@ -158,6 +172,7 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 
 | Page | Summary |
 |---|---|
+| [[Daily Briefing — 10 April 2026]] | Friday pre-ABGF. Rippling intro 9:15am. GTM hire (Khoi) in play. EQT + Thorndyke still uncaptured. Antonella 10 days silent. ABGF Monday prep needed. Gmail unavailable (tool upgrade). |
 | [[Daily Briefing — 9 April 2026]] | EQT Partners (PE firm) meeting 3pm today re Strata — unknown context, flag HIGH. Carol/EQT conflict. StrataMax Session 2 2pm. Rippling 1:30pm. Totality corporate action. Antonella 9 days silent. 5 items from Apr 8 confirmed done. |
 | [[Daily Briefing — 8 April 2026]] | ABGF contract signed ✅. Dr Farago consent orders sent. Chris Thorndyke intro 3pm. StrataMax training Day 1. PIQ follow-up sent. Tax accountant meeting. |
 | [[Daily Briefing — 7 April 2026]] | StrataMax training booked Wed+Thu ✅. PIQ pending Wed. SP102232 Federal Court active TODAY+TOMORROW (Matt handling). ATO payment plan: Aylie back. Antonella meeting unconfirmed. Oppenheimer 2:30pm |

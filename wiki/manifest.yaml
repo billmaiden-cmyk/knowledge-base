@@ -58,6 +58,47 @@ pages:
     created: 2026-04-05
     updated: 2026-04-05
 
+  # ─── Entities: MTS Direct Reports (People Management) ──────────────────────
+
+  - path: wiki/entities/mary-deguara.md
+    title: Mary Deguara
+    type: entity
+    tags: [person, mts, team, senior-strata-manager, governance, lic, direct-report]
+    sources:
+      - raw/Organisation Structure_20250701.pdf
+    source_date: 2025-07
+    created: 2026-04-09 10:00 AEST
+    updated: 2026-04-09 10:00 AEST
+
+  - path: wiki/entities/kat-bagust.md
+    title: Kat Bagust
+    type: entity
+    tags: [person, mts, team, operations-manager, repairs-maintenance, insurance, triage, overwatch, direct-report]
+    sources:
+      - raw/Organisation Structure_20250701.pdf
+    source_date: 2025-07
+    created: 2026-04-09 10:00 AEST
+    updated: 2026-04-09 10:00 AEST
+
+  - path: wiki/entities/matt-wrigley.md
+    title: Matt Wrigley
+    type: entity
+    tags: [person, mts, team, senior-strata-manager, fire, defects, special-projects, direct-report]
+    sources:
+      - raw/Organisation Structure_20250701.pdf
+    source_date: 2025-07
+    created: 2026-04-09 10:00 AEST
+    updated: 2026-04-09 10:00 AEST
+
+  - path: wiki/entities/quang.md
+    title: Quang
+    type: entity
+    tags: [person, mts, team, technology, developer, team-lead, direct-report]
+    sources: []
+    source_date: 2026-04
+    created: 2026-04-09 10:00 AEST
+    updated: 2026-04-09 10:00 AEST
+
   # ─── Concepts: Psychology & Personal Development ─────────────────────────────
 
   - path: wiki/concepts/achievement-based-self-worth.md
@@ -731,6 +772,20 @@ pages:
     source_date: 2026-03-30 to 2026-04-06
     created: 2026-04-06
     updated: 2026-04-06
+
+  - path: wiki/briefings/2026-04-10.md
+    title: "Daily Briefing — 10 April 2026 (Friday)"
+    type: synthesis
+    tags: [briefing, daily, executive-synthesis, mts, abgf, trading, rippling, gtm-hire, stratamax]
+    sources:
+      - Outlook: bmaiden@morethanstrata.com.au (live)
+      - Slack: MTS workspace (live)
+      - wiki/briefings/2026-04-09.md
+      - wiki/coaching/2026-04-08-session-005.md
+      - wiki/synthesis/trading-sync-2026-04-06.md
+    source_date: 2026-04-10
+    created: 2026-04-10 07:30 AEST
+    updated: 2026-04-10 07:30 AEST
 
   - path: wiki/briefings/2026-04-09.md
     title: "Daily Briefing — 9 April 2026 (Thursday)"

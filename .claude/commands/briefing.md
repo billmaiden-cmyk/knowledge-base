@@ -159,11 +159,16 @@ sources:
 
 ## Critical & High Priority
 
+**IMPORTANT: Four initiatives — MTS, ABGF, Liberty, Trading, Personal are ALL separate sections. ABGF items NEVER go under MTS. ABGF is a separate employer (Australian Business Growth Fund) with separate governance. Any item involving Patrick Verlaine, Ghazaleh Lyari, Jason Knott, Anthony Healy, or ABGF onboarding/compliance/portfolio work belongs under ### ABGF only.**
+
 ### MTS
-{Bullet list of critical/high items with source and recommended action}
+{Bullet list of critical/high MTS items only — strata operations, Keira, team, technology, clients}
+
+### ABGF
+{ABGF items only — onboarding, Patrick Verlaine, portfolio work, Jason Knott compliance, ABGF personnel}
 
 ### Liberty
-{Same format}
+{Liberty corporate finance items — Tom Anning, deal flow, EQT, advisory work}
 
 ### Trading
 {Same format — reference latest trading sync if available}

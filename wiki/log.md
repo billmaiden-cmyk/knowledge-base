@@ -1,3 +1,5 @@
+## [2026-04-14 07:30 AEST] update | Briefing corrections: Tom Anning Partner economics email received ✅ ($400k base, 24% bonus pool, 65% MIP, $100k co-invest), Cooper Parry attempted by Bill (awaiting response), Oppenheimer SP36335 delegated to Kat (levies paid, insurance processing). Actions A03/A08/A11/A39 updated.
+
 ## [2026-04-14 05:00 AEST] kickoff | ABGF Day 2 — delegation trust pattern flagged (let Keira run Gino training), GoDaddy unconfirmed is the real risk, Arun acquisition intel not a selling decision, one thing: three decisions before noon, permission: don't join the training session
 
 ## [2026-04-14 05:00 AEST] briefing | 5 actionable Outlook (Khoi Deel correction, Andreas SP93493 response, Arun Pragasam acquisition interest, Toan StrataMax training, Bill→Andrew re candidates). Gmail unavailable. Keira DMs critical — Gino slow, training agenda set for Tue+Wed. Won Ewart St Marrickville. Mary on AL. GoDaddy unconfirmed 🚨. 5 new actions (A45–A49), 6 overdue, 18 carried forward. Ops RED on MTS dashboard.

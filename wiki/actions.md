@@ -1,7 +1,7 @@
 ---
 title: Open Actions Tracker
 created: 2026-04-11 14:30 AEST
-updated: 2026-04-14 05:00 AEST
+updated: 2026-04-14 07:30 AEST
 tags: [actions, tracker, meta, governance]
 ---
 
@@ -19,7 +19,7 @@ Live tracker of open action items across all initiatives. Updated after each bri
 | A30 | Keira/Tim | 🚨 **GoDaddy renewal — 2 days to expiry (16 Apr).** No confirmation it was renewed Monday despite being Decision #2. Ask Keira at standup. | MTS | By 16 Apr — 2 days | — |
 | A01 | Sebastian + Kiet | Data walkthrough meeting | TRADING | 1 Apr 2026 | 13 days |
 | A02 | Bill | Totality corporate action — log in and respond | TRADING | ~5 Apr 2026 | 9 days |
-| A03 | Bill | Oppenheimer SP 36335 — process insurance installment (delegate to Keira if not done) | MTS | 9 Apr 2026 | 5 days |
+| A03 | Kat | Oppenheimer SP 36335 — insurance installment. Bill messaged Kat: levies paid, can now process insurance. **In progress.** | MTS | 9 Apr 2026 | 5 days |
 | A04 | Bill | Follow up Aylie Brutman re: SP102232 ATO payment plan | MTS | Overdue | — |
 | A05 | Bill | Confirm Matt: SP102232 Federal Court Day 2 outcome | MTS | Overdue | — |
 | A10 | Bill | Superannuation Standard Choice Form — send SMSF details to Jason Knott | ABGF | Mon 13 Apr | 1 day |
@@ -35,9 +35,9 @@ Live tracker of open action items across all initiatives. Updated after each bri
 | A49 | Keira | Schedule StrataMax support for three-way trust reconciliation training — compliance time bomb, not in handover | MTS | By 28 Apr |
 | A48 | Bill | Arun Pragasam / Genesis Advisory coffee — confirm Friday, prepare position (intel gathering, not selling) | MTS/STRATEGIC | Confirm by Wed |
 | A32 | Keira | Trust account handover — coordinating Toan + Vy training with Gino. Keira attending full sessions Tue+Wed. Report status to Bill at standup. | MTS | Tue 14 Apr (report at standup) |
-| A08 | Bill/Keira | Oppenheimer SP 36335 — process insurance installment if not done | MTS | This week |
+| A08 | Kat | Oppenheimer SP 36335 — Bill delegated to Kat via Slack. Levies paid, insurance being processed. | MTS | This week |
 | A09 | Keira | Follow up Andrew on s184 PIQ ticket 125311 — confirm actioned | MTS | This week |
-| A11 | Bill | Watch for Tom Anning's Partner economics email — follow up mid-week if silent | LIBERTY | This week |
+| A11 | Bill | ✅ Tom Anning Partner economics email received 13 Apr. Review terms: $400k base, 24% bonus pool, 65% MIP, $100k co-invest at $2/share. | LIBERTY | **Review this week** |
 | A12 | Kiet | vma9_direction formula confirmation | TRADING | Active (spec delivered) |
 | A13 | Kiet | Confirm dist_vma9 and base_number columns | TRADING | Active (spec delivered) |
 | A14 | Kiet | Begin Setup 1 query implementation | TRADING | Active (spec delivered) |
@@ -46,7 +46,7 @@ Live tracker of open action items across all initiatives. Updated after each bri
 | A35 | Bill | Khoi — grant Google Ads access (30 min) | MTS/GTM | This week |
 | A36 | Bill | Khoi — brief on current leads: tone, what Bill wants/doesn't want from lead intake (1 hr) | MTS/GTM | This week |
 | A38 | Bill | Message Sebastian — data walkthrough 13 days overdue, one direct message | TRADING | Today 14 Apr |
-| A39 | Bill | Cooper Parry Cloud PC setup — install Windows App, sign in with CP credentials, change temp password, MFA setup | LIBERTY | This week |
+| A39 | Bill | Cooper Parry Cloud PC setup — Bill attempted, hit issue, emailed Cooper Parry. Awaiting response. | LIBERTY | This week |
 
 ---
 

@@ -175,6 +175,7 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 
 | Page | Summary |
 |---|---|
+| [[Daily Briefing — 14 April 2026]] | Tuesday. ABGF Day 2. GoDaddy unconfirmed 🚨 (2 days to expiry). Gino handover final push — Keira running Tue+Wed sessions. Won Ewart St Marrickville (RFP). Arun Pragasam/Genesis Advisory acquisition interest — coffee Friday. Andreas SP93493 responded. Khoi Deel corrected to 16hrs. Mary on AL. Gmail unavailable. Ops RED. |
 | [[Daily Briefing — 11 April 2026]] | Saturday. Khoi Nguyen hired (GTM Specialist, start 13 May). EQT captured. ABGF starts Monday — prep critical. Send Kiet unified query spec (unblocks trading). Chris Thorndyke still uncaptured. Gmail unavailable. |
 | [[Daily Briefing — 10 April 2026]] | Friday pre-ABGF. Rippling intro 9:15am. GTM hire (Khoi) in play. EQT + Thorndyke still uncaptured. Antonella 10 days silent. ABGF Monday prep needed. Gmail unavailable (tool upgrade). |
 | [[Daily Briefing — 9 April 2026]] | EQT Partners (PE firm) meeting 3pm today re Strata — unknown context, flag HIGH. Carol/EQT conflict. StrataMax Session 2 2pm. Rippling 1:30pm. Totality corporate action. Antonella 9 days silent. 5 items from Apr 8 confirmed done. |

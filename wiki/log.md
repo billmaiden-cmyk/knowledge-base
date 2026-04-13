@@ -1,3 +1,21 @@
+## [2026-04-14 05:00 AEST] kickoff | ABGF Day 2 — delegation trust pattern flagged (let Keira run Gino training), GoDaddy unconfirmed is the real risk, Arun acquisition intel not a selling decision, one thing: three decisions before noon, permission: don't join the training session
+
+## [2026-04-14 05:00 AEST] briefing | 5 actionable Outlook (Khoi Deel correction, Andreas SP93493 response, Arun Pragasam acquisition interest, Toan StrataMax training, Bill→Andrew re candidates). Gmail unavailable. Keira DMs critical — Gino slow, training agenda set for Tue+Wed. Won Ewart St Marrickville. Mary on AL. GoDaddy unconfirmed 🚨. 5 new actions (A45–A49), 6 overdue, 18 carried forward. Ops RED on MTS dashboard.
+
+## [2026-04-13 10:30 AEST] coaching | Session 007 — Gino handover anxiety (last day). Slack Group DM audited: 6 open items unconfirmed (SP 56120 never answered, levy run unconfirmed, SP97019 pending). Zendesk ticket analysis (100 tickets): legal chargebacks = 30% of queue. Built Gino_Handover_Checklist.xlsx with Master Checklist + Monthly Tasks + Team Competency (28 tasks, Toan/Vy separate, 6 CRITICAL gaps). A40/A41/A42 added.
+
+## [2026-04-13 05:15 AEST] kickoff | ABGF Day 1 — exposure pattern flagged for Carrington St, Matt anger→disappointment transition key, one thing: close Matt before 11am, permission: don't be impressive today just arrive
+
+## [2026-04-13 05:00 AEST] briefing | ABGF Day 1 — Matt conversation before 2:30pm, GoDaddy deletion warning escalated to Keira, Keira call activates CoS protocol, Deel for Khoi, Sebastian message. 0 actionable Gmail, 1 actionable Outlook (Khoi reply pending). Quiet Slack weekend.
+
+## [2026-04-12 22:00 AEST] kickoff | ABGF Eve — Matt anger calibrated (PH-adjusted, $159k gap, disappointment register designed), exposure pattern flagged for Carrington St, one thing: close Matt before 2:30pm
+
+## [2026-04-12 22:00 AEST] build | CEO Chief of Staff operating layer — 3 scheduled triggers, /midday-pulse + /close + /1on1-prep commands, wiki/mts-status.md, keira-cos-protocol.md, PRIMER.md key people updated, actions.md updated
+
+## [2026-04-12 21:00 AEST] coaching | Session 006 — Matt Wrigley billing performance ($120k foregone margin), lift-then-backslide pattern, fix decision, shaping conversation designed, weekly 1:1 structure built
+
+## [2026-04-12 19:30 AEST] briefing | Sunday evening update — state of play, week shape, Monday morning sequence, MTS status dashboard
+
 ## [2026-04-11 09:00 AEST] update | Briefing corrections: Kiet spec marked sent ✅, Chris Thorndyke capture marked done ✅. Action items, Wealth Plan Health, Trading Program section and Overdue table updated accordingly.
 
 ## [2026-04-11 08:30 AEST] ingest | ABGF onboarding agenda PDF ingested (Jason Knott, 10 Apr). Full schedule: Mon 13 Apr (Ghazaleh Lyari + Patrick Verlaine, IT/3rdMill, Peter Jennings Finance, Anthony Healy); Fri 17 Apr (Lucy Bradshaw, Investment Committee); Mon 20 Apr (Mark Massara, iLevel + Valuations + Rayna Toman); TBC sessions (Mandate overview, Compliance, Bonnie Powell). 11 new ABGF contacts identified. Briefing updated.

@@ -46,7 +46,7 @@ Live tracker of open action items across all initiatives. Updated after each bri
 | A35 | Bill | Khoi — grant Google Ads access (30 min) | MTS/GTM | This week |
 | A36 | Bill | Khoi — brief on current leads: tone, what Bill wants/doesn't want from lead intake (1 hr) | MTS/GTM | This week |
 | A38 | Bill | Message Sebastian — data walkthrough 13 days overdue, one direct message | TRADING | Today 14 Apr |
-| A39 | Bill | Cooper Parry Cloud PC setup — Bill attempted, hit issue, emailed Cooper Parry. Awaiting response. | LIBERTY | This week |
+| A39 | Bill | Cooper Parry Cloud PC setup — Bill tried 13 Apr, hit error, Carl Atkinson fixed it and replied asking Bill to retry. **Action: try again.** 10 min. | LIBERTY | Today |
 
 ---
 

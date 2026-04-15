@@ -1,3 +1,17 @@
+## [2026-04-16 06:30 AEST] briefing | ~70 Outlook emails (12 actionable), ~12 Gmail threads, 3 decisions, 11 new actions, 8 carried, 5 overdue (A30 resolved). Carol GM hire call 2:45pm. Ausgrid/Project ES materials ready. VMA lock-down + live trades (DMP, BMN, TLX, PNV) from Apr 15 Antonella ingest. ABGF IC intro tomorrow.
+
+## [2026-04-15 18:30 AEST] update | Liberty messaging + Project ES — Major update from email iteration session. Added to messaging page: process mechanics (parallel not sequential, term sheet in data room sets playing field), conviction chain (management investment as "I believe" signal → deal outcomes), life-changing quantum (frame without specific numbers), CEO bandwidth (restored as distinct value prop), email architecture principles (brief FOR champion, not pitch TO). Updated Project ES comms with v3 email draft and full iteration log (v1→v2→v3). Flagged as WIP for continued refinement. Manifest and index updated.
+
+## [2026-04-15 15:00 AEST] ingest | Liberty Project ES (Ausgrid) — outbound email to Divisional CEO filed in wiki/comms/. Deal pipeline updated with Project ES as active prospect. Messaging page deal log updated. Group CEO "not yet" is gating constraint.
+
+## [2026-04-15 12:30 AEST] ingest | WhatsApp Antonella 260415 — appended Apr 2–15 threads to existing digest. 9 new threads including VMA lock-down, live trades (DMP, BMN, TLX, PNV), Telix convertible deep dive, and P2P takeover targets. Created synthesis page: Public-to-Private Opportunities. Updated Liberty CF Deal Pipeline with 14 ASX targets (EML, MVF, BAP, EDV, OFX, AQZ, HLS, ABY, FPR, MYX, SDF/AUB, IPH, RDY). Tier 1 actionable: EML (call Anthony Hynes) and MVF (email CEO, review audio)
+
+## [2026-04-15 12:00 AEST] create | Liberty Management-Side Advisory Key Messages & Objection Handling — new concept page. Three key messages (why now / vs lawyers-banks / the other side), objection register, deal application log. Developed from Ausgrid smart meters spin-out context. First Liberty sales asset in the wiki.
+
+## [2026-04-14 17:45 AEST] update | Liberty CF deal pipeline created. EML Payments (ASX: EML) added as first prospect — Anthony Hynes CEO, price off, PE interest. A51 updated: SP 3049 Ewart St EGM before 20 May, motions sent to Chrissie Kelly 14 Apr, Claire off emails 2 weeks.
+
+## [2026-04-14 17:30 AEST] close | 3 items closed: Khoi Deel executed (A46), Gino last day confirmed (A47), GoDaddy confirmed not an issue (A30). A10 super form still open. New: A50 Peter Hornsby Friday meeting, A51 EGM Marrickville early May (Claire/Chrissie). Physio Fri 8:30am confirmed in Gmail (Bend+Mend). Tomorrow: Gino Day 2 training, Khoi call 10am, standup 12pm.
+
 ## [2026-04-14 07:30 AEST] update | Briefing corrections: Tom Anning Partner economics email received ✅ ($400k base, 24% bonus pool, 65% MIP, $100k co-invest), Cooper Parry attempted by Bill (awaiting response), Oppenheimer SP36335 delegated to Kat (levies paid, insurance processing). Actions A03/A08/A11/A39 updated.
 
 ## [2026-04-14 05:00 AEST] kickoff | ABGF Day 2 — delegation trust pattern flagged (let Keira run Gino training), GoDaddy unconfirmed is the real risk, Arun acquisition intel not a selling decision, one thing: three decisions before noon, permission: don't join the training session

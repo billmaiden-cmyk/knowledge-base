@@ -16,6 +16,7 @@ _A human-readable catalog of all pages, organized by topic area. Pages connected
 | [[OpenClaw]] | Open-source autonomous AI agent (247k GitHub stars); runs locally as persistent daemon; delivers via WhatsApp/Telegram/30+ platforms; skills marketplace; evaluated as coaching delivery option |
 | [[EQT Partners]] | Global PE firm (~$250B AUM). Met Bill 9 Apr 2026 re strata consolidation. Proposed MTS as tech/ops backbone for ~310,000-lot roll-up (PICA, StrataChoice, Jamesons, Neighbourly). $50M USD cheque. CA to be signed. |
 | [[Chris Thorndyke]] | Bill's new tax accountant at Altus (replacing Jeremy). Met ~8 Apr 2026. Awaiting ATO remission decision + FY2025 finalisation within weeks. Likely not material liability. |
+| [[Liberty CF Deal Pipeline]] | Live tracker of Liberty Corporate Finance deal prospects. First entry: EML Payments (ASX: EML) — price off materially, PE interest, Anthony Hynes CEO. |
 
 ---
 
@@ -54,6 +55,15 @@ _All concepts, architectures, and roadmaps that are components of MTS as a busin
 | [[Strata Acquisition Arbitrage]] | Value creation by acquiring strata books at 2.5–4× EBITDA and revaluing on an AI-margin platform at 6–8× EBITDA; base case (2 acquisitions) and institutional model ($240M exit); see also: Wealth & Finance |
 | [[Block (MTS — Michael Teys Scenario)]] | What MTS becomes if Michael Teys invests: renamed "Block", scaled as an AI-powered strata roll-up vehicle; institutional-scale alternative path for the same underlying business |
 | [[MTS Individual Conversation Form (Annual Performance)]] | Annual performance conversation template; employee-led; Looking Back / Looking Forward structure; Development Plan (70-20-10); becomes working reference for Individual Check-ins throughout the year |
+
+---
+
+## Liberty Advisory
+
+| Page | Summary |
+|---|---|
+| [[Liberty — Management-Side Advisory Key Messages & Objection Handling]] | Living sales asset: process mechanics (term sheet → data room → bidder response), conviction chain (management investment as "I believe" signal), life-changing quantum, CEO bandwidth, key messages (why now, vs lawyers/banks, the other side), objection register, email architecture principles for equipping internal champions. |
+| [[Liberty — Project ES (Ausgrid) Divisional CEO Email]] | Project ES comms: original email + v3 refined draft equipping divisional CEO to persuade Group CEO (who said "not yet"). Full iteration log with v1→v2→v3 changes. WIP — continued refinement flagged. |
 
 ---
 
@@ -175,6 +185,7 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 
 | Page | Summary |
 |---|---|
+| [[Daily Briefing — 16 April 2026]] | Thursday. Gino handover DONE. Toan leads from today. A30 GoDaddy RESOLVED. Carol (C-Suite Partners) GM hire call 2:45pm. Ausgrid deal (Project ES) materials ready. ABGF IC intro tomorrow with Lucy Bradshaw. Arun Pragasam intel coffee tomorrow. VMA lock-down + live trades (DMP, BMN, TLX, PNV) from Apr 15 Antonella ingest. 3 decisions: Ausgrid deck, ABGF super form, SP93493. |
 | [[Daily Briefing — 14 April 2026]] | Tuesday. ABGF Day 2. GoDaddy unconfirmed 🚨 (2 days to expiry). Gino handover final push — Keira running Tue+Wed sessions. Won Ewart St Marrickville (RFP). Arun Pragasam/Genesis Advisory acquisition interest — coffee Friday. Andreas SP93493 responded. Khoi Deel corrected to 16hrs. Mary on AL. Gmail unavailable. Ops RED. |
 | [[Daily Briefing — 11 April 2026]] | Saturday. Khoi Nguyen hired (GTM Specialist, start 13 May). EQT captured. ABGF starts Monday — prep critical. Send Kiet unified query spec (unblocks trading). Chris Thorndyke still uncaptured. Gmail unavailable. |
 | [[Daily Briefing — 10 April 2026]] | Friday pre-ABGF. Rippling intro 9:15am. GTM hire (Khoi) in play. EQT + Thorndyke still uncaptured. Antonella 10 days silent. ABGF Monday prep needed. Gmail unavailable (tool upgrade). |
@@ -204,3 +215,4 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 | [[Trading Sync — 2026-04-06]] | First position sync: methodology complete, blocked on Kiet infrastructure (VMA + base numbers). 5 divergences, 5 decisions pending. Sebastian-Kiet walkthrough is critical blocker |
 | [[Coaching App Architecture — Delivery Options]] | Evaluates four delivery options for daily coaching: Claude Code local (current), Claude Dispatch (watch), OpenClaw (future), Remote Agent (rejected). |
 | [[MTS and Trading System Architecture Parallels]] | Shows MTS agent swarm and hedge fund automation share the same ingest→validate→act→track→report→improve pattern |
+| [[Public-to-Private Opportunities — Liberty x Antonella Deal Flow]] | P2P pipeline: 14 ASX targets (EML, MVF, BAP, EDV, OFX, etc.) surfaced via Antonella/Ron network. Tiered by actionability. Trading system as deal origination engine |

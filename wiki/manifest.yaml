@@ -2,6 +2,17 @@ pages:
 
   # ─── Entities ───────────────────────────────────────────────────────────────
 
+  - path: wiki/entities/liberty-cf-deal-pipeline.md
+    title: Liberty CF Deal Pipeline
+    type: entity
+    tags: [liberty, deal-pipeline, corporate-finance, prospects, m-and-a, pe, fintech, public-to-private, takeover-targets]
+    sources:
+      - Bill Maiden verbal debrief, 14 April 2026
+      - raw/whatsapp/antonella-260415.txt
+    source_date: 2026-04-14 to 2026-04-15
+    created: 2026-04-14 17:45 AEST
+    updated: 2026-04-15 12:30 AEST
+
   - path: wiki/entities/chris-thorndyke.md
     title: Chris Thorndyke
     type: entity
@@ -144,6 +155,19 @@ pages:
     source_date: undated        # source document carries no date
     created: 2026-04-05
     updated: 2026-04-05
+
+  # ─── Concepts: Liberty Advisory ─────────────────────────────────────────────
+
+  - path: wiki/concepts/liberty-management-advisory-messaging.md
+    title: Liberty — Management-Side Advisory Key Messages & Objection Handling
+    type: concept
+    tags: [liberty, management-advisory, objection-handling, key-messages, sales, m-and-a, private-equity, positioning, conviction-chain, process-mechanics, email-architecture]
+    sources:
+      - Bill Maiden verbal (15 April 2026) — Ausgrid smart meters spin-out context
+      - Bill Maiden — Project ES email iteration session (15 April 2026) — process corrections, conviction chain, email architecture
+    source_date: 2026-04-15
+    created: 2026-04-15 12:00 AEST
+    updated: 2026-04-15 18:30 AEST
 
   # ─── Concepts: Wealth & Finance ──────────────────────────────────────────────
 
@@ -508,6 +532,18 @@ pages:
 
   # ─── Synthesis ────────────────────────────────────────────────────────────────
 
+  - path: wiki/synthesis/public-to-private-opportunities.md
+    title: "Public-to-Private Opportunities — Liberty x Antonella Deal Flow"
+    type: synthesis
+    tags: [liberty, public-to-private, takeover, m-and-a, deal-flow, antonella, ron, ceo-advisory]
+    sources:
+      - raw/whatsapp/antonella-260415.txt
+      - wiki/entities/liberty-cf-deal-pipeline.md
+      - wiki/concepts/antonella-takeover-target-filter.md
+    source_date: 2026-04-14 to 2026-04-15
+    created: 2026-04-15 12:30 AEST
+    updated: 2026-04-15 12:30 AEST
+
   - path: wiki/synthesis/bill-maiden-generational-wealth-plan.md
     title: Bill Maiden — Generational Wealth Plan
     type: synthesis
@@ -780,12 +816,13 @@ pages:
   - path: wiki/comms/whatsapp-antonella-2025-04-to-2026-04.md
     title: "WhatsApp Digest — Antonella — Apr 2025 to Apr 2026"
     type: synthesis
-    tags: [comms, whatsapp, trading, antonella, mts, liberty, three-setups, autoresearch, kiet]
+    tags: [comms, whatsapp, trading, antonella, mts, liberty, three-setups, autoresearch, kiet, takeover-targets, public-to-private]
     sources:
       - raw/whatsapp/antonella-2025-04-to-2026-04.txt
-    source_date: 2025-04 to 2026-04
+      - raw/whatsapp/antonella-260415.txt
+    source_date: 2025-04 to 2026-04-15
     created: 2026-04-06
-    updated: 2026-04-06
+    updated: 2026-04-15 12:30 AEST
 
   - path: wiki/concepts/antonella-kiet-setup1-changes.md
     title: "Kiet — Setup 1 Query Changes & New Computed Fields"
@@ -798,6 +835,17 @@ pages:
     created: 2026-04-06
     updated: 2026-04-06
 
+  - path: wiki/comms/liberty-project-es-ausgrid-2026-04-15.md
+    title: "Liberty — Project ES (Ausgrid) Divisional CEO Email, 15 April 2026"
+    type: synthesis
+    tags: [liberty, project-es, ausgrid, management-advisory, outreach, comms, divisional-ceo, group-ceo, selling-board, conviction-chain, email-architecture]
+    sources:
+      - Email from Bill Maiden to Ausgrid Divisional CEO, 15 April 2026
+      - Bill Maiden — iterative email refinement session, 15 April 2026
+    source_date: 2026-04-15
+    created: 2026-04-15 15:00 AEST
+    updated: 2026-04-15 18:30 AEST
+
   - path: wiki/comms/slack-digest-mts-2026-04-06.md
     title: "Slack Digest — MTS — 30 Mar to 6 Apr 2026"
     type: synthesis
@@ -807,6 +855,26 @@ pages:
     source_date: 2026-03-30 to 2026-04-06
     created: 2026-04-06
     updated: 2026-04-06
+
+  - path: wiki/briefings/2026-04-16.md
+    title: "Daily Briefing — 16 April 2026 (Thursday)"
+    type: synthesis
+    tags: [briefing, daily, executive-synthesis, mts, abgf, liberty, trading, gino-handover-complete, khoi-onboarded, arun-meeting, carol-gm-hire]
+    sources:
+      - wiki/briefings/2026-04-14.md
+      - wiki/coaching/2026-04-13-session-007.md
+      - wiki/synthesis/trading-sync-2026-04-06.md
+      - wiki/concepts/antonella-trading-program-status.md
+      - wiki/comms/whatsapp-antonella-2025-04-to-2026-04.md
+      - wiki/entities/liberty-cf-deal-pipeline.md
+      - wiki/synthesis/public-to-private-opportunities.md
+      - Outlook: bmaiden@morethanstrata.com.au (live, Apr 14–16)
+      - Gmail: billmaiden@gmail.com (live, Apr 14–16)
+      - Slack: MTS workspace (live, Apr 14–15)
+      - Outlook Calendar: bmaiden@morethanstrata.com.au (live)
+    source_date: 2026-04-16
+    created: 2026-04-16 06:00 AEST
+    updated: 2026-04-16 06:30 AEST
 
   - path: wiki/briefings/2026-04-14.md
     title: "Daily Briefing — 14 April 2026 (Tuesday)"

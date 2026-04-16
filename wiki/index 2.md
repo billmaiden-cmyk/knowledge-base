@@ -185,6 +185,7 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 
 | Page | Summary |
 |---|---|
+| [[Daily Briefing — 17 April 2026]] | Friday. ABGF Day 5. Arun Pragasam coffee 10am (moved from 1pm). Modra board intro complete (Patrick→Bill handover). Derwent Search CEO opportunity (Lumia Care/Pemba). Super form A10 overdue 3 days. SP 93493 updated proposal committed for AM. Two Strata Staff invoices outstanding ($5,682.85). Sebastian walkthrough 16 days overdue. IC prep for Mon Lucy Bradshaw. 4 decisions. |
 | [[Daily Briefing — 16 April 2026]] | Thursday. Gino handover DONE. Toan leads from today. A30 GoDaddy RESOLVED. Carol (C-Suite Partners) GM hire call 2:45pm. Ausgrid deal (Project ES) materials ready. ABGF IC intro tomorrow with Lucy Bradshaw. Arun Pragasam intel coffee tomorrow. VMA lock-down + live trades (DMP, BMN, TLX, PNV) from Apr 15 Antonella ingest. 3 decisions: Ausgrid deck, ABGF super form, SP93493. |
 | [[Daily Briefing — 14 April 2026]] | Tuesday. ABGF Day 2. GoDaddy unconfirmed 🚨 (2 days to expiry). Gino handover final push — Keira running Tue+Wed sessions. Won Ewart St Marrickville (RFP). Arun Pragasam/Genesis Advisory acquisition interest — coffee Friday. Andreas SP93493 responded. Khoi Deel corrected to 16hrs. Mary on AL. Gmail unavailable. Ops RED. |
 | [[Daily Briefing — 11 April 2026]] | Saturday. Khoi Nguyen hired (GTM Specialist, start 13 May). EQT captured. ABGF starts Monday — prep critical. Send Kiet unified query spec (unblocks trading). Chris Thorndyke still uncaptured. Gmail unavailable. |

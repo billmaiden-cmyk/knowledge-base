@@ -1,7 +1,7 @@
 ---
 title: MTS Health Dashboard
 created: 2026-04-12 21:00 AEST
-updated: 2026-04-14 05:00 AEST
+updated: 2026-04-25 09:00 AEST
 tags: [mts, status, dashboard, operations, meta]
 ---
 
@@ -15,11 +15,11 @@ MTS at a glance. Five traffic lights. Updated by every agent that touches MTS da
 
 | Area | Status | Owner | Last Updated | Notes |
 |------|--------|-------|-------------|-------|
-| **Team** | 🟡 | Keira | 2026-04-14 | Gino last day Tue 14 or Wed 15 (CONFIRM). Keira attending full training sessions. Mary on AL until 24 Apr — Kathryn + Matt carrying SM load. |
-| **Compliance** | 🟡 | Mary Deguara | 2026-04-14 | s184 PIQ ticket 125311 open (Keira monitoring). SP102232 Aylie Brutman ATO payment plan pending. Three-way trust reconciliation NOT in handover — compliance exposure if not trained within 2 weeks (A49). |
-| **Billing** | 🟡 | Vy / Toan | 2026-04-14 | Trust account handover active — Toan completed levy issuance for 3 buildings solo. Training continues today. Legal chargebacks (30% of queue) not yet trained hands-on. |
-| **Operations** | 🔴 | Keira | 2026-04-14 | GoDaddy renewal due 16 Apr — **NOT CONFIRMED RENEWED** (A30 🚨). StrataMax v5.6.152 bug (David Edgerton managing, new release TBC). Oppenheimer SP 36335 insurance 5 days overdue (A03). |
-| **Growth** | 🟢 | Keira / Khoi | 2026-04-14 | **Won Ewart St Marrickville** (RFP, 13 Apr). Andreas SP 93493 responded positively (A45). Khoi Deel agreement ready for execution (A46). New HubSpot lead 13 Apr. GTM producing. |
+| **Team** | 🟡 | Keira | 2026-04-25 | Gino handed over mid-April — Toan operational. Matt performance concern active (billing 12hr vs 22.5hr target — Tuesday 1:1 is accountability container). Mary returned from AL 24 Apr. VN ops triage partner launching week of 27 Apr (A73). |
+| **Compliance** | 🟡 | Keira / Mary | 2026-04-25 | **A49 SCHEDULED** — StrataMax three-way trust reconciliation training Tue 28 Apr 14:00 AEST with Lisa McCoustra. Compliance time bomb now has a container. SP102232 Aylie Brutman ATO payment plan still open (A04). |
+| **Billing** | 🟡 | Vy / Toan | 2026-04-25 | **Vy completed April Sch B reconciliation** (24 Apr) — trust account bedding in well post-Gino. Duplicate invoice process in flight (StrataMax permissions needed). SP 80436 BPAY error still unresolved Day 4 (A82). |
+| **Operations** | 🔴 | Bill / Tim | 2026-04-25 | **A90 CRITICAL** — second GoDaddy M365 subscription (Vietnamese account #148478905) faces permanent deletion 26 Apr. Separate from Tim's renewal 23 Apr. Must act TODAY. Strata Staff INV-2795 $1,861.92 now 15 days overdue (A89). |
+| **Growth** | 🟢 | Keira / Khoi | 2026-04-25 | Khoi Nguyen starts 13 May. New HubSpot lead: James Trimble, 10 Eltham St Lewisham (9 lots, Google Ads, A91). Pipeline active. Misha/Dragonfly second meeting proposed Thu 7 May (A87). GTM producing. |
 
 ---
 

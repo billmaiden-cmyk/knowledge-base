@@ -2,6 +2,20 @@ pages:
 
   # ─── Briefings ─────────────────────────────────────────────────────────────
 
+  - path: wiki/briefings/2026-04-25.md
+    title: "Daily Briefing — 25 April 2026 (Saturday / ANZAC Day)"
+    type: synthesis
+    tags: [briefing, daily, executive-synthesis, coaching-kickoff]
+    sources:
+      - Outlook (bmaiden@morethanstrata.com.au)
+      - Gmail (billmaiden@gmail.com)
+      - Slack (Vy DM)
+      - Outlook Calendar (week of 27 Apr)
+      - wiki/coaching/2026-04-24-session-008.md
+    source_date: 2026-04-25
+    created: 2026-04-25 08:00 AEST
+    updated: 2026-04-25 09:00 AEST
+
   - path: wiki/briefings/2026-04-24.md
     title: "Daily Briefing — 24 April 2026 (Friday)"
     type: synthesis

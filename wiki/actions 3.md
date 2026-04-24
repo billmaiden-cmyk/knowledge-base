@@ -1,13 +1,15 @@
 ---
 title: Open Actions Tracker
 created: 2026-04-11 14:30 AEST
-updated: 2026-04-24 07:00 AEST
+updated: 2026-04-25 08:00 AEST
 tags: [actions, tracker, meta, governance]
 ---
 
 Live tracker of open action items across all initiatives. Updated after each briefing and coaching session. Completed items are marked and removed on the next update cycle. Items without an owner default to Bill.
 
-*Last synced from: Daily briefing 24 April 2026, 07:00 AEST*
+*Last synced from: Daily briefing 25 April 2026, 09:00 AEST (Coach's Kickoff run)*
+
+**Updates 25 Apr (ANZAC Day):** 🔴 NEW CRITICAL: A90 — second GoDaddy M365 subscription (Vietnamese account, customer #148478905) warning permanent deletion 26 Apr. This is separate from the subscription Tim renewed 23 Apr. Renew immediately. A82 BPAY Day 4. A83 laptop Day 4. A89 Strata Staff 15 days overdue. Vy completed Sch B reconciliation — duplicate invoice process in flight (elevated StrataMax permissions needed). New lead: A91 James Trimble, Lewisham 9 lots. Matt A67–A69 now 3 days overdue. A70 due date passed (Fri 24).
 
 **Updates 24 Apr:** A86 RESOLVED — Tim renewed GoDaddy M365 (order #3939171714), provisioned Khoi + Sebastian accounts, Power BI Pro purchased. A82 BPAY Day 3 — Bill reports new error file this morning. A83 laptop Day 3. New: A87 (Dragonfly second meeting Thu 7 May), A88 (SP105746/DP1290007 invoice reconciliation), A89 (Strata Staff INV-2795 overdue $1,861.92). Misha/Dragonfly post-meeting: exploring "standalone partnership or bolt-on to broader play." Matt cleanup A67–A69 now 2 days overdue.
 
@@ -23,6 +25,7 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 | # | Owner | Action | Initiative | Due | Days Overdue |
 |---|-------|--------|-----------|-----|-------------|
+| A90 | Bill/Tim | **🔴 GoDaddy M365 Vietnamese account — RENEW IMMEDIATELY.** Separate subscription from the one Tim renewed 23 Apr. Customer #148478905. Product: "M365 Email Thiết yếu với Bảo mật" (quarterly). Expired 6 Apr. **Permanent deletion 26 Apr (TOMORROW).** Confirm which accounts are affected and renew today. | MTS | **TODAY 25 Apr** | — |
 | ~~A86~~ | ~~Bill/Tim~~ | ~~GoDaddy M365 email renewal~~ — **DONE.** Tim renewed (order #3939171714, 23 Apr). New accounts for Khoi + Sebastian provisioned, Power BI Pro purchased. Moved to Completed. | MTS | ✅ 23 Apr | — |
 | A47 | Bill/Keira | **Confirm Gino's actual last day (Tue 14 or Wed 15)** — discrepancy between wiki (14 Apr) and Keira messages (15 Apr). Must know to manage training hours. | MTS | **Today 14 Apr AM** | — |
 | ~~A30~~ | ~~Keira/Tim~~ | ~~GoDaddy renewal~~ — **DONE.** Auto-renewal receipt confirmed 19 Apr (order #4067821280). Moved to Completed. | MTS | ✅ 19 Apr | — |
@@ -42,7 +45,7 @@ Live tracker of open action items across all initiatives. Updated after each bri
 |---|-------|--------|-----------|-----|
 | A45 | Bill | Respond to Andreas Deligiannis — amend SP 93493 proposal (start 1/7/26, review 1/7/27), correct committee error, clarify quote/WO inclusions | MTS/GTM | Today 14 Apr |
 | A46 | Bill | Review and execute Khoi Deel agreement (corrected 16hr cap), book Wed 10am AEST call | MTS/GTM | Today 14 Apr |
-| A49 | Keira | Schedule StrataMax support for three-way trust reconciliation training — compliance time bomb, not in handover | MTS | By 28 Apr |
+| A49 | Keira | ✅ **SCHEDULED** — StrataMax training confirmed Tue 28 Apr 14:00 AEST (Lisa McCoustra + Toan + Vy + Keira + David Edgerton). Agenda: Financial Year End adjustments/journals + Report Set/Audit Reports. Keira to carry; Bill attending. *(Confirmed 25 Apr second sweep)* | MTS | Tue 28 Apr |
 | A48 | Bill | Arun Pragasam / Genesis Advisory coffee — confirm Friday, prepare position (intel gathering, not selling) | MTS/STRATEGIC | Confirm by Wed |
 | A32 | Keira | Trust account handover — coordinating Toan + Vy training with Gino. Keira attending full sessions Tue+Wed. Report status to Bill at standup. | MTS | Tue 14 Apr (report at standup) |
 | A08 | Kat | Oppenheimer SP 36335 — Bill delegated to Kat via Slack. Levies paid, insurance being processed. | MTS | This week |
@@ -83,6 +86,7 @@ Live tracker of open action items across all initiatives. Updated after each bri
 | A31 | Quang | Vietnam dev — An departed 27 Mar, Quang to resolve or rewrite broken code | MTS | Active — #vn-office silent since 27 Mar. Check in with Quang. |
 | A73 | Kat / VN nominee | VN ops triage partner launch — Week 1 cleanup task (apply Rules 1–3 as onboarding), then daily AM/midday passes to surface escalations to Matt. **Reports to Matt only; no daily metrics to Bill.** See revised [[wiki/synthesis/matt-ticket-hygiene-support-plan-2026-04-19.md]]. | MTS | Week commencing 27 Apr |
 | A74 | Bill / Matt | First 1:1 using revised Section 3 format — conversational queue check, not metrics dashboard. Matt leads. | MTS | Mon 27 Apr |
+| A91 | Thao/Khoi | **New lead: James Trimble, 10 Eltham St Lewisham** — 9 lots, not committee member, Google Ads "strata contract" keyword. First contact Monday. | MTS/GTM | Mon 27 Apr |
 
 ---
 

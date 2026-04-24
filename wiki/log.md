@@ -1,3 +1,5 @@
+## [2026-04-23 11:30 AEST] 1on1 | Kat Bagust first 1:1 — Slack huddle transcript ingested, entity page updated (priorities, 1:1 log, open actions), 5 deliverables drafted in wiki/synthesis/kat-1on1-deliverables-2026-04-23.md: weekly report template, standup redesign, role description, offshore plan, expanded metrics framework.
+
 ## [2026-04-25 09:00 AEST] kickoff | ANZAC Day — hold the Matt anger, Tuesday is the container. GoDaddy A90 is the only hard deadline today. A49 StrataMax training confirmed Tue 28 Apr (compliance time bomb now scheduled). Liberty: protect Tuesday morning for Tom Anning. Permission: nothing to figure out today.
 
 ## [2026-04-25 09:00 AEST] briefing | Second sweep — ANZAC Day. 0 new Outlook emails. 0 new Gmail. Slack: #dailystand-up and #urgent-tasks quiet (public holiday). New calendar intel: StrataMax training confirmed Tue 28 Apr 14:00 AEST (A49 scheduled — Lisa McCoustra + Toan + Vy + Keira). Matt 1:1 confirmed Mon 27 Apr 16:15 AEST. "Modera" all-day Tue 28. A49 updated in actions. mts-status refreshed. Coach's Kickoff appended to briefing.

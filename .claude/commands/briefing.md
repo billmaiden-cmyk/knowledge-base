@@ -56,14 +56,28 @@ Bill manages four concurrent initiatives across fragmented channels. This briefi
 - Check for any `wiki/synthesis/comms-whatsapp-*.md` pages created today or since the last briefing
 - If none exist, note it — Bill may need to export and run `/ingest-whatsapp`
 
-**Trading State:**
-- Read the most recent `wiki/synthesis/trading-sync-*.md`
+**Trading State (always surface in briefing — Bill won't open the file separately):**
+- Read the most recent `wiki/synthesis/trading-sync-*.md` — note its date
 - Read `wiki/concepts/antonella-trading-program-status.md` for current state
+- Compute days since last trading-sync. If **>7 days**, this is a 🔴 fresh-sync needed flag.
+- Search Gmail for recent `from:antonella` (last since-date), and check `wiki/comms/whatsapp-antonella-*.md` for activity since last sync. If non-zero, surface counts in briefing.
+
+**Decisions State (always read, never silently ignore):**
+- Read `wiki/decisions.md` — note last entry date
+- Identify any decisions made in last 7 days
+- Scan recent coaching sessions (`wiki/coaching/*.md`) for **decision-style content** (lines starting "Decided", "Commitment", or in a "Commitments" section) — anything not yet captured in `decisions.md` is an uncaptured decision that this briefing will append.
+
+**Strategic Questions (open non-tactical decisions awaiting Bill's call):**
+- Read `wiki/strategic-questions.md` if it exists. If not, plan to create it in Step 5 with current open strategic questions seeded from coaching sessions and synthesis pages.
+- Examples of strategic questions: "Matt role-design — restructure / accept / exit?", "Misha second meeting positioning?", "Liberty energy split"
+
+**Yesterday's Evening Close (for continuity):**
+- Read `wiki/log.md` — find the most recent `close |` entry. The "must not slip" items from last night should be top-of-mind in today's Decisions Needed.
 
 **Wiki State:**
 - Read `wiki/synthesis/bill-maiden-generational-wealth-plan.md` — the master strategic context
 - Read `wiki/synthesis/mts-one-page-plan-2026.md` — MTS operating milestones
-- Read the most recent `wiki/synthesis/briefing-*.md` — for continuity and tracking carry-over items
+- Read the most recent `wiki/briefings/*.md` — for continuity and tracking carry-over items
 - Read recent `wiki/coaching/` sessions — for patterns the coach has noticed
 
 **Wiki Activity Since Last Briefing:**
@@ -157,6 +171,26 @@ sources:
 
 {If no decisions needed, say so — that's a good day.}
 
+## Trading Status
+
+{Always include — Bill should never have to open trading-sync separately to know what's outstanding.}
+
+- **Last sync:** {YYYY-MM-DD, days ago}. {🔴 if >7 days — fresh sync needed.}
+- **Antonella activity since sync:** {N Gmail, N WhatsApp messages — list top thread subjects if non-zero}
+- **Open positions / divergences:** {2–4 bullets from latest sync — what's unresolved}
+- **Kiet blockers:** {count and brief}
+- **Action:** {if fresh sync needed: "Run /trading-sync today (Sun 6pm Windows task will run anyway)". Otherwise: "Status holds — no trading action today."}
+
+## Strategic Questions
+
+{Open non-tactical questions awaiting Bill's call. These live in `wiki/strategic-questions.md` and are NOT the same as actions tracker items. Examples: role-design, M&A positioning, energy split between initiatives.}
+
+| # | Question | Surfaced | Status / Decision Window |
+|---|----------|----------|--------------------------|
+| Q01 | {short question} | {date} | {e.g. "decide by mid-May per coaching session 008"} |
+
+{If no open strategic questions, omit this section.}
+
 ## Critical & High Priority
 
 **IMPORTANT: Four initiatives — MTS, ABGF, Liberty, Trading, Personal are ALL separate sections. ABGF items NEVER go under MTS. ABGF is a separate employer (Australian Business Growth Fund) with separate governance. Any item involving Patrick Verlaine, Ghazaleh Lyari, Jason Knott, Anthony Healy, or ABGF onboarding/compliance/portfolio work belongs under ### ABGF only.**
@@ -210,13 +244,15 @@ sources:
 
 **Net effect on open items:** {e.g. "3 Antonella divergences resolved by trading-sync-2026-04-06. 1 new item added: Kiet SQL walkthrough still pending."}
 
-## Trading Program Update
+## Decisions Logged (Last 7 Days)
 
-{Always read wiki/concepts/antonella-trading-program-status.md and the most recent wiki/synthesis/trading-sync-*.md for current state. If a trading sync was published today, use that as the authoritative source — do not rely on yesterday's briefing status.}
-- Antonella's focus: {brief}
-- Key divergences: {count and top issue — 0 if resolved today}
-- Kiet blockers: {count}
-- Next decision needed: {brief}
+{Pull from wiki/decisions.md — list any entries dated within the last 7 days. If a recent coaching session or synthesis page contains decision-style content not yet in decisions.md, list it here as "[UNCAPTURED — appended to decisions.md]" and append it in Step 5.}
+
+| Date | Domain | Decision | Source |
+|------|--------|----------|--------|
+| {YYYY-MM-DD} | {MTS/LIBERTY/TRADING/META} | {one-line summary} | {coaching session NNN / wiki page} |
+
+{If no decisions in last 7 days AND nothing uncaptured, say "No material decisions this week."}
 
 ## Time & Energy Check
 
@@ -235,16 +271,29 @@ sources:
 ## Tomorrow's Setup
 
 {1-3 things Bill could do today to make tomorrow smoother}
+
+## Stale References (audit only — do not auto-rewrite)
+
+{List any wiki pages this briefing referenced (entities, concepts, synthesis) whose `updated` field or file mtime is >7 days old. Bill decides whether to refresh.}
+
+| Page | Last touched | Why referenced today |
+|------|--------------|---------------------|
+| {wiki/entities/X.md} | {YYYY-MM-DD} | {e.g. "Matt is in calendar today; entity hasn't reflected session 008 frame"} |
+
+{If nothing stale was referenced, omit this section.}
 ```
 
 ### Step 5: Update Wiki Infrastructure
 
-1. Update `wiki/manifest.yaml` with the new briefing page
-2. Update `wiki/index.md` — add under the "Briefings" section (at the top of that table, most recent first)
+1. Update `wiki/manifest.yaml` (note: iCloud may have corrupted to `wiki/manifest 2.yaml` — use whichever exists) with the new briefing page entry. Also bump the `updated` field for any wiki page modified by this run.
+2. Update `wiki/index.md` (or `wiki/index 2.md`) — add under the "Briefings" section (at the top of that table, most recent first)
 3. Append to `wiki/log.md`:
    ```
-   ## [YYYY-MM-DD] briefing | {N} emails, {N} WhatsApp threads, {N} action items ({N} new, {N} carried, {N} overdue)
+   ## [YYYY-MM-DD HH:MM AEST] briefing | {N} emails, {N} action items ({N} new, {N} carried, {N} overdue), {N} decisions logged, {N} strategic questions
    ```
+4. **Decisions append** — for any uncaptured decision identified in the "Decisions Logged" section above, append to the TOP of `wiki/decisions.md` using the existing format (date | domain | decision | rationale | source). Use coaching session number or wiki page as source.
+5. **Strategic Questions update** — if `wiki/strategic-questions.md` doesn't exist, create it with frontmatter and seed with current open questions. If it exists, append any new strategic questions and update status of existing ones (resolved → strikethrough; decision-window updated based on new info).
+6. **Stale References** — write the staleness audit list as a new section at the end of today's briefing file. Do NOT automatically modify the stale pages — surface them for Bill to refresh manually or via /weekly-review on Sunday.
 
 ## Important Rules
 

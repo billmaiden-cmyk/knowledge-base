@@ -1,7 +1,7 @@
 ---
 title: Kat Bagust
 created: 2026-04-09 10:00 AEST
-updated: 2026-04-09 10:00 AEST
+updated: 2026-04-23 11:30 AEST
 tags: [person, mts, team, operations-manager, repairs-maintenance, insurance, triage, overwatch, direct-report]
 sources:
   - raw/Organisation Structure_20250701.pdf
@@ -54,17 +54,28 @@ Kathryn (Kat) Bagust is Operations Manager at [[More Than Strata (MTS)]]. She le
 
 ## Current Priorities
 
-*To be populated at first 1:1*
+1. Build offshore team capabilities with Kira — codify Kat's triage/overwatch processes into training materials
+2. Redesign daily standup — move to metrics-first, time-boxed format (away from open complaint sessions)
+3. Develop weekly management reports with narrative insights, not just raw Zendesk data
+4. Maintain service responsiveness: 4-hour first reply median
+5. Address Matt's unreplied queue (48 messages not captured in standard metrics)
 
 ## 1:1 Log
 
 *Newest entries at top. Format: date, key discussion points, actions.*
 
+**2026-04-23 — First 1:1 (Slack huddle, 10:47–11:30 AEST)**
+Topics: (1) Role formally confirmed as Operations Manager. (2) Daily standup redesign — current format too complaint-heavy, needs to anchor on metrics. (3) Offshore development — Kat to work with Kira to codify her processes; goal is scalable "engine room". (4) Matt performance — both Bill and Kat frustrated; 48 unreplied messages not reflected in reported first reply times; evasive pattern noted. (5) Weekly reporting — Kat to produce insight-led reports, not raw data. See Open Actions below. *(source: Slack huddle AI notes, 2026-04-23)*
+
 ## Open Actions
 
-| Action | Due | Status |
-|---|---|---|
-| *To be populated at first 1:1* | | |
+| Action | Owner | Due | Status |
+|---|---|---|---|
+| Prepare weekly management report (template drafted in synthesis) | Kat | TBD | Open |
+| Redesign daily standup format | Kat + team | TBD | Open |
+| Formalize Operations Manager role description | Bill | TBD | Open |
+| Develop offshore capability training plan with Kira | Kat | TBD | Open |
+| Investigate expanded metrics: ticket allocation + work type distribution | Bill/Kat | TBD | Open |
 
 ## Background
 

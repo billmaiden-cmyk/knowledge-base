@@ -1,17 +1,43 @@
 ---
 title: Matt Wrigley
 created: 2026-04-09 10:00 AEST
-updated: 2026-04-20 21:00 AEST
-tags: [person, mts, team, senior-strata-manager, fire, defects, special-projects, direct-report]
+updated: 2026-04-25 09:50 AEST
+tags: [person, mts, team, senior-strata-manager, fire, defects, special-projects, direct-report, role-design-question]
 sources:
   - raw/Organisation Structure_20250701.pdf
   - Coaching session 2026-04-12 (session 006) — billing performance, 1:1 structure design
+  - Coaching session 2026-04-24 (session 008) — role-design question, self-concept mismatch frame, three options
 source_date: 2025-07 to 2026-04
 ---
 
 Matthew (Matt) Wrigley is Senior Strata Manager at [[More Than Strata (MTS)]], leading the fire compliance and defects/major projects specialist teams. As a licensed builder and former proprietor of a 5,000-lot strata management business, Matt brings deep construction and regulatory expertise. He is one of [[Bill Maiden]]'s five direct reports.
 
-## Performance Context *(Updated 2026-04-12, coaching session 006)*
+## Current Frame — Role Design, Not Performance Management *(Updated 2026-04-25, coaching session 008)*
+
+The operative question shifted at session 008. Bill walked in angry — Matt had delivered ~12 hours of billing in the week against a 22.5-hour target agreed five days prior at the 19 April 1:1, with one day showing just 75 minutes. The session reframed the question.
+
+**The diagnosis: self-concept mismatch.** Matt sees himself as a specialist professional — licensed builder, former 5,000-lot proprietor, studying law, 2016 UDIA NSW Young Leader of the Year. In his own head he's a principal, a peer to Bill, not a managed employee. The role Bill is paying $161k for — a managed employee delivering 22.5 billable hours/week against targets — is not his self-concept. Every friction lives in that gap.
+
+Behaviour that aligns with the diagnosis:
+- Cherry-picks specialist work (complex remediation, fire compliance, legal); ignores routine work (ticket hygiene, status reports, hour tracking)
+- Reads the strata-search disagreement as disrespect of his professional judgement, not a work disagreement
+- Lift-and-backslide: complies enough to end the conversation, reverts because the conversation itself felt humiliating
+
+**The strategic question (replaces "how do I get Matt to 22.5?"):**
+
+> Is this a role I can reshape to fit a specialist who needs to see himself as a principal, or do I need to rebuild this capability around someone else?
+
+**Three options on the table** (tracked as Q01 in [[wiki/strategic-questions.md]]):
+
+1. **Restructure** — Practice Leader / Principal of fire-defects specialist team with P&L responsibility. Title matches self-image. Variable comp tied to output, not time sheets. Works if he can lead — that's the real test.
+2. **Accept** — pay $161k for ~13 hrs/week, drop the billing-target conversation entirely, shift 1:1 focus to project quality. Saves Bill's energy; resentment stops because expectation stops.
+3. **Exit over 60–90 days** — clean PIP documented, specific exit if targets aren't met. Lose specialist capability temporarily; rebuild via internal promotion + external hire.
+
+**Decision window:** mid-May 2026. Bill needs to see Tuesday 28 Apr 1:1 outcome and ~2 weeks of post-conversation behaviour to decide.
+
+**Bill's own loop to notice (session 008):** he has been carrying Matt while being frustrated by carrying him. At some point he picks: stop carrying, or stop being frustrated. The Friday anger was tolerance catching up.
+
+## Performance Context *(Original frame — 2026-04-12, coaching session 006 — superseded by session 008 above but kept for history)*
 
 Matt has a documented lift-then-backslide pattern: billing performance improves after direct conversations then gradually pulls back. Two consecutive weeks of ~13 hours billed (vs 22-hour target) as of April 2026. A structured weekly 1:1 with billing as the standing first agenda item is being introduced from the week of 13 April 2026. Shaping conversation scheduled for Monday 13 April before ABGF start.
 

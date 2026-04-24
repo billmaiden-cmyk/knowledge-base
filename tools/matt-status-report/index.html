@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Matt Wrigley — Weekly Status Report</title>
+<style>
+  :root {
+    --bg:#fafaf7; --panel:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e5e5e0;
+    --accent:#1f4e79; --good:#2f7a3a; --warn:#b8860b; --bad:#b3261e;
+    --soft-bad:#fde7e5; --soft-warn:#fff6dd; --soft-good:#e4f1e4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.5}
+  header{background:var(--accent);color:#fff;padding:16px 24px}
+  header h1{margin:0 0 4px 0;font-size:20px;font-weight:600}
+  header p{margin:0;font-size:13px;opacity:.85}
+  nav{background:#fff;border-bottom:1px solid var(--line);padding:0 16px;display:flex;gap:4px;flex-wrap:wrap}
+  nav button{background:none;border:none;padding:12px 18px;cursor:pointer;font-size:14px;color:var(--muted);border-bottom:2px solid transparent;font-weight:500}
+  nav button.active{color:var(--accent);border-bottom-color:var(--accent)}
+  nav button:hover{color:var(--ink)}
+  main{padding:24px;max-width:1320px;margin:0 auto}
+  section{display:none}
+  section.active{display:block}
+  h2{margin:0 0 8px 0;font-size:18px;font-weight:600}
+  h3{margin:24px 0 8px 0;font-size:15px;font-weight:600;color:var(--accent)}
+  h4{margin:20px 0 6px 0;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+  .subtitle{color:var(--muted);margin:0 0 20px 0}
+  .dash-header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+  select,input[type=date],input[type=number],input[type=text],textarea{padding:8px 10px;border:1px solid var(--line);border-radius:4px;font-size:14px;background:#fff;font-family:inherit}
+  input[type=number]{max-width:180px}
+  textarea{width:100%;min-height:120px;font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:12px;resize:vertical}
+  .kpi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-bottom:18px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+  .kpi .label{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px}
+  .kpi .value{font-size:28px;font-weight:600;line-height:1}
+  .kpi .sub{font-size:12px;color:var(--muted);margin-top:6px}
+  .kpi.good{background:var(--soft-good);border-color:#bcdcbc}
+  .kpi.warn{background:var(--soft-warn);border-color:#f0d97a}
+  .kpi.bad{background:var(--soft-bad);border-color:#f3b0ab}
+  .kpi.primary{border-left:4px solid var(--accent)}
+  .tag{display:inline-block;font-size:10px;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-left:6px;vertical-align:middle;letter-spacing:.3px}
+  .tag.pdf{background:#e6f0f9;color:#0e3957}
+  .tag.csv{background:#f0ede6;color:#555}
+  .tag.manual{background:#f3e7f6;color:#5a1e68}
+  .tag.tracker{background:#fff4e0;color:#7a4a00}
+  table{border-collapse:collapse;width:100%;background:var(--panel)}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:top}
+  th{background:#f5f5f0;font-weight:600;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.3px}
+  tr:last-child td{border-bottom:none}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  td.bad{color:var(--bad);font-weight:600}
+  td.warn{color:var(--warn);font-weight:600}
+  td.good{color:var(--good);font-weight:600}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px;margin-bottom:16px}
+  form fieldset{border:1px solid var(--line);border-radius:6px;padding:16px;margin-bottom:14px}
+  form legend{padding:0 8px;font-weight:600;color:var(--accent)}
+  form .row{display:grid;grid-template-columns:240px 1fr;gap:12px;align-items:center;margin-bottom:10px}
+  form .row.top{align-items:flex-start}
+  form label{font-weight:500}
+  form .hint{font-size:12px;color:var(--muted);margin-top:2px}
+  button.primary{background:var(--accent);color:#fff;border:none;padding:10px 18px;border-radius:4px;font-size:14px;cursor:pointer;font-weight:500}
+  button.primary:hover{background:#173b5c}
+  button.secondary{background:#fff;color:var(--accent);border:1px solid var(--accent);padding:9px 16px;border-radius:4px;font-size:14px;cursor:pointer;font-weight:500}
+  button.secondary:hover{background:#eaf2fa}
+  button.danger{background:none;color:var(--bad);border:none;cursor:pointer;font-size:12px;padding:4px 8px}
+  button.danger:hover{text-decoration:underline}
+  button.small{font-size:12px;padding:4px 8px}
+  .flash{padding:10px 14px;border-radius:4px;margin-bottom:12px;font-size:13px}
+  .flash.good{background:var(--soft-good);color:#1e4a24}
+  .flash.bad{background:var(--soft-bad);color:#7a1912}
+  .flash.info{background:#e6f0f9;color:#0e3957}
+  .help h3{margin-top:28px}
+  .help code{background:#f0ede6;padding:1px 4px;border-radius:3px;font-size:12px}
+  .help ol,.help ul{margin:8px 0;padding-left:24px}
+  .help li{margin-bottom:4px}
+  .target-bar{background:#eee;height:6px;border-radius:3px;margin-top:8px;overflow:hidden}
+  .target-bar-fill{height:100%;background:var(--good);transition:width .3s}
+  .target-bar-fill.warn{background:var(--warn)}
+  .target-bar-fill.bad{background:var(--bad)}
+  .spark{display:flex;gap:2px;height:28px;align-items:flex-end;padding:4px 0}
+  .spark-bar{flex:1;background:var(--accent);min-height:2px;border-radius:1px 1px 0 0;opacity:.7}
+  .spark-bar.current{opacity:1}
+  .divider{height:1px;background:var(--line);margin:24px 0}
+  .note{font-size:12px;color:var(--muted);margin-top:8px}
+  .badge-row{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+  .badge{font-size:11px;padding:3px 8px;border-radius:12px;background:#f0ede6;color:var(--muted)}
+  .badge.on{background:var(--soft-good);color:#1e4a24}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:800px){.two-col{grid-template-columns:1fr}}
+
+  /* PROJECTS */
+  .filters{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 16px 0}
+  .filters button{background:#fff;border:1px solid var(--line);padding:5px 12px;border-radius:16px;font-size:12px;color:var(--muted);cursor:pointer}
+  .filters button.active{background:var(--accent);border-color:var(--accent);color:#fff}
+  .proj-card{background:var(--panel);border:1px solid var(--line);border-radius:6px;margin-bottom:10px;overflow:hidden}
+  .proj-card-head{padding:10px 14px;display:grid;grid-template-columns:auto 1fr auto auto auto;gap:12px;align-items:center;cursor:pointer}
+  .proj-card-head:hover{background:#fafaf5}
+  .proj-plan{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);min-width:60px}
+  .proj-name{font-weight:600;font-size:14px}
+  .proj-type{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.3px;margin-top:2px}
+  .proj-current{font-size:12px;color:var(--muted);margin-top:3px}
+  .rag-badge{padding:3px 8px;border-radius:3px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}
+  .rag-badge.on-track{background:var(--soft-good);color:#1e4a24}
+  .rag-badge.at-risk{background:var(--soft-warn);color:#7a5800}
+  .rag-badge.blocked{background:var(--soft-bad);color:#7a1912}
+  .rag-badge.planning{background:#eef0f2;color:#555}
+  .rag-badge.complete{background:#e5e5e0;color:#555}
+  .age-chip{font-size:11px;color:var(--muted);padding:2px 6px;background:#f5f5f0;border-radius:10px}
+  .age-chip.aged{background:#fff4e0;color:#7a4a00}
+  .proj-card-body{padding:0 14px 14px 14px;border-top:1px solid var(--line);display:none}
+  .proj-card.expanded .proj-card-body{display:block}
+  .proj-card.expanded .expand-icon{transform:rotate(90deg)}
+  .expand-icon{transition:transform .2s;display:inline-block;color:var(--muted)}
+  .milestone-row{display:grid;grid-template-columns:auto 2fr auto 120px 110px auto;gap:8px;padding:6px 0;align-items:center;border-bottom:1px solid #f5f5f0;font-size:13px}
+  .milestone-row:last-child{border-bottom:none}
+  .milestone-row input[type=checkbox]{width:16px;height:16px;cursor:pointer}
+  .milestone-row.done{color:var(--muted)}
+  .milestone-row.done .milestone-label{text-decoration:line-through}
+  .milestone-row.current{background:#fffbea;margin:0 -14px;padding-left:14px;padding-right:14px}
+  .milestone-label{cursor:pointer}
+  .milestone-label input{width:100%;border:1px dashed transparent;background:transparent;padding:2px 4px;font-size:13px}
+  .milestone-label input:focus,.milestone-label input:hover{border-color:var(--line);background:#fff}
+  .milestone-owner{font-size:11px;padding:2px 6px;background:#f0ede6;color:#555;border-radius:3px;white-space:nowrap}
+  .milestone-owner select{border:none;background:transparent;font-size:11px;cursor:pointer;padding:0}
+  .milestone-date input{width:100%;font-size:12px;padding:3px 6px}
+  .slip{font-size:11px;color:var(--bad);margin-left:4px}
+  .scorecard{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-bottom:12px}
+  .scorecard .stat{background:#fff;border:1px solid var(--line);border-radius:4px;padding:8px 10px}
+  .scorecard .stat .n{font-size:20px;font-weight:600;line-height:1}
+  .scorecard .stat .l{font-size:10px;text-transform:uppercase;letter-spacing:.3px;color:var(--muted);margin-top:3px}
+
+  /* MODAL */
+  .modal-back{position:fixed;inset:0;background:rgba(20,20,30,.5);display:none;align-items:center;justify-content:center;z-index:100}
+  .modal-back.open{display:flex}
+  .modal{background:#fff;border-radius:8px;padding:24px;width:min(720px,92vw);max-height:90vh;overflow-y:auto}
+  .modal h3{margin-top:0}
+  .modal .close-x{float:right;background:none;border:none;font-size:24px;line-height:1;cursor:pointer;color:var(--muted);padding:0;margin:-8px -8px 0 0}
+  .template-preview{max-height:200px;overflow-y:auto;background:#fafaf5;border:1px solid var(--line);border-radius:4px;padding:10px;font-size:12px;margin-top:6px}
+  .template-preview ol{margin:0;padding-left:20px}
+
+  /* PDF preview */
+  .pdf-holder{border:1px solid var(--line);border-radius:4px;height:600px;margin-top:10px;display:none;overflow:hidden;background:#f0f0f0}
+  .pdf-holder iframe,.pdf-holder embed{width:100%;height:100%;border:none}
+
+  /* narrative boxes */
+  .narrative textarea{min-height:80px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Matt Wrigley — Weekly Status Report</h1>
+  <p>Billing (Schedule B) · Matt Dashboard (Zendesk Explore) · Matthew: Open and Pending view · Project register</p>
+</header>
+
+<nav>
+  <button data-tab="dashboard" class="active">Dashboard</button>
+  <button data-tab="projects">Projects</button>
+  <button data-tab="trends">Trends</button>
+  <button data-tab="entry">Enter Week's Data</button>
+  <button data-tab="history">History &amp; Export</button>
+  <button data-tab="help">How to Use</button>
+</nav>
+
+<main>
+
+<!-- ========== DASHBOARD ========== -->
+<section id="tab-dashboard" class="active">
+  <div id="dash-empty" class="panel" style="display:none">
+    <p>No weekly data yet. Go to <strong>Enter Week's Data</strong> to begin.</p>
+  </div>
+
+  <div id="dash-content" style="display:none">
+    <div class="dash-header">
+      <div>
+        <h2>Weekly Status — Week ending <span id="dash-week"></span></h2>
+        <p class="subtitle" id="dash-subtitle"></p>
+      </div>
+      <div>
+        <label for="dashboardWeek" style="font-size:12px;color:var(--muted);margin-right:6px">Show week:</label>
+        <select id="dashboardWeek"></select>
+      </div>
+    </div>
+
+    <div class="badge-row" id="dash-sources"></div>
+
+    <h3>1. Billing &amp; Utilisation <span style="font-weight:400;color:var(--muted);font-size:13px">(Schedule B)</span></h3>
+    <div class="kpi-grid">
+      <div class="kpi primary"><div class="label">Hours billed <span class="tag manual">manual</span></div><div class="value"><span id="kpi-hours"></span></div><div class="sub">Target 22.5 hrs (→25 from 12 May) · Gap <span id="kpi-hours-gap"></span></div><div class="target-bar"><div class="target-bar-fill" id="kpi-hours-bar"></div></div></div>
+      <div class="kpi primary"><div class="label">Billing amount (ex GST) <span class="tag manual">manual</span></div><div class="value">$<span id="kpi-amount"></span></div><div class="sub">Target $6,210 · Gap <span id="kpi-amount-gap"></span></div><div class="target-bar"><div class="target-bar-fill" id="kpi-amount-bar"></div></div></div>
+      <div class="kpi"><div class="label">Avg hrs/day</div><div class="value" id="kpi-avgday"></div><div class="sub">Target 4.5 (→5.0 from 12 May)</div></div>
+      <div class="kpi"><div class="label">Effective rate</div><div class="value">$<span id="kpi-rate"></span></div><div class="sub">Target $276/hr</div></div>
+    </div>
+
+    <h3>2. Week Activity <span style="font-weight:400;color:var(--muted);font-size:13px">(Matt Dashboard — Zendesk Explore)</span></h3>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="label">Tickets received <span class="tag pdf">pdf</span></div><div class="value" id="kpi-received">—</div><div class="sub">New tickets this week</div></div>
+      <div class="kpi"><div class="label">Tickets solved <span class="tag pdf">pdf</span></div><div class="value" id="kpi-solved">—</div><div class="sub">Resolved this week</div></div>
+      <div class="kpi" id="kpi-net-tile"><div class="label">Net change <span class="tag pdf">pdf</span></div><div class="value" id="kpi-net">—</div><div class="sub">Received – Solved</div></div>
+      <div class="kpi" id="kpi-frt-tile"><div class="label">First response time <span class="tag pdf">pdf</span></div><div class="value" id="kpi-frt">—</div><div class="sub">Target &lt; 120 min</div></div>
+      <div class="kpi"><div class="label">Full resolution time <span class="tag pdf">pdf</span></div><div class="value" id="kpi-fullres">—</div><div class="sub">Target &lt; 24 hrs</div></div>
+    </div>
+
+    <h3>3. Backlog <span style="font-weight:400;color:var(--muted);font-size:13px">(Matt Dashboard — Zendesk Explore, week ending)</span></h3>
+    <div class="kpi-grid">
+      <div class="kpi primary"><div class="label">Total backlog <span class="tag pdf">pdf</span></div><div class="value" id="kpi-pdf-total">—</div><div class="sub">Open + Pending</div></div>
+      <div class="kpi"><div class="label">Open <span class="tag pdf">pdf</span></div><div class="value" id="kpi-pdf-open">—</div><div class="sub">Awaiting agent</div></div>
+      <div class="kpi"><div class="label">Pending <span class="tag pdf">pdf</span></div><div class="value" id="kpi-pdf-pending">—</div><div class="sub">Awaiting client</div></div>
+      <div class="kpi" id="kpi-waiting-tile"><div class="label">Waiting reply <span class="tag pdf">pdf</span></div><div class="value" id="kpi-waiting">—</div><div class="sub">Agent reply overdue</div></div>
+      <div class="kpi" id="kpi-ultralong-tile"><div class="label">Ultra-long (&gt;90d) <span class="tag pdf">pdf</span></div><div class="value" id="kpi-ultralong">—</div><div class="sub">Target 0</div></div>
+    </div>
+
+    <h3>4. Live Response Performance <span style="font-weight:400;color:var(--muted);font-size:13px">(Matthew: Open and Pending Tickets view — CSV)</span></h3>
+    <div class="kpi-grid">
+      <div class="kpi" id="kpi-24h-tile"><div class="label">Not responded &gt; 24 hrs <span class="tag csv">csv</span></div><div class="value" id="kpi-24h">—</div><div class="sub">Target 0</div></div>
+      <div class="kpi" id="kpi-noreply-tile"><div class="label">No agent response ever <span class="tag csv">csv</span></div><div class="value" id="kpi-noreply">—</div><div class="sub">First-reply SLA breach</div></div>
+      <div class="kpi" id="kpi-clientwaiting-tile"><div class="label">Client waiting <span class="tag csv">csv</span></div><div class="value" id="kpi-clientwaiting">—</div><div class="sub">Bucket B</div></div>
+      <div class="kpi" id="kpi-oldest-tile"><div class="label">Oldest unanswered <span class="tag csv">csv</span></div><div class="value" id="kpi-oldest">—</div><div class="sub">Days</div></div>
+      <div class="kpi" id="kpi-mismatch-tile"><div class="label">Status mismatch <span class="tag csv">csv</span></div><div class="value" id="kpi-mismatch">—</div><div class="sub">Should be Pending</div></div>
+      <div class="kpi" id="kpi-stale-tile"><div class="label">Stale &gt; 30 days <span class="tag csv">csv</span></div><div class="value" id="kpi-stale">—</div><div class="sub">No activity</div></div>
+    </div>
+
+    <h3>5. Project Portfolio <span style="font-weight:400;color:var(--muted);font-size:13px">(from Project Register)</span></h3>
+    <div class="kpi-grid">
+      <div class="kpi primary"><div class="label">Active projects <span class="tag tracker">tracker</span></div><div class="value" id="kpi-proj-active">—</div><div class="sub">Not archived</div></div>
+      <div class="kpi good"><div class="label">On track <span class="tag tracker">tracker</span></div><div class="value" id="kpi-proj-ontrack">—</div><div class="sub"></div></div>
+      <div class="kpi warn"><div class="label">At risk <span class="tag tracker">tracker</span></div><div class="value" id="kpi-proj-atrisk">—</div><div class="sub">Due within 7 days</div></div>
+      <div class="kpi bad"><div class="label">Blocked / Overdue <span class="tag tracker">tracker</span></div><div class="value" id="kpi-proj-blocked">—</div><div class="sub">Past target date</div></div>
+      <div class="kpi" id="kpi-proj-aged-tile"><div class="label">Aged (14+d no touch) <span class="tag tracker">tracker</span></div><div class="value" id="kpi-proj-aged">—</div><div class="sub">Possibly stale</div></div>
+      <div class="kpi"><div class="label">Cumulative slippage <span class="tag tracker">tracker</span></div><div class="value" id="kpi-proj-slip">—</div><div class="sub">Days across portfolio</div></div>
+    </div>
+
+    <div class="two-col">
+      <div class="panel"><h4 style="margin-top:0">Who's blocking the portfolio</h4><div id="dash-by-owner"></div></div>
+      <div class="panel"><h4 style="margin-top:0">Projects by stage</h4><div id="dash-by-stage"></div></div>
+    </div>
+
+    <h3>6. Weekly Narrative</h3>
+    <div class="two-col">
+      <div class="panel"><h4 style="margin-top:0">What moved this week</h4><div id="dash-narr-moved" style="white-space:pre-wrap;font-size:13px;color:var(--ink)"></div></div>
+      <div class="panel"><h4 style="margin-top:0">What's stuck</h4><div id="dash-narr-stuck" style="white-space:pre-wrap;font-size:13px"></div></div>
+    </div>
+
+    <p class="note" style="margin-top:24px"><span class="tag pdf">pdf</span> = <strong>Matt Dashboard</strong> (Zendesk Explore → Download) · <span class="tag csv">csv</span> = <strong>Matthew: Open and Pending Tickets</strong> view (Actions → Export as CSV) · <span class="tag manual">manual</span> = Schedule B · <span class="tag tracker">tracker</span> = Project Register. <span id="dash-snapshot-note"></span></p>
+  </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<section id="tab-projects">
+  <div class="dash-header">
+    <div>
+      <h2>Project Register</h2>
+      <p class="subtitle">Maintained continuously as Matt works — roll-ups feed the dashboard automatically. Click a project to expand milestones.</p>
+    </div>
+    <div>
+      <button class="secondary" id="bulkAddBtn">Bulk add…</button>
+      <button class="primary" id="addProjectBtn" style="margin-left:8px">+ Add project</button>
+    </div>
+  </div>
+
+  <div class="scorecard" id="proj-scorecard"></div>
+
+  <div class="filters" id="proj-filters">
+    <button data-filter="active" class="active">Active</button>
+    <button data-filter="on-track">On track</button>
+    <button data-filter="at-risk">At risk</button>
+    <button data-filter="blocked">Blocked / Overdue</button>
+    <button data-filter="aged">Aged (14+d)</button>
+    <button data-filter="archived">Archived</button>
+    <button data-filter="all">All</button>
+  </div>
+
+  <div id="proj-list"></div>
+  <div id="proj-empty" style="text-align:center;padding:40px;color:var(--muted);display:none">No projects match this filter. Click <strong>+ Add project</strong> to start the register, or <strong>Bulk add…</strong> to paste many at once.</div>
+</section>
+
+<!-- ========== TRENDS ========== -->
+<section id="tab-trends">
+  <div id="trend-empty" class="panel" style="display:none"><p>No weekly data yet. Trends need at least one saved week.</p></div>
+  <div id="trend-content" style="display:none">
+    <h2>Week-over-Week Trend</h2>
+    <p class="subtitle">Last 12 weeks. Sparklines show the series; colour on the change indicates whether the direction is an improvement.</p>
+    <div class="panel" style="padding:12px;overflow-x:auto">
+      <table id="trendTable">
+        <thead><tr><th>Metric</th><th>Source</th><th class="num">Latest</th><th class="num">Prior</th><th class="num">Change</th><th>Trend (last 12 weeks)</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ENTRY ========== -->
+<section id="tab-entry">
+  <h2>Enter Previous Week's Data</h2>
+  <p class="subtitle">Monday morning: (1) Schedule B billing, (2) <strong>Matt Dashboard</strong> PDF (from Zendesk Explore → Download), (3) <strong>Matthew: Open and Pending Tickets</strong> view CSV (Actions → Export as CSV), (4) quick portfolio review + narrative.</p>
+
+  <div id="entry-flash"></div>
+
+  <form id="entryForm">
+    <fieldset>
+      <legend>Week &amp; Billing</legend>
+      <div class="row"><label for="weekEnding">Week ending (Sunday)</label><div><input type="date" id="weekEnding" required><div class="hint">Defaults to Sunday just past.</div></div></div>
+      <div class="row"><label for="billingHours">Billing hours (decimal)</label><input type="number" id="billingHours" step="0.1" min="0" placeholder="e.g. 18.5"></div>
+      <div class="row"><label for="billingAmount">Billing amount $ (ex GST)</label><input type="number" id="billingAmount" step="0.01" min="0" placeholder="e.g. 5106.00"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>From Matt Dashboard (Zendesk Explore — PDF)</legend>
+      <p class="hint" style="margin:0 0 12px 0">Upload the <strong>Matt Dashboard</strong> PDF (downloaded from Zendesk Explore) to preview it below, then type the tile values into the fields.</p>
+      <div class="row"><label for="pdfUpload">Upload Matt Dashboard PDF</label><input type="file" id="pdfUpload" accept=".pdf"></div>
+      <div class="pdf-holder" id="pdfHolder"><iframe id="pdfFrame"></iframe></div>
+      <div class="two-col" style="margin-top:12px">
+        <div>
+          <h4>Week activity tiles</h4>
+          <div class="row"><label for="pdfReceived">Tickets received</label><input type="number" id="pdfReceived" step="1" min="0" placeholder="e.g. 55"></div>
+          <div class="row"><label for="pdfSolved">Tickets solved</label><input type="number" id="pdfSolved" step="1" min="0" placeholder="e.g. 42"></div>
+          <div class="row"><label for="pdfFirstResponse">First response (min)</label><input type="number" id="pdfFirstResponse" step="1" min="0" placeholder="e.g. 98"></div>
+          <div class="row"><label for="pdfFullResolution">Full resolution (hrs)</label><input type="number" id="pdfFullResolution" step="0.1" min="0" placeholder="e.g. 1.7"></div>
+        </div>
+        <div>
+          <h4>Backlog (week end)</h4>
+          <div class="row"><label for="pdfOpen">Open</label><input type="number" id="pdfOpen" step="1" min="0" placeholder="e.g. 76"></div>
+          <div class="row"><label for="pdfPending">Pending</label><input type="number" id="pdfPending" step="1" min="0" placeholder="e.g. 32"></div>
+          <div class="row"><label for="pdfWaiting">Waiting reply</label><input type="number" id="pdfWaiting" step="1" min="0" placeholder="e.g. 48"></div>
+          <div class="row"><label for="pdfUltraLong">Ultra-long (&gt;90d)</label><input type="number" id="pdfUltraLong" step="1" min="0" placeholder="e.g. 31"></div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>From Matthew: Open and Pending Tickets view (CSV)</legend>
+      <p class="hint" style="margin:0 0 12px 0">Live pull used for &gt;24h overdue / client-waiting / status-mismatch metrics. Optional.</p>
+      <div class="row"><label for="csvFile">Upload CSV file</label><input type="file" id="csvFile" accept=".csv,.txt"></div>
+      <div class="row top"><label for="csvPaste" style="padding-top:8px">Or paste CSV</label><textarea id="csvPaste" placeholder="Paste CSV here (header row required: ID, Status, Requested, Updated, Assignee updated, Requester updated, ...)"></textarea></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Portfolio &amp; Narrative</legend>
+      <p class="hint" style="margin:0 0 8px 0">Scorecard pulled live from the Project Register. Below, a short narrative of what changed.</p>
+      <div class="scorecard" id="entry-scorecard"></div>
+
+      <div id="aged-prompt" class="panel" style="background:#fff6dd;border-color:#f0d97a;display:none">
+        <h4 style="margin-top:0">Projects untouched for 14+ days</h4>
+        <p class="note" style="margin-bottom:8px">Click each to confirm still active, or Archive from the Projects tab.</p>
+        <div id="aged-prompt-list"></div>
+      </div>
+
+      <div class="narrative" style="margin-top:12px">
+        <div class="row top"><label for="narrMoved">What moved this week (3–5 bullets)</label><textarea id="narrMoved" placeholder="- SP 87409 Pitt St — fire scope agreed&#10;- SP 101609 Bricklane — engineer engaged"></textarea></div>
+        <div class="row top"><label for="narrStuck">What's stuck</label><textarea id="narrStuck" placeholder="- SP 55007 Benelong — awaiting committee response (21d)"></textarea></div>
+      </div>
+    </fieldset>
+
+    <div style="display:flex;gap:8px">
+      <button type="button" class="secondary" id="previewBtn">Preview</button>
+      <button type="button" class="primary" id="saveBtn">Save Week</button>
+    </div>
+  </form>
+
+  <div id="previewPanel" class="panel" style="display:none;margin-top:16px"><h3 style="margin-top:0">Preview</h3><div id="previewContent"></div></div>
+</section>
+
+<!-- ========== HISTORY ========== -->
+<section id="tab-history">
+  <h2>History &amp; Export</h2>
+  <p class="subtitle">Weekly snapshots + full register export. Export JSON regularly for backup.</p>
+  <div class="panel">
+    <button class="secondary" id="exportJsonBtn">Export all data (JSON)</button>
+    <button class="secondary" id="importJsonBtn" style="margin-left:8px">Import JSON…</button>
+    <input type="file" id="importJsonFile" accept=".json" style="display:none">
+    <span class="note" style="margin-left:12px" id="storage-note"></span>
+  </div>
+  <div class="panel" style="padding:0;overflow-x:auto">
+    <table id="historyTable">
+      <thead><tr><th>Week ending</th><th class="num">Hrs</th><th class="num">$</th><th class="num">Recv</th><th class="num">Solv</th><th class="num">Net</th><th class="num">FRT</th><th class="num">Backlog</th><th class="num">Wait</th><th class="num">&gt;90d</th><th class="num">&gt;24h</th><th class="num">Oldest</th><th class="num">Proj Act</th><th class="num">At-Risk</th><th class="num">Blocked</th><th class="num">Slip</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ========== HELP ========== -->
+<section id="tab-help" class="help">
+  <h2>How to Use</h2>
+  <div class="panel">
+    <h3 style="margin-top:0">Weekly routine (Monday, ~10 minutes)</h3>
+    <ol>
+      <li>Open <strong>Zendesk Explore</strong> → <strong>Matt Dashboard</strong>. Set time filter to <strong>Previous week</strong> (7 days ending Sunday). Click <strong>Download</strong> to save the PDF.</li>
+      <li>Open the <strong>"Matthew: Open and Pending Tickets"</strong> view in Zendesk (not "My Unsolved Tickets"). Click <strong>Actions</strong> → <strong>Export as CSV</strong>.</li>
+      <li>Open the tool → <strong>Enter Week's Data</strong>.</li>
+      <li>Confirm Week ending (Sunday). Enter Schedule B billing.</li>
+      <li>Upload the PDF — it displays inline — type the tile numbers.</li>
+      <li>Paste or upload the CSV.</li>
+      <li>Glance at the portfolio scorecard. If any projects show "aged 14+d", click through to confirm or archive.</li>
+      <li>Write the 3 short narrative boxes (what moved / what's stuck / asks).</li>
+      <li>Preview → Save Week.</li>
+    </ol>
+  </div>
+
+  <div class="panel">
+    <h3 style="margin-top:0">Project Register — how it works</h3>
+    <p>The register is <strong>persistent</strong> — you maintain it as you work, not on Monday. Roll-ups (active / on-track / at-risk / blocked) are computed automatically from each project's current milestone.</p>
+    <ul>
+      <li><strong>Add project</strong> — pick a type (Remediation / Fire / SBBIS / Fencing / Roof / Custom). The tool pre-seeds the milestone sequence. You set the first milestone's target date; the rest cascade based on typical elapsed times.</li>
+      <li><strong>Complete a milestone</strong> — tick the checkbox. The next milestone becomes current.</li>
+      <li><strong>Slippage</strong> — move a target date later. The tool remembers the original and displays slippage in days.</li>
+      <li><strong>On Track / At Risk / Blocked / Overdue</strong> — computed from the current milestone's target date vs today: past due = blocked, within 7 days = at risk, future = on track.</li>
+      <li><strong>Aging</strong> — if you don't touch a project for 14 days, it gets flagged. The weekly form surfaces these.</li>
+      <li><strong>Archive</strong> — when a project is complete, archive it. It drops off active views but stays in history.</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h3 style="margin-top:0">Templates</h3>
+    <ul>
+      <li><strong>Remediation (standard)</strong> — 17 milestones. Engineer → scope → tender → committee → EGM (levy + loan) → contract → works → DBP compliance → sign-off.</li>
+      <li><strong>Fire / Compliance</strong> — 9 milestones. Fire order → consultant → scope → committee → (EGM if levied) → works → AFSS → certifier sign-off.</li>
+      <li><strong>Defects / SBBIS</strong> — 10 milestones. Inspector → inspections → reports → developer window → rectification → reinspection → bond release.</li>
+      <li><strong>Fencing (Dividing Fences Act)</strong> — 6 milestones. Notice → statutory window → agreement/NCAT → works → cost recovery.</li>
+      <li><strong>Roof replacement</strong> — 10 milestones. Similar to remediation, single GM cycle.</li>
+      <li><strong>Legal — defects claim</strong> — 8 milestones. Engagement → GIPA → experts → LoD → proceedings → mediation → settlement.</li>
+      <li><strong>Custom</strong> — blank. Add your own milestones.</li>
+    </ul>
+    <p class="note">Templates are starting points. Add, remove, or rename milestones per project.</p>
+  </div>
+
+  <div class="panel">
+    <h3 style="margin-top:0">Data privacy</h3>
+    <p>All data is stored in this browser's localStorage. Nothing leaves the machine. Export JSON regularly. (Future: Azure Static Web Apps hosted version with Microsoft 365 sign-in — see AZURE.md.)</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== ADD PROJECT MODAL ========== -->
+<div class="modal-back" id="addProjectModal">
+  <div class="modal">
+    <button class="close-x" data-close="addProjectModal">&times;</button>
+    <h3>Add project</h3>
+    <div class="row"><label for="apPlan">Strata plan</label><input type="text" id="apPlan" placeholder="e.g. 4874"></div>
+    <div class="row"><label for="apTicket">Zendesk ticket (optional)</label><input type="text" id="apTicket" placeholder="e.g. 85869"></div>
+    <div class="row"><label for="apName">Project name</label><input type="text" id="apName" placeholder="e.g. Balconies Remedial Work, Lintels, Door Frames" style="width:100%"></div>
+    <div class="row"><label for="apType">Template</label>
+      <select id="apType">
+        <option value="remediation-standard">Remediation (standard, 17 steps)</option>
+        <option value="fire-compliance">Fire / Compliance (9 steps)</option>
+        <option value="sbbis">Defects / SBBIS / Building Bond (10 steps)</option>
+        <option value="fencing">Fencing — Dividing Fences Act (6 steps)</option>
+        <option value="roof">Roof replacement (10 steps)</option>
+        <option value="legal-defects">Legal — defects claim (8 steps)</option>
+        <option value="custom">Custom (blank)</option>
+      </select>
+    </div>
+    <div class="row top"><label>Preview</label><div class="template-preview" id="apTemplatePreview"></div></div>
+    <div class="row"><label for="apStartDate">First milestone target date</label><input type="date" id="apStartDate"></div>
+    <p class="hint">Remaining milestones cascade automatically using typical elapsed times. Edit any later.</p>
+    <div style="text-align:right;margin-top:16px">
+      <button type="button" class="secondary" data-close="addProjectModal">Cancel</button>
+      <button type="button" class="primary" id="apCreateBtn" style="margin-left:8px">Create project</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== BULK ADD MODAL ========== -->
+<div class="modal-back" id="bulkAddModal">
+  <div class="modal">
+    <button class="close-x" data-close="bulkAddModal">&times;</button>
+    <h3>Bulk add projects</h3>
+    <p>Paste one project per line. Format: <code>PLAN | NAME | TYPE</code> (type is optional; defaults to Remediation). Example:</p>
+    <pre style="background:#fafaf5;padding:8px;font-size:12px;border-radius:4px">4874 | Balconies Remedial Work | remediation-standard
+101110 | Lift Door Compliance | fire-compliance
+76375 | Water Ingress Remediation | remediation-standard</pre>
+    <p class="hint">Valid type codes: <code>remediation-standard</code>, <code>fire-compliance</code>, <code>sbbis</code>, <code>fencing</code>, <code>roof</code>, <code>legal-defects</code>, <code>custom</code>.</p>
+    <textarea id="bulkAddText" style="min-height:200px" placeholder="plan | name | type"></textarea>
+    <div style="text-align:right;margin-top:16px">
+      <button type="button" class="secondary" data-close="bulkAddModal">Cancel</button>
+      <button type="button" class="primary" id="bulkAddCreateBtn" style="margin-left:8px">Create</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   STORAGE (v4)
+   ============================================================ */
+const STORAGE_KEY = 'mattStatusReport.v4';
+
+function loadStore() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+    // Migrate from v3
+    const v3 = localStorage.getItem('mattStatusReport.v3');
+    if (v3) {
+      const old = JSON.parse(v3);
+      return { projects: {}, weeks: old.weeks || {} };
+    }
+    return { projects: {}, weeks: {} };
+  } catch (e) {
+    console.error(e);
+    return { projects: {}, weeks: {} };
+  }
+}
+function saveStore(s) { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); updateStorageNote(); }
+function updateStorageNote() {
+  const s = loadStore();
+  const w = Object.keys(s.weeks).length, p = Object.keys(s.projects).length;
+  const el = document.getElementById('storage-note');
+  if (el) el.textContent = w + ' week' + (w===1?'':'s') + ', ' + p + ' project' + (p===1?'':'s') + ' stored';
+}
+function uid() { return 'p' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+
+/* ============================================================
+   TEMPLATES
+   ============================================================ */
+const OWNERS = [
+  ['strata-manager', 'Strata Manager'],
+  ['committee', 'Committee'],
+  ['owners-corporation', 'Owners Corporation'],
+  ['engineer', 'Engineer'],
+  ['consultant', 'Consultant'],
+  ['contractor', 'Contractor'],
+  ['financier', 'Financier'],
+  ['certifier', 'Certifier'],
+  ['legal', 'Legal'],
+  ['developer', 'Developer'],
+  ['adjoining-owner', 'Adjoining owner'],
+  ['other', 'Other']
+];
+function ownerLabel(k) { const f = OWNERS.find(o => o[0] === k); return f ? f[1] : k; }
+
+const TEMPLATES = {
+  'remediation-standard': {
+    name: 'Remediation (standard)',
+    milestones: [
+      { label: 'Engineer / consultant engaged', owner: 'strata-manager', elapsed: 0, stage: 'Scope' },
+      { label: 'Initial report / scope received', owner: 'engineer', elapsed: 14, stage: 'Scope' },
+      { label: '(Optional) Second opinion obtained', owner: 'engineer', elapsed: 21, stage: 'Scope', optional: true },
+      { label: 'Committee meeting — scope/approach resolved', owner: 'committee', elapsed: 7, stage: 'Approval #1' },
+      { label: 'Tender issued', owner: 'strata-manager', elapsed: 2, stage: 'Tender' },
+      { label: 'Bids received and analysed', owner: 'strata-manager', elapsed: 14, stage: 'Tender' },
+      { label: 'Funding options obtained (levy + strata loan)', owner: 'strata-manager', elapsed: 10, stage: 'Tender' },
+      { label: 'Committee meeting — contractor + funding recommendation', owner: 'committee', elapsed: 7, stage: 'Approval #2' },
+      { label: 'EGM notice issued (21-day statutory)', owner: 'strata-manager', elapsed: 2, stage: 'EGM' },
+      { label: 'EGM held / special resolution passed', owner: 'owners-corporation', elapsed: 21, stage: 'EGM' },
+      { label: 'Special levy raised', owner: 'strata-manager', elapsed: 7, stage: 'Funding', optional: true },
+      { label: 'Strata loan drawn', owner: 'financier', elapsed: 21, stage: 'Funding', optional: true },
+      { label: 'Contract executed + permits in place', owner: 'strata-manager', elapsed: 7, stage: 'Execution' },
+      { label: 'Works commenced', owner: 'contractor', elapsed: 0, stage: 'Execution' },
+      { label: 'Works completed / practical completion', owner: 'contractor', elapsed: 90, stage: 'Execution' },
+      { label: 'DBP Act compliance declarations + certification', owner: 'certifier', elapsed: 14, stage: 'Closeout' },
+      { label: 'Committee sign-off; maintenance plan; DLP begins', owner: 'committee', elapsed: 7, stage: 'Closeout' }
+    ]
+  },
+  'fire-compliance': {
+    name: 'Fire / Compliance',
+    milestones: [
+      { label: 'Fire order / AFSS non-compliance identified', owner: 'strata-manager', elapsed: 0, stage: 'Identification' },
+      { label: 'Fire consultant engaged', owner: 'strata-manager', elapsed: 7, stage: 'Scope' },
+      { label: 'Scope / performance solution defined', owner: 'consultant', elapsed: 21, stage: 'Scope' },
+      { label: 'Committee approval', owner: 'committee', elapsed: 7, stage: 'Approval' },
+      { label: '(If levy-funded) EGM held', owner: 'owners-corporation', elapsed: 28, stage: 'EGM', optional: true },
+      { label: 'Contractor appointed', owner: 'strata-manager', elapsed: 14, stage: 'Execution' },
+      { label: 'Works completed', owner: 'contractor', elapsed: 60, stage: 'Execution' },
+      { label: 'AFSS / fire safety statement issued', owner: 'consultant', elapsed: 14, stage: 'Closeout' },
+      { label: 'Certifier / council sign-off', owner: 'certifier', elapsed: 7, stage: 'Closeout' }
+    ]
+  },
+  'sbbis': {
+    name: 'Defects / SBBIS (Building Bond)',
+    milestones: [
+      { label: 'Inspector appointed', owner: 'strata-manager', elapsed: 0, stage: 'Appointment' },
+      { label: 'Initial inspection conducted', owner: 'consultant', elapsed: 30, stage: 'Inspection' },
+      { label: 'Interim report issued', owner: 'consultant', elapsed: 30, stage: 'Reporting' },
+      { label: 'Final inspection', owner: 'consultant', elapsed: 60, stage: 'Inspection' },
+      { label: 'Final report issued', owner: 'consultant', elapsed: 30, stage: 'Reporting' },
+      { label: 'Developer response window closes', owner: 'developer', elapsed: 28, stage: 'Developer' },
+      { label: 'Rectification scope agreed', owner: 'committee', elapsed: 21, stage: 'Rectification' },
+      { label: 'Rectification works completed', owner: 'developer', elapsed: 90, stage: 'Rectification' },
+      { label: 'Reinspection', owner: 'consultant', elapsed: 14, stage: 'Closeout' },
+      { label: 'Bond release / closed', owner: 'strata-manager', elapsed: 14, stage: 'Closeout' }
+    ]
+  },
+  'fencing': {
+    name: 'Fencing (Dividing Fences Act)',
+    milestones: [
+      { label: 'Notice issued to adjoining owner', owner: 'strata-manager', elapsed: 0, stage: 'Notice' },
+      { label: 'Statutory response window (30 days)', owner: 'adjoining-owner', elapsed: 30, stage: 'Notice' },
+      { label: 'Agreement OR NCAT application filed', owner: 'strata-manager', elapsed: 14, stage: 'Resolution' },
+      { label: 'Order / agreement recorded', owner: 'strata-manager', elapsed: 60, stage: 'Resolution' },
+      { label: 'Works completed', owner: 'contractor', elapsed: 14, stage: 'Execution' },
+      { label: 'Cost recovered', owner: 'strata-manager', elapsed: 30, stage: 'Closeout' }
+    ]
+  },
+  'roof': {
+    name: 'Roof replacement',
+    milestones: [
+      { label: 'Roof condition report obtained', owner: 'consultant', elapsed: 14, stage: 'Scope' },
+      { label: 'Tender issued', owner: 'strata-manager', elapsed: 2, stage: 'Tender' },
+      { label: 'Bids received and analysed', owner: 'strata-manager', elapsed: 14, stage: 'Tender' },
+      { label: 'Committee recommendation', owner: 'committee', elapsed: 7, stage: 'Approval' },
+      { label: 'EGM / special levy approved', owner: 'owners-corporation', elapsed: 28, stage: 'EGM' },
+      { label: 'Contract executed', owner: 'strata-manager', elapsed: 7, stage: 'Execution' },
+      { label: 'Works commenced', owner: 'contractor', elapsed: 0, stage: 'Execution' },
+      { label: 'Works completed', owner: 'contractor', elapsed: 30, stage: 'Execution' },
+      { label: 'Final certification', owner: 'certifier', elapsed: 14, stage: 'Closeout' },
+      { label: 'Committee sign-off', owner: 'committee', elapsed: 7, stage: 'Closeout' }
+    ]
+  },
+  'legal-defects': {
+    name: 'Legal — defects claim',
+    milestones: [
+      { label: 'Legal firm engaged', owner: 'strata-manager', elapsed: 0, stage: 'Engagement' },
+      { label: 'GIPA / document requests submitted', owner: 'legal', elapsed: 14, stage: 'Discovery' },
+      { label: 'Expert reports commissioned', owner: 'consultant', elapsed: 30, stage: 'Evidence' },
+      { label: 'Expert reports received', owner: 'consultant', elapsed: 60, stage: 'Evidence' },
+      { label: 'Letter of demand issued', owner: 'legal', elapsed: 21, stage: 'Demand' },
+      { label: '(If required) Proceedings filed', owner: 'legal', elapsed: 30, stage: 'Litigation', optional: true },
+      { label: 'Mediation / negotiation', owner: 'legal', elapsed: 90, stage: 'Resolution' },
+      { label: 'Settlement or judgment', owner: 'legal', elapsed: 30, stage: 'Closeout' }
+    ]
+  },
+  'custom': { name: 'Custom (blank)', milestones: [] }
+};
+
+/* ============================================================
+   CSV (unchanged)
+   ============================================================ */
+function parseCSV(text) {
+  const rows=[]; let row=[],field='',inQ=false;
+  for (let i=0;i<text.length;i++) { const c=text[i];
+    if (inQ) { if (c==='"') { if (text[i+1]==='"') {field+='"';i++;} else inQ=false; } else field+=c; }
+    else { if (c==='"') inQ=true;
+      else if (c===',') { row.push(field); field=''; }
+      else if (c==='\n'||c==='\r') { if (c==='\r'&&text[i+1]==='\n') i++; row.push(field); if (!(row.length===1&&row[0]==='')) rows.push(row); row=[]; field=''; }
+      else field+=c;
+    }
+  }
+  if (field.length||row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+function csvToObjects(t) {
+  const rows=parseCSV(t); if (!rows.length) return [];
+  const h=rows[0].map(x=>x.trim()); const out=[];
+  for (let i=1;i<rows.length;i++) {
+    if (rows[i].length===1&&rows[i][0].trim()==='') continue;
+    const o={}; for (let j=0;j<h.length;j++) o[h[j]]=(rows[i][j]||'').trim();
+    out.push(o);
+  }
+  return out;
+}
+function parseZDate(s) {
+  if (!s||!s.trim()) return null;
+  const m=s.trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})(?:[ T](\d{1,2}):(\d{2}))?/);
+  if (!m) return null;
+  return new Date(+m[3], +m[2]-1, +m[1], m[4]?+m[4]:0, m[5]?+m[5]:0);
+}
+function computeCsvMetrics(t) {
+  const tickets = csvToObjects(t);
+  if (!tickets.length) throw new Error('No ticket rows in CSV.');
+  const expected=['ID','Status','Requested','Updated','Assignee updated','Requester updated'];
+  for (const h of expected) if (!(h in tickets[0])) throw new Error('CSV missing column: "' + h + '".');
+  const parsed = tickets.map(t => ({
+    status:(t.Status||'').trim(),
+    requested:parseZDate(t.Requested),
+    updated:parseZDate(t.Updated),
+    assigneeUpdated:parseZDate(t['Assignee updated']),
+    requesterUpdated:parseZDate(t['Requester updated'])
+  }));
+  let snap=null; for (const p of parsed) if (p.updated && (!snap||p.updated>snap)) snap=p.updated;
+  if (!snap) snap=new Date();
+  const HOUR=3600000, DAY=24*HOUR;
+  let open=0,pending=0,bA=0,bB=0,bC=0,over24=0,stale=0,oldest=0;
+  for (const p of parsed) {
+    if (p.status==='Open') open++; else if (p.status==='Pending') pending++;
+    let wh=null;
+    if (!p.assigneeUpdated) { bA++; if (p.requested) wh=(snap-p.requested)/HOUR; }
+    else if (p.requesterUpdated && p.requesterUpdated>p.assigneeUpdated) { bB++; wh=(snap-p.requesterUpdated)/HOUR; }
+    else if (p.status==='Open' && p.assigneeUpdated) bC++;
+    if (wh!==null && wh>24) over24++;
+    if (wh!==null) { const d=wh/24; if (d>oldest) oldest=d; }
+    if (p.updated && (snap-p.updated)/DAY>30) stale++;
+  }
+  return { snapshotTime:snap.toISOString(), totalActive:parsed.length, open,pending, noAgentResponse:bA, clientWaiting:bB, statusMismatch:bC, over24hrOverdue:over24, stale30d:stale, oldestUnansweredDays:Math.round(oldest) };
+}
+
+/* ============================================================
+   PROJECT MODEL & HELPERS
+   ============================================================ */
+function todayISO() { return new Date().toISOString().slice(0, 10); }
+function addDays(iso, days) {
+  if (!iso) return '';
+  const d = new Date(iso); d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+function daysBetween(isoA, isoB) {
+  if (!isoA || !isoB) return null;
+  const a = new Date(isoA), b = new Date(isoB);
+  return Math.round((b - a) / (1000 * 60 * 60 * 24));
+}
+
+function createProjectFromTemplate(plan, ticket, name, templateKey, firstDate) {
+  const t = TEMPLATES[templateKey];
+  const proj = {
+    id: uid(),
+    plan: plan || '',
+    ticket: ticket || '',
+    name: name || '',
+    templateKey,
+    createdAt: new Date().toISOString(),
+    lastTouched: new Date().toISOString(),
+    status: 'active',
+    manualOverride: null,
+    overrideReason: '',
+    milestones: []
+  };
+  let cursor = firstDate || todayISO();
+  for (const tm of t.milestones) {
+    const target = cursor;
+    proj.milestones.push({
+      id: uid(),
+      label: tm.label,
+      owner: tm.owner,
+      stage: tm.stage || '',
+      elapsed: tm.elapsed,
+      optional: !!tm.optional,
+      originalTargetDate: target,
+      targetDate: target,
+      completed: false,
+      completedDate: null,
+      notes: ''
+    });
+    cursor = addDays(cursor, tm.elapsed);
+  }
+  return proj;
+}
+
+function currentMilestone(proj) {
+  return proj.milestones.find(m => !m.completed) || null;
+}
+
+function projectRAG(proj) {
+  if (proj.status === 'archived') return 'complete';
+  if (proj.manualOverride) return proj.manualOverride;
+  const cm = currentMilestone(proj);
+  if (!cm) return 'complete';
+  if (!cm.targetDate) return 'planning';
+  const today = todayISO();
+  if (cm.targetDate < today) return 'blocked';
+  const dd = daysBetween(today, cm.targetDate);
+  if (dd !== null && dd <= 7) return 'at-risk';
+  return 'on-track';
+}
+
+function projectSlippage(proj) {
+  let total = 0;
+  for (const m of proj.milestones) {
+    if (m.targetDate && m.originalTargetDate && m.targetDate > m.originalTargetDate) {
+      total += daysBetween(m.originalTargetDate, m.targetDate);
+    }
+  }
+  return total;
+}
+
+function projectAge(proj) {
+  const last = new Date(proj.lastTouched);
+  return Math.floor((Date.now() - last.getTime()) / (1000 * 60 * 60 * 24));
+}
+
+function projectStage(proj) {
+  const cm = currentMilestone(proj);
+  return cm ? (cm.stage || 'Unknown') : 'Complete';
+}
+
+function portfolioRollup(store) {
+  const all = Object.values(store.projects);
+  const active = all.filter(p => p.status === 'active');
+  const byRag = { 'on-track': 0, 'at-risk': 0, blocked: 0, planning: 0, complete: 0 };
+  const byOwner = {};
+  const byStage = {};
+  const byType = {};
+  let slippage = 0;
+  let aged = 0;
+  for (const p of active) {
+    const rag = projectRAG(p);
+    byRag[rag] = (byRag[rag] || 0) + 1;
+    slippage += projectSlippage(p);
+    if (projectAge(p) >= 14) aged++;
+    const cm = currentMilestone(p);
+    if (cm) {
+      byOwner[cm.owner] = (byOwner[cm.owner] || 0) + 1;
+      byStage[cm.stage || 'Unknown'] = (byStage[cm.stage || 'Unknown'] || 0) + 1;
+    }
+    byType[p.templateKey] = (byType[p.templateKey] || 0) + 1;
+  }
+  return { total: active.length, byRag, byOwner, byStage, byType, slippage, aged, archived: all.length - active.length };
+}
+
+/* ============================================================
+   TABS
+   ============================================================ */
+document.querySelectorAll('nav button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    if (btn.dataset.tab === 'dashboard') renderDashboard();
+    if (btn.dataset.tab === 'projects') renderProjects();
+    if (btn.dataset.tab === 'trends') renderTrends();
+    if (btn.dataset.tab === 'entry') onEntryTabShown();
+    if (btn.dataset.tab === 'history') renderHistory();
+  });
+});
+
+/* ============================================================
+   MODAL
+   ============================================================ */
+function openModal(id) { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => closeModal(b.dataset.close)));
+document.querySelectorAll('.modal-back').forEach(mb => mb.addEventListener('click', e => { if (e.target === mb) closeModal(mb.id); }));
+
+/* ============================================================
+   ADD PROJECT MODAL
+   ============================================================ */
+function renderTemplatePreview() {
+  const key = document.getElementById('apType').value;
+  const t = TEMPLATES[key];
+  const el = document.getElementById('apTemplatePreview');
+  if (!t.milestones.length) { el.innerHTML = '<em>Custom — add milestones after creating.</em>'; return; }
+  el.innerHTML = '<ol>' + t.milestones.map(m => `<li>${escapeHtml(m.label)} <span class="age-chip">${ownerLabel(m.owner)}</span>${m.optional ? ' <em>(optional)</em>' : ''}</li>`).join('') + '</ol>';
+}
+document.getElementById('addProjectBtn').addEventListener('click', () => {
+  document.getElementById('apPlan').value = '';
+  document.getElementById('apTicket').value = '';
+  document.getElementById('apName').value = '';
+  document.getElementById('apType').value = 'remediation-standard';
+  document.getElementById('apStartDate').value = todayISO();
+  renderTemplatePreview();
+  openModal('addProjectModal');
+});
+document.getElementById('apType').addEventListener('change', renderTemplatePreview);
+
+document.getElementById('apCreateBtn').addEventListener('click', () => {
+  const plan = document.getElementById('apPlan').value.trim();
+  const ticket = document.getElementById('apTicket').value.trim();
+  const name = document.getElementById('apName').value.trim();
+  const type = document.getElementById('apType').value;
+  const start = document.getElementById('apStartDate').value;
+  if (!name) { alert('Project name required'); return; }
+  const store = loadStore();
+  const proj = createProjectFromTemplate(plan, ticket, name, type, start);
+  store.projects[proj.id] = proj;
+  saveStore(store);
+  closeModal('addProjectModal');
+  renderProjects();
+});
+
+/* ============================================================
+   BULK ADD
+   ============================================================ */
+document.getElementById('bulkAddBtn').addEventListener('click', () => {
+  document.getElementById('bulkAddText').value = '';
+  openModal('bulkAddModal');
+});
+document.getElementById('bulkAddCreateBtn').addEventListener('click', () => {
+  const text = document.getElementById('bulkAddText').value.trim();
+  if (!text) { closeModal('bulkAddModal'); return; }
+  const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+  const store = loadStore();
+  let n = 0, fail = 0;
+  for (const line of lines) {
+    const parts = line.split('|').map(x => x.trim());
+    if (parts.length < 2) { fail++; continue; }
+    const [plan, name, type] = parts;
+    const tk = (type || 'remediation-standard');
+    if (!TEMPLATES[tk]) { fail++; continue; }
+    const proj = createProjectFromTemplate(plan, '', name, tk, todayISO());
+    store.projects[proj.id] = proj;
+    n++;
+  }
+  saveStore(store);
+  closeModal('bulkAddModal');
+  renderProjects();
+  alert('Created ' + n + ' project' + (n === 1 ? '' : 's') + (fail ? ' · ' + fail + ' line(s) skipped (malformed or unknown type)' : ''));
+});
+
+/* ============================================================
+   PROJECTS TAB
+   ============================================================ */
+let currentFilter = 'active';
+document.getElementById('proj-filters').querySelectorAll('button').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('#proj-filters button').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    currentFilter = b.dataset.filter;
+    renderProjects();
+  });
+});
+
+function projectPassesFilter(p, f) {
+  if (f === 'all') return true;
+  if (f === 'archived') return p.status === 'archived';
+  if (f === 'active') return p.status === 'active';
+  if (p.status !== 'active') return false;
+  if (f === 'on-track') return projectRAG(p) === 'on-track';
+  if (f === 'at-risk') return projectRAG(p) === 'at-risk';
+  if (f === 'blocked') return projectRAG(p) === 'blocked';
+  if (f === 'aged') return projectAge(p) >= 14;
+  return true;
+}
+
+function renderProjects() {
+  const store = loadStore();
+  const roll = portfolioRollup(store);
+  document.getElementById('proj-scorecard').innerHTML = [
+    `<div class="stat"><div class="n">${roll.total}</div><div class="l">Active</div></div>`,
+    `<div class="stat" style="background:var(--soft-good)"><div class="n">${roll.byRag['on-track']||0}</div><div class="l">On track</div></div>`,
+    `<div class="stat" style="background:var(--soft-warn)"><div class="n">${roll.byRag['at-risk']||0}</div><div class="l">At risk</div></div>`,
+    `<div class="stat" style="background:var(--soft-bad)"><div class="n">${roll.byRag.blocked||0}</div><div class="l">Blocked</div></div>`,
+    `<div class="stat"><div class="n">${roll.byRag.planning||0}</div><div class="l">Planning</div></div>`,
+    `<div class="stat"><div class="n">${roll.aged}</div><div class="l">Aged 14+d</div></div>`,
+    `<div class="stat"><div class="n">${roll.slippage}d</div><div class="l">Slippage</div></div>`,
+    `<div class="stat"><div class="n">${roll.archived}</div><div class="l">Archived</div></div>`
+  ].join('');
+
+  const all = Object.values(store.projects);
+  const list = all.filter(p => projectPassesFilter(p, currentFilter))
+    .sort((a, b) => {
+      const order = { blocked: 0, 'at-risk': 1, 'on-track': 2, planning: 3, complete: 4 };
+      const ra = projectRAG(a), rb = projectRAG(b);
+      if (order[ra] !== order[rb]) return order[ra] - order[rb];
+      const ma = currentMilestone(a), mb = currentMilestone(b);
+      const da = ma ? ma.targetDate : '9999', db = mb ? mb.targetDate : '9999';
+      return (da || '9999').localeCompare(db || '9999');
+    });
+
+  const host = document.getElementById('proj-list');
+  host.innerHTML = '';
+  document.getElementById('proj-empty').style.display = list.length ? 'none' : 'block';
+
+  for (const p of list) host.appendChild(renderProjectCard(p));
+}
+
+function renderProjectCard(p) {
+  const rag = projectRAG(p);
+  const cm = currentMilestone(p);
+  const age = projectAge(p);
+  const slip = projectSlippage(p);
+  const card = document.createElement('div');
+  card.className = 'proj-card';
+  card.dataset.id = p.id;
+
+  const ragTag = `<span class="rag-badge ${rag}">${rag === 'on-track' ? 'On track' : rag === 'at-risk' ? 'At risk' : rag === 'blocked' ? 'Blocked' : rag === 'planning' ? 'Planning' : 'Complete'}</span>`;
+  const ageTag = age >= 14 ? `<span class="age-chip aged">${age}d no touch</span>` : `<span class="age-chip">${age}d</span>`;
+  const cmStr = cm ? `<div class="proj-current"><strong>Next:</strong> ${escapeHtml(cm.label)} · <strong>${cm.targetDate ? formatDate(cm.targetDate) : '—'}</strong> · ${ownerLabel(cm.owner)}${slip > 0 ? ` <span class="slip">+${slip}d slip</span>` : ''}</div>` : '<div class="proj-current"><em>All milestones complete</em></div>';
+
+  card.innerHTML = `
+    <div class="proj-card-head">
+      <span class="expand-icon">▶</span>
+      <div>
+        <div><span class="proj-plan">SP ${escapeHtml(p.plan || '—')}</span> <span class="proj-name">${escapeHtml(p.name)}</span></div>
+        <div class="proj-type">${TEMPLATES[p.templateKey] ? TEMPLATES[p.templateKey].name : p.templateKey}${p.ticket ? ' · Ticket ' + escapeHtml(p.ticket) : ''}</div>
+        ${cmStr}
+      </div>
+      ${ageTag}
+      ${ragTag}
+      <button class="danger small" data-action="archive">${p.status === 'active' ? 'Archive' : 'Restore'}</button>
+    </div>
+    <div class="proj-card-body"></div>
+  `;
+
+  const head = card.querySelector('.proj-card-head');
+  head.addEventListener('click', e => {
+    if (e.target.closest('[data-action]')) return;
+    if (!card.classList.contains('expanded')) {
+      card.classList.add('expanded');
+      renderProjectBody(card, p);
+    } else card.classList.remove('expanded');
+  });
+
+  card.querySelector('[data-action="archive"]').addEventListener('click', () => {
+    const store = loadStore();
+    const pp = store.projects[p.id];
+    if (!pp) return;
+    pp.status = pp.status === 'active' ? 'archived' : 'active';
+    pp.lastTouched = new Date().toISOString();
+    saveStore(store);
+    renderProjects();
+  });
+  return card;
+}
+
+function renderProjectBody(card, p) {
+  const body = card.querySelector('.proj-card-body');
+  const ownerOpts = OWNERS.map(o => `<option value="${o[0]}">${o[1]}</option>`).join('');
+  let html = '<h4 style="margin-top:12px">Milestones</h4>';
+  for (const m of p.milestones) {
+    const slip = (m.targetDate && m.originalTargetDate && m.targetDate > m.originalTargetDate) ? daysBetween(m.originalTargetDate, m.targetDate) : 0;
+    const isCurrent = (!m.completed && currentMilestone(p) && currentMilestone(p).id === m.id);
+    html += `
+      <div class="milestone-row ${m.completed ? 'done' : ''} ${isCurrent ? 'current' : ''}" data-mid="${m.id}">
+        <input type="checkbox" data-field="completed" ${m.completed ? 'checked' : ''}>
+        <div class="milestone-label"><input type="text" data-field="label" value="${escapeAttr(m.label)}"></div>
+        <select data-field="owner" class="milestone-owner">${ownerOpts}</select>
+        <div class="milestone-date"><input type="date" data-field="targetDate" value="${m.targetDate || ''}">${slip > 0 ? `<span class="slip">+${slip}d</span>` : ''}</div>
+        <div style="font-size:11px;color:var(--muted)">${escapeHtml(m.stage || '')}${m.optional ? ' · opt' : ''}</div>
+        <button class="danger small" data-action="del-milestone">✕</button>
+      </div>`;
+  }
+  html += `
+    <div style="margin-top:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+      <button type="button" class="secondary small" data-action="add-milestone">+ Add milestone</button>
+      <label style="margin-left:12px;font-size:12px">Override RAG:
+        <select data-action="override">
+          <option value="">(auto)</option>
+          <option value="on-track">On track</option>
+          <option value="at-risk">At risk</option>
+          <option value="blocked">Blocked</option>
+        </select>
+      </label>
+      <input type="text" data-action="override-reason" placeholder="Reason (required when override)" style="flex:1;min-width:200px">
+    </div>
+    <div class="row top" style="margin-top:12px"><label>Project notes</label><textarea data-action="notes" style="min-height:60px">${escapeHtml(p.notes || '')}</textarea></div>
+  `;
+  body.innerHTML = html;
+
+  // Set owner values and override
+  body.querySelectorAll('.milestone-row').forEach(r => {
+    const m = p.milestones.find(x => x.id === r.dataset.mid);
+    r.querySelector('select[data-field="owner"]').value = m.owner;
+  });
+  body.querySelector('select[data-action="override"]').value = p.manualOverride || '';
+  body.querySelector('input[data-action="override-reason"]').value = p.overrideReason || '';
+
+  function touch() { const s = loadStore(); const pp = s.projects[p.id]; pp.lastTouched = new Date().toISOString(); saveStore(s); }
+  function commit() {
+    const s = loadStore();
+    const pp = s.projects[p.id];
+    if (!pp) return;
+    pp.milestones = [];
+    body.querySelectorAll('.milestone-row').forEach(r => {
+      const m = {
+        id: r.dataset.mid,
+        label: r.querySelector('[data-field="label"]').value,
+        owner: r.querySelector('[data-field="owner"]').value,
+        targetDate: r.querySelector('[data-field="targetDate"]').value,
+        completed: r.querySelector('[data-field="completed"]').checked,
+        stage: (p.milestones.find(x => x.id === r.dataset.mid) || {}).stage || '',
+        optional: (p.milestones.find(x => x.id === r.dataset.mid) || {}).optional || false,
+        elapsed: (p.milestones.find(x => x.id === r.dataset.mid) || {}).elapsed || 0,
+        originalTargetDate: (p.milestones.find(x => x.id === r.dataset.mid) || {}).originalTargetDate || r.querySelector('[data-field="targetDate"]').value,
+        notes: ''
+      };
+      if (m.completed && !((p.milestones.find(x => x.id === r.dataset.mid) || {}).completedDate)) m.completedDate = todayISO();
+      else m.completedDate = (p.milestones.find(x => x.id === r.dataset.mid) || {}).completedDate || null;
+      pp.milestones.push(m);
+    });
+    pp.manualOverride = body.querySelector('select[data-action="override"]').value || null;
+    pp.overrideReason = body.querySelector('input[data-action="override-reason"]').value || '';
+    pp.notes = body.querySelector('textarea[data-action="notes"]').value || '';
+    pp.lastTouched = new Date().toISOString();
+    saveStore(s);
+  }
+
+  body.addEventListener('change', e => {
+    if (e.target.matches('[data-field],select[data-action="override"],input[data-action="override-reason"]')) commit();
+  });
+  body.addEventListener('input', e => {
+    if (e.target.matches('[data-field="label"],[data-field="targetDate"],textarea[data-action="notes"],input[data-action="override-reason"]')) {
+      clearTimeout(body._deb); body._deb = setTimeout(commit, 500);
+    }
+  });
+  body.addEventListener('click', e => {
+    if (e.target.matches('[data-action="add-milestone"]')) {
+      const s = loadStore(); const pp = s.projects[p.id];
+      pp.milestones.push({ id: uid(), label: 'New milestone', owner: 'strata-manager', stage: '', elapsed: 0, optional: false, originalTargetDate: todayISO(), targetDate: todayISO(), completed: false, completedDate: null, notes: '' });
+      pp.lastTouched = new Date().toISOString();
+      saveStore(s);
+      // Refresh body
+      const cd = document.querySelector('.proj-card[data-id="' + p.id + '"]');
+      renderProjectBody(cd, pp);
+    }
+    if (e.target.matches('[data-action="del-milestone"]')) {
+      if (!confirm('Remove this milestone?')) return;
+      const row = e.target.closest('.milestone-row');
+      const mid = row.dataset.mid;
+      const s = loadStore(); const pp = s.projects[p.id];
+      pp.milestones = pp.milestones.filter(m => m.id !== mid);
+      pp.lastTouched = new Date().toISOString();
+      saveStore(s);
+      const cd = document.querySelector('.proj-card[data-id="' + p.id + '"]');
+      renderProjectBody(cd, pp);
+    }
+  });
+}
+
+/* ============================================================
+   DASHBOARD
+   ============================================================ */
+const HOURS_TARGET = 22.5, AMOUNT_TARGET = 6210, RATE_TARGET = 276, FRT_TARGET_MIN = 120;
+
+function renderDashboard() {
+  const store = loadStore();
+  const keys = Object.keys(store.weeks).sort();
+  const emptyEl = document.getElementById('dash-empty'), contentEl = document.getElementById('dash-content');
+
+  // Portfolio section renders even with no weeks
+  const roll = portfolioRollup(store);
+  document.getElementById('kpi-proj-active').textContent = roll.total;
+  document.getElementById('kpi-proj-ontrack').textContent = roll.byRag['on-track'] || 0;
+  document.getElementById('kpi-proj-atrisk').textContent = roll.byRag['at-risk'] || 0;
+  document.getElementById('kpi-proj-blocked').textContent = roll.byRag.blocked || 0;
+  document.getElementById('kpi-proj-aged').textContent = roll.aged;
+  document.getElementById('kpi-proj-slip').textContent = roll.slippage + ' d';
+  setTone('kpi-proj-aged-tile', roll.aged, [2, 5]);
+
+  document.getElementById('dash-by-owner').innerHTML = renderRollupTable(roll.byOwner, k => ownerLabel(k));
+  document.getElementById('dash-by-stage').innerHTML = renderRollupTable(roll.byStage, k => k);
+
+  if (!keys.length) {
+    emptyEl.style.display = roll.total ? 'none' : 'block';
+    contentEl.style.display = 'block';
+    document.getElementById('dash-week').textContent = '—';
+    document.getElementById('dash-subtitle').textContent = 'No weekly data yet.';
+    return;
+  }
+  emptyEl.style.display = 'none';
+  contentEl.style.display = 'block';
+
+  const sel = document.getElementById('dashboardWeek');
+  sel.innerHTML = '';
+  keys.slice().reverse().forEach(k => { const o = document.createElement('option'); o.value = k; o.textContent = 'Week ending ' + formatDate(k); sel.appendChild(o); });
+  if (!sel._wired) { sel.addEventListener('change', () => renderDashboardFor(sel.value)); sel._wired = true; }
+  const latest = keys[keys.length - 1];
+  sel.value = latest;
+  renderDashboardFor(latest);
+}
+
+function renderRollupTable(obj, fmt) {
+  const entries = Object.entries(obj).sort((a, b) => b[1] - a[1]);
+  if (!entries.length) return '<p class="note">—</p>';
+  const max = Math.max(...entries.map(e => e[1]));
+  return '<table style="background:none"><tbody>' + entries.map(([k, v]) =>
+    `<tr><td>${fmt(k)}</td><td class="num"><strong>${v}</strong></td><td style="width:100px"><div style="background:var(--accent);height:6px;border-radius:3px;width:${(v/max)*100}%"></div></td></tr>`
+  ).join('') + '</tbody></table>';
+}
+
+function renderDashboardFor(weekKey) {
+  const store = loadStore();
+  const w = store.weeks[weekKey]; if (!w) return;
+  const pdf = w.pdfMetrics || {}, csv = w.csvMetrics || null, narr = w.narrative || {};
+
+  document.getElementById('dash-week').textContent = formatDate(weekKey);
+  const keys = Object.keys(store.weeks).sort();
+  const idx = keys.indexOf(weekKey);
+  const prior = idx > 0 ? store.weeks[keys[idx - 1]] : null;
+  document.getElementById('dash-subtitle').textContent = 'Saved ' + formatDateTime(w.savedAt) + (prior ? ' · Prior: ' + formatDate(prior.weekEnding) : ' · First week');
+
+  const projCount = Object.values(store.projects).filter(p => p.status === 'active').length;
+  document.getElementById('dash-sources').innerHTML =
+    ((w.billingHours !== null && w.billingHours !== undefined) || (w.billingAmount !== null && w.billingAmount !== undefined) ? '<span class="badge on">Billing</span>' : '<span class="badge">No billing</span>') +
+    (w.pdfMetrics ? '<span class="badge on">PDF</span>' : '<span class="badge">No PDF</span>') +
+    (csv ? '<span class="badge on">CSV</span>' : '<span class="badge">No CSV</span>') +
+    (projCount ? '<span class="badge on">' + projCount + ' active project' + (projCount > 1 ? 's' : '') + '</span>' : '<span class="badge">No projects</span>');
+  document.getElementById('dash-snapshot-note').textContent = csv ? 'Live CSV snapshot: ' + formatDateTime(csv.snapshotTime) : '';
+
+  setValOrDash('kpi-hours', w.billingHours, v => v.toFixed(1));
+  if (w.billingHours !== null && w.billingHours !== undefined) {
+    const g = w.billingHours - HOURS_TARGET;
+    setText('kpi-hours-gap', (g >= 0 ? '+' : '') + g.toFixed(1) + ' hrs');
+    setBar('kpi-hours-bar', w.billingHours / HOURS_TARGET);
+    setText('kpi-avgday', (w.billingHours / 5).toFixed(1));
+  } else { setText('kpi-hours-gap', '—'); setBar('kpi-hours-bar', 0); setText('kpi-avgday', '—'); }
+  setValOrDash('kpi-amount', w.billingAmount, v => formatMoney(v));
+  if (w.billingAmount !== null && w.billingAmount !== undefined) {
+    const g = w.billingAmount - AMOUNT_TARGET;
+    setText('kpi-amount-gap', (g >= 0 ? '+$' : '-$') + formatMoney(Math.abs(g)));
+    setBar('kpi-amount-bar', w.billingAmount / AMOUNT_TARGET);
+  } else { setText('kpi-amount-gap', '—'); setBar('kpi-amount-bar', 0); }
+  setText('kpi-rate', (w.billingHours && w.billingAmount) ? formatMoney(w.billingAmount / w.billingHours) : '—');
+
+  setValOrDash('kpi-received', pdf.ticketsReceived);
+  setValOrDash('kpi-solved', pdf.ticketsSolved);
+  if (pdf.ticketsReceived !== null && pdf.ticketsReceived !== undefined && pdf.ticketsSolved !== null && pdf.ticketsSolved !== undefined) {
+    const net = pdf.ticketsReceived - pdf.ticketsSolved;
+    setText('kpi-net', (net > 0 ? '+' : '') + net);
+    setTone('kpi-net-tile', net, [0, 5]);
+  } else { setText('kpi-net', '—'); clearTone('kpi-net-tile'); }
+  setValOrDash('kpi-frt', pdf.firstResponseMin, v => v + ' min');
+  if (pdf.firstResponseMin !== null && pdf.firstResponseMin !== undefined) setTone('kpi-frt-tile', pdf.firstResponseMin, [FRT_TARGET_MIN, FRT_TARGET_MIN * 2]);
+  else clearTone('kpi-frt-tile');
+  setValOrDash('kpi-fullres', pdf.fullResolutionHrs, v => v + ' hrs');
+  const pdfTotal = (pdf.open !== null && pdf.open !== undefined && pdf.pending !== null && pdf.pending !== undefined) ? pdf.open + pdf.pending : null;
+  setValOrDash('kpi-pdf-total', pdfTotal);
+  setValOrDash('kpi-pdf-open', pdf.open);
+  setValOrDash('kpi-pdf-pending', pdf.pending);
+  setValOrDash('kpi-waiting', pdf.totalWaitingReply);
+  if (pdf.totalWaitingReply !== null && pdf.totalWaitingReply !== undefined) setTone('kpi-waiting-tile', pdf.totalWaitingReply, [10, 40]); else clearTone('kpi-waiting-tile');
+  setValOrDash('kpi-ultralong', pdf.ultraLong90d);
+  if (pdf.ultraLong90d !== null && pdf.ultraLong90d !== undefined) setTone('kpi-ultralong-tile', pdf.ultraLong90d, [5, 20]); else clearTone('kpi-ultralong-tile');
+
+  if (csv) {
+    setText('kpi-24h', csv.over24hrOverdue); setTone('kpi-24h-tile', csv.over24hrOverdue, [5, 20]);
+    setText('kpi-noreply', csv.noAgentResponse); setTone('kpi-noreply-tile', csv.noAgentResponse, [3, 15]);
+    setText('kpi-clientwaiting', csv.clientWaiting); setTone('kpi-clientwaiting-tile', csv.clientWaiting, [2, 8]);
+    setText('kpi-oldest', csv.oldestUnansweredDays + ' d'); setTone('kpi-oldest-tile', csv.oldestUnansweredDays, [7, 30]);
+    setText('kpi-mismatch', csv.statusMismatch); setTone('kpi-mismatch-tile', csv.statusMismatch, [5, 20]);
+    setText('kpi-stale', csv.stale30d); setTone('kpi-stale-tile', csv.stale30d, [3, 10]);
+  } else {
+    ['kpi-24h','kpi-noreply','kpi-clientwaiting','kpi-oldest','kpi-mismatch','kpi-stale'].forEach(id => setText(id, '—'));
+    ['kpi-24h-tile','kpi-noreply-tile','kpi-clientwaiting-tile','kpi-oldest-tile','kpi-mismatch-tile','kpi-stale-tile'].forEach(clearTone);
+  }
+
+  document.getElementById('dash-narr-moved').textContent = narr.whatMoved || '—';
+  document.getElementById('dash-narr-stuck').textContent = narr.whatStuck || '—';
+}
+
+function setText(id, v) { const el = document.getElementById(id); if (el) el.textContent = v; }
+function setValOrDash(id, v, fmt) { const el = document.getElementById(id); if (!el) return; if (v === null || v === undefined) el.textContent = '—'; else el.textContent = fmt ? fmt(v) : v; }
+function setBar(id, r) { const el = document.getElementById(id); if (!el) return; const p = Math.max(0, Math.min(1, r)) * 100; el.style.width = p + '%'; el.classList.remove('warn','bad'); if (r < 0.6) el.classList.add('bad'); else if (r < 0.9) el.classList.add('warn'); }
+function setTone(id, v, t) { const el = document.getElementById(id); if (!el) return; el.classList.remove('good','warn','bad'); if (v <= t[0]) el.classList.add('good'); else if (v <= t[1]) el.classList.add('warn'); else el.classList.add('bad'); }
+function clearTone(id) { const el = document.getElementById(id); if (el) el.classList.remove('good','warn','bad'); }
+
+/* ============================================================
+   TRENDS
+   ============================================================ */
+function renderTrends() {
+  const store = loadStore();
+  const keys = Object.keys(store.weeks).sort();
+  document.getElementById('trend-empty').style.display = keys.length ? 'none' : 'block';
+  document.getElementById('trend-content').style.display = keys.length ? 'block' : 'none';
+  if (!keys.length) return;
+  const last = keys.slice(-12);
+  const tbody = document.querySelector('#trendTable tbody'); tbody.innerHTML = '';
+  const rows = [
+    { label: 'Hours billed', src: 'manual', get: w => w.billingHours, fmt: v => nullish(v) ? '—' : v.toFixed(1), direction: 'up' },
+    { label: 'Billing $', src: 'manual', get: w => w.billingAmount, fmt: v => nullish(v) ? '—' : '$' + formatMoney(v), direction: 'up' },
+    { label: 'Tickets received', src: 'pdf', get: w => w.pdfMetrics && w.pdfMetrics.ticketsReceived, fmt: v => nullish(v) ? '—' : v, direction: 'neutral' },
+    { label: 'Tickets solved', src: 'pdf', get: w => w.pdfMetrics && w.pdfMetrics.ticketsSolved, fmt: v => nullish(v) ? '—' : v, direction: 'up' },
+    { label: 'Net change', src: 'pdf', get: w => w.pdfMetrics && !nullish(w.pdfMetrics.ticketsReceived) && !nullish(w.pdfMetrics.ticketsSolved) ? w.pdfMetrics.ticketsReceived - w.pdfMetrics.ticketsSolved : null, fmt: v => nullish(v) ? '—' : (v > 0 ? '+' : '') + v, direction: 'down' },
+    { label: 'First response (min)', src: 'pdf', get: w => w.pdfMetrics && w.pdfMetrics.firstResponseMin, fmt: v => nullish(v) ? '—' : v + 'm', direction: 'down' },
+    { label: 'Total backlog', src: 'pdf', get: w => w.pdfMetrics && !nullish(w.pdfMetrics.open) && !nullish(w.pdfMetrics.pending) ? w.pdfMetrics.open + w.pdfMetrics.pending : null, fmt: v => nullish(v) ? '—' : v, direction: 'down' },
+    { label: 'Waiting reply', src: 'pdf', get: w => w.pdfMetrics && w.pdfMetrics.totalWaitingReply, fmt: v => nullish(v) ? '—' : v, direction: 'down' },
+    { label: '>90d', src: 'pdf', get: w => w.pdfMetrics && w.pdfMetrics.ultraLong90d, fmt: v => nullish(v) ? '—' : v, direction: 'down' },
+    { label: 'Not responded >24h', src: 'csv', get: w => w.csvMetrics && w.csvMetrics.over24hrOverdue, fmt: v => nullish(v) ? '—' : v, direction: 'down' },
+    { label: 'No agent response', src: 'csv', get: w => w.csvMetrics && w.csvMetrics.noAgentResponse, fmt: v => nullish(v) ? '—' : v, direction: 'down' },
+    { label: 'Oldest unanswered (d)', src: 'csv', get: w => w.csvMetrics && w.csvMetrics.oldestUnansweredDays, fmt: v => nullish(v) ? '—' : v + 'd', direction: 'down' },
+    { label: 'Projects active', src: 'tracker', get: w => w.projSnapshot && w.projSnapshot.total, fmt: v => nullish(v) ? '—' : v, direction: 'neutral' },
+    { label: 'Projects at risk', src: 'tracker', get: w => w.projSnapshot && w.projSnapshot.atRisk, fmt: v => nullish(v) ? '—' : v, direction: 'down' },
+    { label: 'Projects blocked', src: 'tracker', get: w => w.projSnapshot && w.projSnapshot.blocked, fmt: v => nullish(v) ? '—' : v, direction: 'down' },
+    { label: 'Portfolio slippage (d)', src: 'tracker', get: w => w.projSnapshot && w.projSnapshot.slippage, fmt: v => nullish(v) ? '—' : v + 'd', direction: 'down' }
+  ];
+  for (const r of rows) {
+    const vals = last.map(k => r.get(store.weeks[k]));
+    const latest = vals[vals.length - 1], prior = vals.length > 1 ? vals[vals.length - 2] : null;
+    const change = (!nullish(latest) && !nullish(prior)) ? latest - prior : null;
+    let ch = '';
+    if (change !== null && change !== 0 && r.direction !== 'neutral') {
+      const imp = (r.direction === 'up' && change > 0) || (r.direction === 'down' && change < 0);
+      ch = imp ? 'good' : 'bad';
+    }
+    const nums = vals.map(v => nullish(v) || isNaN(Number(v)) ? 0 : Number(v));
+    const mx = Math.max(1, ...nums.map(Math.abs));
+    const spark = vals.map((v, i) => {
+      const n = nullish(v) ? 0 : Number(v);
+      const h = Math.abs(n) / mx * 100;
+      const cur = i === vals.length - 1 ? ' current' : '';
+      const bg = nullish(v) ? 'background:#ccc' : '';
+      return `<div class="spark-bar${cur}" style="height:${h}%;${bg}" title="${formatDate(last[i])}: ${nullish(v) ? 'no data' : r.fmt(v)}"></div>`;
+    }).join('');
+    tbody.innerHTML += `<tr><td>${r.label}</td><td><span class="tag ${r.src}">${r.src}</span></td><td class="num">${r.fmt(latest)}</td><td class="num">${!nullish(prior) ? r.fmt(prior) : '—'}</td><td class="num ${ch}">${change === null ? '—' : (change === 0 ? '0' : (change > 0 ? '+' : '') + change)}</td><td><div class="spark">${spark}</div></td></tr>`;
+  }
+}
+function nullish(v) { return v === null || v === undefined; }
+
+/* ============================================================
+   ENTRY FORM
+   ============================================================ */
+function defaultWeekEnding() {
+  const d = new Date();
+  const diff = d.getDay() === 0 ? 7 : d.getDay();
+  d.setDate(d.getDate() - diff); d.setHours(0,0,0,0);
+  return d.toISOString().slice(0, 10);
+}
+document.getElementById('weekEnding').value = defaultWeekEnding();
+
+document.getElementById('pdfUpload').addEventListener('change', e => {
+  const f = e.target.files[0]; if (!f) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    const frame = document.getElementById('pdfFrame');
+    frame.src = reader.result;
+    document.getElementById('pdfHolder').style.display = 'block';
+    flash('entry-flash', 'PDF loaded — read tile numbers off the preview and type them into the fields.', 'info');
+  };
+  reader.readAsDataURL(f);
+});
+
+document.getElementById('csvFile').addEventListener('change', e => {
+  const f = e.target.files[0]; if (!f) return;
+  const r = new FileReader();
+  r.onload = () => { document.getElementById('csvPaste').value = r.result; flash('entry-flash', 'CSV loaded. Preview or Save to compute metrics.', 'info'); };
+  r.readAsText(f);
+});
+
+function onEntryTabShown() {
+  renderEntryScorecard();
+}
+function renderEntryScorecard() {
+  const store = loadStore();
+  const roll = portfolioRollup(store);
+  document.getElementById('entry-scorecard').innerHTML = [
+    `<div class="stat"><div class="n">${roll.total}</div><div class="l">Active</div></div>`,
+    `<div class="stat" style="background:var(--soft-good)"><div class="n">${roll.byRag['on-track']||0}</div><div class="l">On track</div></div>`,
+    `<div class="stat" style="background:var(--soft-warn)"><div class="n">${roll.byRag['at-risk']||0}</div><div class="l">At risk</div></div>`,
+    `<div class="stat" style="background:var(--soft-bad)"><div class="n">${roll.byRag.blocked||0}</div><div class="l">Blocked</div></div>`,
+    `<div class="stat"><div class="n">${roll.aged}</div><div class="l">Aged 14+d</div></div>`,
+    `<div class="stat"><div class="n">${roll.slippage}d</div><div class="l">Slippage</div></div>`
+  ].join('');
+
+  const aged = Object.values(store.projects).filter(p => p.status === 'active' && projectAge(p) >= 14);
+  const prompt = document.getElementById('aged-prompt');
+  if (aged.length) {
+    prompt.style.display = 'block';
+    document.getElementById('aged-prompt-list').innerHTML = aged.map(p =>
+      `<div style="padding:4px 0"><strong>SP ${escapeHtml(p.plan||'—')}</strong> — ${escapeHtml(p.name)} <span class="age-chip aged">${projectAge(p)}d</span></div>`
+    ).join('');
+  } else prompt.style.display = 'none';
+}
+
+function gatherEntry() {
+  const numOrNull = id => { const v = document.getElementById(id).value; if (v === '' || v === null) return null; const n = parseFloat(v); return isNaN(n) ? null : n; };
+  return {
+    weekEnding: document.getElementById('weekEnding').value,
+    billingHours: numOrNull('billingHours'),
+    billingAmount: numOrNull('billingAmount'),
+    pdf: {
+      ticketsReceived: numOrNull('pdfReceived'), ticketsSolved: numOrNull('pdfSolved'),
+      firstResponseMin: numOrNull('pdfFirstResponse'), fullResolutionHrs: numOrNull('pdfFullResolution'),
+      open: numOrNull('pdfOpen'), pending: numOrNull('pdfPending'),
+      totalWaitingReply: numOrNull('pdfWaiting'), ultraLong90d: numOrNull('pdfUltraLong')
+    },
+    csvText: document.getElementById('csvPaste').value.trim(),
+    narrative: {
+      whatMoved: document.getElementById('narrMoved').value,
+      whatStuck: document.getElementById('narrStuck').value
+    }
+  };
+}
+function anyPdf(p) { return Object.values(p).some(v => v !== null); }
+
+document.getElementById('previewBtn').addEventListener('click', () => {
+  const v = gatherEntry();
+  let csv = null;
+  if (v.csvText) { try { csv = computeCsvMetrics(v.csvText); } catch (e) { flash('entry-flash', e.message, 'bad'); return; } }
+  renderPreview(v, csv);
+  flash('entry-flash', 'Preview generated.', 'good');
+});
+document.getElementById('saveBtn').addEventListener('click', () => {
+  const v = gatherEntry();
+  if (!v.weekEnding) { flash('entry-flash', 'Set Week Ending first.', 'bad'); return; }
+  let csv = null;
+  if (v.csvText) { try { csv = computeCsvMetrics(v.csvText); } catch (e) { flash('entry-flash', e.message, 'bad'); return; } }
+  const store = loadStore();
+  const roll = portfolioRollup(store);
+  const existed = !!store.weeks[v.weekEnding];
+  store.weeks[v.weekEnding] = {
+    weekEnding: v.weekEnding,
+    billingHours: v.billingHours,
+    billingAmount: v.billingAmount,
+    pdfMetrics: anyPdf(v.pdf) ? v.pdf : null,
+    csvMetrics: csv,
+    narrative: v.narrative,
+    projSnapshot: { total: roll.total, onTrack: roll.byRag['on-track']||0, atRisk: roll.byRag['at-risk']||0, blocked: roll.byRag.blocked||0, slippage: roll.slippage, aged: roll.aged, byOwner: roll.byOwner, byStage: roll.byStage },
+    savedAt: new Date().toISOString()
+  };
+  saveStore(store);
+  flash('entry-flash', (existed ? 'Replaced' : 'Saved') + ' week ending ' + formatDate(v.weekEnding) + '.', 'good');
+  renderHistory();
+});
+
+function renderPreview(v, csv) {
+  const rows = [];
+  rows.push(['Week ending', formatDate(v.weekEnding)]);
+  if (v.billingHours !== null) rows.push(['Hours', v.billingHours.toFixed(1)]);
+  if (v.billingAmount !== null) rows.push(['Amount', '$' + formatMoney(v.billingAmount)]);
+  if (anyPdf(v.pdf)) {
+    rows.push(['— PDF —', '']);
+    if (v.pdf.ticketsReceived !== null) rows.push(['Received', v.pdf.ticketsReceived]);
+    if (v.pdf.ticketsSolved !== null) rows.push(['Solved', v.pdf.ticketsSolved]);
+    if (v.pdf.firstResponseMin !== null) rows.push(['First response', v.pdf.firstResponseMin + ' min']);
+    if (v.pdf.open !== null) rows.push(['Open', v.pdf.open]);
+    if (v.pdf.pending !== null) rows.push(['Pending', v.pdf.pending]);
+    if (v.pdf.totalWaitingReply !== null) rows.push(['Waiting reply', v.pdf.totalWaitingReply]);
+    if (v.pdf.ultraLong90d !== null) rows.push(['>90d', v.pdf.ultraLong90d]);
+  }
+  if (csv) {
+    rows.push(['— CSV —', '']);
+    rows.push(['<strong>Not responded &gt;24h</strong>', '<strong>' + csv.over24hrOverdue + '</strong>']);
+    rows.push(['No agent response', csv.noAgentResponse]);
+    rows.push(['Client waiting', csv.clientWaiting]);
+    rows.push(['Status mismatch', csv.statusMismatch]);
+    rows.push(['Stale >30d', csv.stale30d]);
+  }
+  const roll = portfolioRollup(loadStore());
+  rows.push(['— Portfolio —', '']);
+  rows.push(['Active', roll.total]);
+  rows.push(['On track / At risk / Blocked', `${roll.byRag['on-track']||0} / ${roll.byRag['at-risk']||0} / ${roll.byRag.blocked||0}`]);
+  rows.push(['Slippage', roll.slippage + ' days']);
+
+  document.getElementById('previewContent').innerHTML = '<table><tbody>' + rows.map(r => `<tr><td>${r[0]}</td><td class="num">${r[1]}</td></tr>`).join('') + '</tbody></table>';
+  document.getElementById('previewPanel').style.display = 'block';
+}
+
+function flash(id, msg, type) {
+  const el = document.getElementById(id); if (!el) return;
+  el.innerHTML = `<div class="flash ${type}">${msg}</div>`;
+  setTimeout(() => { if (el.innerHTML.includes(msg)) el.innerHTML = ''; }, 8000);
+}
+
+/* ============================================================
+   HISTORY
+   ============================================================ */
+function renderHistory() {
+  const store = loadStore();
+  const keys = Object.keys(store.weeks).sort().reverse();
+  const tbody = document.querySelector('#historyTable tbody'); tbody.innerHTML = '';
+  if (!keys.length) { tbody.innerHTML = '<tr><td colspan="17" style="text-align:center;color:var(--muted);padding:20px">No data yet.</td></tr>'; updateStorageNote(); return; }
+  for (const k of keys) {
+    const w = store.weeks[k], p = w.pdfMetrics || {}, c = w.csvMetrics || {}, ps = w.projSnapshot || {};
+    const backlog = (!nullish(p.open) && !nullish(p.pending)) ? p.open + p.pending : null;
+    const net = (!nullish(p.ticketsReceived) && !nullish(p.ticketsSolved)) ? p.ticketsReceived - p.ticketsSolved : null;
+    const cell = v => nullish(v) ? '—' : v;
+    tbody.innerHTML += `<tr>
+      <td>${formatDate(k)}</td>
+      <td class="num">${nullish(w.billingHours) ? '—' : w.billingHours.toFixed(1)}</td>
+      <td class="num">${nullish(w.billingAmount) ? '—' : '$' + formatMoney(w.billingAmount)}</td>
+      <td class="num">${cell(p.ticketsReceived)}</td>
+      <td class="num">${cell(p.ticketsSolved)}</td>
+      <td class="num">${nullish(net) ? '—' : (net > 0 ? '+' : '') + net}</td>
+      <td class="num">${cell(p.firstResponseMin)}</td>
+      <td class="num">${cell(backlog)}</td>
+      <td class="num">${cell(p.totalWaitingReply)}</td>
+      <td class="num">${cell(p.ultraLong90d)}</td>
+      <td class="num">${cell(c.over24hrOverdue)}</td>
+      <td class="num">${cell(c.oldestUnansweredDays)}</td>
+      <td class="num">${cell(ps.total)}</td>
+      <td class="num">${cell(ps.atRisk)}</td>
+      <td class="num">${cell(ps.blocked)}</td>
+      <td class="num">${cell(ps.slippage)}</td>
+      <td><button class="danger small" data-del="${k}">Del</button></td>
+    </tr>`;
+  }
+  tbody.querySelectorAll('button[data-del]').forEach(b => b.addEventListener('click', () => {
+    if (!confirm('Delete week ending ' + formatDate(b.dataset.del) + '?')) return;
+    const s = loadStore(); delete s.weeks[b.dataset.del]; saveStore(s); renderHistory();
+  }));
+  updateStorageNote();
+}
+
+document.getElementById('exportJsonBtn').addEventListener('click', () => {
+  const blob = new Blob([JSON.stringify(loadStore(), null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = 'matt-status-' + new Date().toISOString().slice(0, 10) + '.json'; a.click();
+  URL.revokeObjectURL(url);
+});
+document.getElementById('importJsonBtn').addEventListener('click', () => document.getElementById('importJsonFile').click());
+document.getElementById('importJsonFile').addEventListener('change', e => {
+  const f = e.target.files[0]; if (!f) return;
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const inc = JSON.parse(r.result);
+      if (!inc || (!inc.weeks && !inc.projects)) throw new Error('Not a valid backup');
+      const s = loadStore();
+      if (!confirm(`Import ${Object.keys(inc.weeks || {}).length} week(s) and ${Object.keys(inc.projects || {}).length} project(s)? Existing items with same ID/date will be overwritten.`)) return;
+      Object.assign(s.weeks, inc.weeks || {});
+      Object.assign(s.projects, inc.projects || {});
+      saveStore(s); renderHistory();
+      alert('Import complete.');
+    } catch (err) { alert('Import failed: ' + err.message); }
+  };
+  r.readAsText(f);
+});
+
+/* ============================================================
+   FORMATTING
+   ============================================================ */
+function escapeHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function escapeAttr(s) { return String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
+function formatDate(iso) { if (!iso) return ''; const d = new Date(iso); if (isNaN(d)) return iso; return d.toLocaleDateString('en-AU',{day:'2-digit',month:'short',year:'numeric'}); }
+function formatDateTime(iso) { if (!iso) return ''; const d = new Date(iso); if (isNaN(d)) return iso; return d.toLocaleDateString('en-AU',{day:'2-digit',month:'short',year:'numeric'}) + ' ' + d.toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit'}); }
+function formatMoney(n) { if (nullish(n)) return '—'; return Number(n).toLocaleString('en-AU',{minimumFractionDigits:0,maximumFractionDigits:0}); }
+
+/* ============================================================
+   INIT
+   ============================================================ */
+renderDashboard();
+updateStorageNote();
+</script>
+</body>
+</html>

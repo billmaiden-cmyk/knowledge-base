@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "df9fec9079d8dcbd",
+    "type": "split",
+    "children": [
+      {
+        "id": "4adce27b3ac212e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "033020a26a5ef95d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "entities/liberty-cf-deal-pipeline.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "liberty-cf-deal-pipeline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4f19e318f60953cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ad102f4119b55aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2572f829589d5537",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8febd26f64f3bbd1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "aa33ca69a11a08a3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "9f9b5bd90bafa1c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "16cbec3b2504939e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "94c457ade0bc4b6c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "2e394e1436d5dd45",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "e8b48ab8bfc40966",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6ebdbc0ecc65429a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "fe7f01e285311425",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "033020a26a5ef95d",
+  "lastOpenFiles": [
+    "briefings/2026-04-16.md",
+    "briefings/2026-04-16 2.md",
+    "entities/liberty-cf-deal-pipeline.md",
+    "log.md.tmp.32696.1776287739383",
+    "manifest.yaml.tmp.32696.1776287719073",
+    "briefings/2026-04-16.md.tmp.32696.1776287712174",
+    "briefings/2026-04-16.md.tmp.32696.1776287658749",
+    "briefings/2026-04-16.md.tmp.32696.1776287642410",
+    "log.md.tmp.45148.1776238956898",
+    "index.md.tmp.45148.1776238945725",
+    "manifest.yaml.tmp.45148.1776238934630",
+    "manifest.yaml.tmp.45148.1776238926233",
+    "concepts/liberty-management-advisory-messaging.md.tmp.45148.1776238788185",
+    "comms/whatsapp-antonella-2025-04-to-2026-04.md",
+    "briefings/2026-04-14.md",
+    "comms/liberty-project-es-ausgrid-2026-04-15.md",
+    "synthesis/public-to-private-opportunities.md",
+    "concepts/liberty-management-advisory-messaging.md",
+    "actions 2.md",
+    "mts-status.md",
+    "briefings/2026-04-13.md",
+    "actions.md",
+    "2026-04-05.md",
+    "coaching/2026-04-13-session-007.md",
+    "briefings/2026-04-12.md",
+    "Matt Wrigley.md",
+    "entities/agnes.md",
+    "concepts/keira-cos-protocol.md",
+    "concepts/google-ads-bridge-justification.md",
+    "coaching/2026-04-12-session-006.md",
+    "concepts/khoi-gtm-onboarding-plan.md",
+    "entities/a16z-perennial.md",
+    "briefings/2026-04-11.md",
+    "decisions.md",
+    "PRIMER.md",
+    "concepts/mts-bd-lead-automation.md",
+    "Untitled.canvas"
+  ]
+}

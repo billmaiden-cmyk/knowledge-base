@@ -1,18 +1,20 @@
 ---
 title: Antonella — Trading Program Status (WIP)
 created: 2026-04-05
-updated: 2026-04-06
+updated: 2026-04-25 10:30 AEST
 tags: [trading, antonella, status, wip, work-plan, three-setups, autoresearch]
 sources:
   - OneDrive / AI Hedge Fund / Action Priorities.pdf
   - OneDrive / AI Hedge Fund / Three_Setups_Framework.docx
   - Google Drive / Bill and Antonella comms / (all documents)
+  - WhatsApp exports (Antonella + Kiet) 14–21 Apr 2026
+  - Outlook "Security Update: Power BI Access & AI Integration" thread, 23 Apr 2026
 stale: false
 ---
 
 Current status and work plan for the Antonella/Bill quantitative trading system. This page tracks what is done, what is in progress, and what comes next.
 
-> **Last reviewed**: 2026-04-06 (via [[Trading Sync — 2026-04-06]])
+> **Last reviewed**: 2026-04-25 (via [[Trading Sync — 2026-04-25]]) — previous: [[Trading Sync — 2026-04-06]]
 
 ## System Architecture (Complete)
 
@@ -51,8 +53,9 @@ All methodology is fully designed. The gap is implementation — getting from de
 | `dist_vma9` (signed %) | ⚠️ Confirm with Kiet | VMA query conditions |
 | `vma9_direction` (Rising/Flat/Falling) | ⚠️ Confirm with Kiet — if computed, confirm formula is ATR-normalised | Setup 1 VMA version |
 | `base_number` (1, 2, 3, 4+) | ⚠️ Confirm with Kiet | Setup 2 position sizing |
+| `vma_weekly` (weekly VMA + OHLC) | ⏳ In progress — Kiet implementing since 17 Apr | Weekly regime filter across setups |
 
-*(Status updated 2026-04-06 per trading-sync chat. Bill confirmed VMA-9 done. VMA-18/27 deferred — VMA-9 sufficient for v1.)*
+*(Status updated 2026-04-06 per trading-sync chat. Bill confirmed VMA-9 done. VMA-18/27 deferred — VMA-9 sufficient for v1. Weekly VMA added 17 Apr 2026 per Bill's request; Kiet confirmed "I'll add VMA_weekly". Per 2026-04-25 sync, the three "confirm with Kiet" columns still need validation.)*
 
 ### Priority 2: Constructive Base v1 Improvements — ✅ DONE
 
@@ -66,9 +69,23 @@ Three improvements to the shared constructive base detector — all implemented 
 
 *(Status updated 2026-04-06 per trading-sync chat. Bill confirmed all three implemented by Kiet. The constructive_score in the DB now includes these improvements.)*
 
+### Priority 3: Power BI Queries — ✅ LIVE (Setups page shipped ~17 Apr)
+
+Kiet's Setups page went live ~17 April 2026 with all three setups implemented and buy/sell rules documented. Bill: *"I am very excited to review."* Mode A live signals are now visible.
+
+*(Updated 2026-04-25. Setups page is the first production output of the program. Weekly VMA queries can be added once the `vma_weekly` column lands.)*
+
+### Priority 4: Autoresearch — Kiet reviewing autoresearch.zip (sent 19 Apr)
+
+Bill sent Kiet an autoresearch.zip on 19 April — AI-assisted research integration scaffolding. Kiet is reviewing. Still blocked on:
+- Sebastian–Kiet data walkthrough (now 23+ days overdue as of 25 Apr). Sebastian has dedicated MTS mailbox + Power BI Pro + MFA provisioned 23 Apr, so infrastructure blocker is removed; remaining friction is calendar/scheduling.
+- Pending confirmation that `dist_vma9`, `vma9_direction`, `base_number` columns are live.
+
+*(Updated 2026-04-25. Research package — Performance Report, SMA Evaluation, Realistic Evaluation, Sell Rule Refinement — sent to Antonella 19 Apr; she is in reading mode.)*
+
 ## What Comes Next
 
-### Priority 3: Power BI Queries — Owner: Kiet (after Priority 1)
+### Priority 3 (legacy spec): Power BI Queries — Owner: Kiet (after Priority 1)
 
 Build 12 queries:
 
@@ -164,9 +181,11 @@ Priority 1.5 (Market Direction)
   └→ can run parallel to Priority 4
 ```
 
-**Single most important thing right now**: Confirm with Kiet that `vma9_direction`, `dist_vma9`, `base_number`, and `sma_10` are computed. Then update Setup 1 queries per [[Kiet — Setup 1 Query Changes & New Computed Fields]] and begin Priority 3 (Power BI queries).
+**Single most important thing right now (25 Apr 2026)**: Force the Sebastian–Kiet data walkthrough. Sebastian has been provisioned with a dedicated MTS mailbox + Power BI Pro + MFA as of 23 Apr (Andrew Tang). The infrastructure blocker is gone; the only friction left is calendar. Bill should open a three-way WhatsApp (Bill + Sebastian + Kiet) and lock a 60-minute slot this week. Without this walkthrough, autoresearch can't run against live DB structure even though Bill sent Kiet the autoresearch.zip on 19 Apr.
 
 *(Updated 2026-04-06. Setup 1 queries revised: SMA version added close > SMA-10; VMA version changed to vma9_direction IN (Flat, Rising) + ABS(close - vma_9) <= 1.0 × ATR14. See [[Kiet — Setup 1 Query Changes & New Computed Fields]] for Kiet's implementation spec.)*
+
+*(Updated 2026-04-25 per trading-sync. Setups page LIVE ~17 Apr. Constructive base v1 improvements DONE. Bill adopted sell rules and wrote Sell Rule Refinement doc. Weekly VMA in progress. autoresearch.zip with Kiet for review. Sebastian–Kiet walkthrough still the critical blocker.)*
 
 ## Related Pages
 

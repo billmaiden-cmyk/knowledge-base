@@ -20,6 +20,7 @@ _A human-readable catalog of all pages, organized by topic area. Pages connected
 | [[Chris Thorndyke]] | Bill's new tax accountant at Altus (replacing Jeremy). Met ~8 Apr 2026. Awaiting ATO remission decision + FY2025 finalisation within weeks. Likely not material liability. |
 | [[Maiden Family Superannuation Fund]] | Bill's SMSF. ABN: 80 889 539 247, ESA: BGLSF360, Trustee: Maiden Investments 2 Pty Ltd. Sole asset: Connected Medical Solutions shares. Administered by Altus Financial. |
 | [[Liberty CF Deal Pipeline]] | Live tracker of Liberty Corporate Finance deal prospects. First entry: EML Payments (ASX: EML) — price off materially, PE interest, Anthony Hynes CEO. |
+| [[Modra Technology Pty Ltd]] | ABGF portfolio company. Robotics/creel manufacturer for global tufted carpet industry, Warragul VIC. $35m valuation, ABGF 40% stake. CEO Craig Fuller, Chair Michael Morley, Founder Tim Modra. Bill joining board 28 Apr 2026. |
 
 ---
 
@@ -67,6 +68,7 @@ _All concepts, architectures, and roadmaps that are components of MTS as a busin
 |---|---|
 | [[Liberty — Management-Side Advisory Key Messages & Objection Handling]] | Living sales asset: process mechanics (term sheet → data room → bidder response), conviction chain (management investment as "I believe" signal), life-changing quantum, CEO bandwidth, key messages (why now, vs lawyers/banks, the other side), objection register, email architecture principles for equipping internal champions. |
 | [[Liberty — Project ES (Ausgrid) Divisional CEO Email]] | Project ES comms: original email + v3 refined draft equipping divisional CEO to persuade Group CEO (who said "not yet"). Full iteration log with v1→v2→v3 changes. WIP — continued refinement flagged. |
+| [[Modra Board Brief — Tuesday 28 April 2026 (Board Meeting No 18)]] | Bill's first Modra board prep. Director's read on March 26 trading; cash flow forecast analysis with Apr 26 → Jun 27 monthly trajectory; 3 high-impact CEO questions (FY28 pipeline framing, Tarkett walkaway, services diversification ambition); Chair Michael Morley profile; Bill's ABGF posture. |
 
 ---
 
@@ -186,6 +188,15 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 
 ---
 
+## Weekly Reviews
+*End-of-week synthesis — what got done, what slipped, wealth-plan drift, next-week setup*
+
+| Page | Summary |
+|---|---|
+| [[Weekly Review — Week 17, 2026 (Mon 20 – Fri 24 Apr)]] | Misha/Dragonfly surfaced as real MTS strategic interest; Matt role design (Q01) became the quarter's open question. Liberty got ~0.5 hrs; ABGF 0. Matt delivered 12 hrs vs 22.5 target → coaching 008 reframe (self-concept mismatch, three options). MTS operational drag (BPAY Day 4, laptop Day 4, Strata Staff 15-day overdue) accumulated. Wiki health: no stale strategic pages; many missing entity pages for active people (Keira, Toan, Tom Anning, Khoi, Misha, Sebastian, Antonella, Kiet, Sean D'Souza). |
+
+---
+
 ## Briefings
 *Daily integrated briefings — open this first each morning*
 
@@ -226,6 +237,7 @@ _Session notes and reflections from personal coaching sessions. Coach integrates
 |---|---|
 | [[Bill Maiden — Generational Wealth Plan]] | Master synthesis of all three wealth engines, critical dependencies, operating rhythm, risk map, and family legacy plan; $5m → $53m in 5 years |
 | [[Trading Sync — 2026-04-06]] | First position sync: methodology complete, blocked on Kiet infrastructure (VMA + base numbers). 5 divergences, 5 decisions pending. Sebastian-Kiet walkthrough is critical blocker |
+| [[Trading Sync — 2026-04-25]] | Second sync. Infrastructure unblocked: Setups page LIVE, VMA-9 + constructive base v1 done, Sebastian got Power BI Pro access 23 Apr. Bill adopted sell rules. Sebastian–Kiet walkthrough still 23 days overdue. New channel: P2P Liberty pipeline. 5 decisions pending (force walkthrough, FDV sizing, re-book catchup) |
 | [[Coaching App Architecture — Delivery Options]] | Evaluates four delivery options for daily coaching: Claude Code local (current), Claude Dispatch (watch), OpenClaw (future), Remote Agent (rejected). |
 | [[MTS and Trading System Architecture Parallels]] | Shows MTS agent swarm and hedge fund automation share the same ingest→validate→act→track→report→improve pattern |
 | [[Public-to-Private Opportunities — Liberty x Antonella Deal Flow]] | P2P pipeline: 14 ASX targets (EML, MVF, BAP, EDV, OFX, etc.) surfaced via Antonella/Ron network. Tiered by actionability. Trading system as deal origination engine |

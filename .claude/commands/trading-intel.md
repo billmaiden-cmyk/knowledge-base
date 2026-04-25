@@ -14,6 +14,12 @@ Bill manages a **$2.08M Totality account** but has explicitly said he's been und
 
 ### Step 1: Gather Inputs (last 24h)
 
+**Signa (PRIMARY structured feed):**
+- Read the most recent `wiki/synthesis/signa-{YYYY-MM-DD}.md` (produced by `/signa-pull` at 12:30 PM AEST the previous day)
+- This is the structured quant feed: Tier 3/2 signals, multi-timeframe confluence, ERN catalysts, regime context
+- Treat Signa's Tier 2/3 picks as the SPINE of today's brief — newsletter content is qualitative confirmation around them, not the primary signal
+- If `wiki/synthesis/signa-{date}.md` is missing or stale (>2 days), flag in Source Health as "Signa data not refreshed — Bill needs to keep Chrome open with Signa logged in"
+
 **Gmail (`billmaiden@gmail.com`):**
 
 Use `mcp__c2aa7e97-1697-49a3-91ba-209dfa301c24__search_threads` for each of the following queries (last 24h each). For each match, use `mcp__c2aa7e97-1697-49a3-91ba-209dfa301c24__get_thread` to read full content.
@@ -47,19 +53,23 @@ For each thread, extract:
 
 ### Step 2: Synthesize
 
-**Cross-source signal weighting:**
+**Cross-source signal weighting (Signa-led):**
 
-For each unique ticker that appears in any source today, build a row:
+Build a unified ticker table with Signa's Tier as the primary sort:
 
-| Ticker | Direction | Sources today | Cumulative conviction | Held? |
-|--------|-----------|---------------|-----------------------|-------|
+| Ticker | Signa Tier | Signa Strength | Newsletter sources today | Confluence flag | Held? |
+|--------|-----------|----------------|--------------------------|-----------------|-------|
 
 Score conviction by:
-- 1 source mentioning = baseline
-- 2+ sources same direction = stronger signal (bold)
-- "MUST READ" or all-caps treatment = high conviction marker
-- Same ticker in yesterday's intel + today = continuing thesis (not duplicate)
-- New ticker not in last 7 days of intel = fresh signal
+- **Signa Tier 3** = highest baseline (top of brief regardless of newsletter coverage)
+- **Signa Tier 2** = strong (always include)
+- **Signa Tier 1** = include only if confirmed by ≥1 newsletter source
+- Newsletter-only signal (no Signa) = "watch list" — flag but don't elevate
+- 2+ newsletters same direction WITHOUT Signa = unusual, surface as "newsletter-only consensus"
+- Multi-timeframe BULLISH on all 3 (1H/4H/1D) per Signa Action Card = confluence ✅ (boost)
+- ERN tag (📅) + Tier ≥2 = catalyst-driven setup, surface separately
+- Same ticker in yesterday's intel + today = continuing thesis (track follow-through)
+- New ticker not in last 7 days = fresh signal
 
 **Categorize:**
 - **Today's high-conviction** (2+ source agreement OR explicit must-read flagging)

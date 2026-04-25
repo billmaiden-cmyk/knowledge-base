@@ -1,11 +1,12 @@
 ---
 title: Bill Maiden
 created: 2026-04-05
-updated: 2026-04-05
-tags: [person, founder, private-equity, strata, recovery, psychology]
+updated: 2026-04-25 09:55 AEST
+tags: [person, founder, private-equity, strata, recovery, psychology, anger-as-information, standard-projection, tolerance-loop]
 sources:
   - raw/text 2.txt
   - raw/Complete_Wealth_Plan_Final.md
+  - Coaching session 2026-04-24 (session 008) — anger→action reflex, standard-projection, tolerance-loop patterns
 ---
 
 Bill Maiden is an Australian entrepreneur, investor, and CEO with a background in private equity and operating leadership. He is the founder and CEO of [[More Than Strata (MTS)]] and holds a 16% equity stake in [[Liberty Corporate Finance]]. He has two sons, Tom (14) and James (12), and a partner, Agnes. His decision-making is shaped by a long history of pressure, trauma, and rebuilding, and his psychological profile is central to understanding his strategic choices.
@@ -83,6 +84,14 @@ See [[Achievement-Based Self-Worth]] for the primary psychological driver.
 4. **Relationship with Agnes:** Ambivalent. The relationship was born in chaos and secrecy but has been one of the few constants since everything fell apart.
 
 5. **Identity as "the $100m man":** Believes his natural level is running large platforms and PE-scale outcomes. Running MTS at $1.3m revenue feels like a comedown.
+
+### Patterns surfaced in coaching session 008 (24 Apr 2026, applied to Matt situation but generalisable)
+
+6. **Anger → action reflex.** When activated by a clear violation (Matt missing the 22.5hr target by 10hrs after agreeing 5 days prior), Bill's nervous system reaches for something to do — call, message, solve. The activation wants a release valve. *The work is to slow the reflex enough that the feeling can inform the decision rather than govern it.* Anger as information ≠ anger as instruction.
+
+7. **Standard-projection.** Bill's intensity of expectation can become its own distortion when a direct report doesn't match his own work standard. *"I would never do that"* — meaning "I showed up straight, prepared, delivered" — is legitimate as an operational expectation but can shade into projection when the other person isn't Bill. Useful to notice in moments when anger feels especially personal.
+
+8. **Tolerance-loop.** Bill has been carrying Matt while being frustrated by carrying him — paying $161k for ~13 hrs/week of billing while resenting the gap. *Cannot keep doing both.* At some point in 2026 Bill picks: stop carrying, or stop being frustrated. The Friday session 008 anger was tolerance catching up. Generalisable beyond Matt — anywhere Bill is paying (financially or energetically) for an arrangement that frustrates him.
 
 ## What Bill Says He Wants
 

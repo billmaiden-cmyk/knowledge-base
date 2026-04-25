@@ -34,13 +34,31 @@ Run in parallel:
 
 **Wealth Plan:**
 - Read `wiki/synthesis/bill-maiden-generational-wealth-plan.md`
-- Read `wiki/synthesis/mts-one-page-plan-2026.md`
+- Read `wiki/synthesis/mts-one-page-plan-2026.md` (or `mts-one-page-plan-2026 2.md` — iCloud variant)
 - Read the most recent `wiki/synthesis/trading-sync-*.md`
 
 **Calendar:**
 - Use `outlook_calendar_search` to pull this week's events from `bmaiden@morethanstrata.com.au`
 - Classify each by initiative (MTS / Liberty / ABGF / Trading / Personal)
 - Calculate approximate time allocation by initiative
+
+### Step 2.5: Strategic Position Page Sweep
+
+Strategic synthesis pages (wealth plan, mts-one-page, role-design pages, M&A positioning) drift out of sync with reality if nothing forces refresh. This step is the forcing function.
+
+For each strategic synthesis page in `wiki/synthesis/` that is **NOT** a project synthesis (e.g. excludes the Matt-ticket-* series, kat-1on1-deliverables, weekly-review-*) and is **NOT** a cadenced output (excludes trading-sync-*, weekly-review-*):
+
+1. Check the file's `updated` field in its frontmatter
+2. Compare to today's date
+3. If >30 days old AND the topic is still active in this week's briefings/coaching/decisions → **refresh the page** with current state. Do not rewrite the whole thing — append a new dated section reflecting current state, mark older sections as historical context if they conflict.
+4. If >30 days old AND the topic has gone quiet → mark `stale: true` in the page's manifest entry but leave the file alone. List in the weekly review under "Stale strategic pages" so Bill can decide whether to retire or refresh.
+5. If new strategic questions were opened in this week's coaching (check `wiki/strategic-questions.md` for entries added since last weekly review), and they don't yet have a dedicated synthesis page → flag in the weekly review as "Strategic synthesis pages that should be created."
+
+Also sweep entity pages for active people referenced in this week's briefings:
+- For each person referenced ≥3 times in this week's briefings, check their entity page `updated` field
+- If >14 days old → flag in the weekly review under "Stale entity pages — active people"
+
+Don't auto-update entity pages from the weekly review — that's coaching's job. Just surface the gap.
 
 ### Step 3: Generate the Weekly Review
 
@@ -106,6 +124,19 @@ sources:
 | # | Owner | Action | Initiative | Priority | Days Open |
 |---|---|---|---|---|---|
 {Pull all unresolved HIGH/CRITICAL items from this week's briefings}
+
+## Wiki Health (from Step 2.5 sweep)
+
+**Stale strategic pages** (>30 days, topic still active — refresh recommended):
+{list with last-updated date}
+
+**Stale entity pages** (>14 days, person referenced ≥3 times this week — flag for next coaching session):
+{list with last-updated date}
+
+**Strategic synthesis pages that should be created** (new strategic questions opened this week without a dedicated synthesis page):
+{list}
+
+{If everything is fresh, say "Wiki health: ✅ all referenced pages within freshness thresholds."}
 
 ## Coaching Patterns This Week
 

@@ -99,7 +99,29 @@ sources: []
 [Coach's honest read on where Bill is and what might serve him next]
 ```
 
-Update `wiki/manifest.yaml` and `wiki/index.md` when creating new coaching pages.
+Update `wiki/manifest 2.yaml` and `wiki/index 2.md` when creating new coaching pages.
+
+**Propagate strategic frames to entity pages (this step is mandatory if applicable):**
+
+Coaching sessions often shift the operative frame about a person — a direct report, a stakeholder, a family member, or Bill himself. When that happens, the relevant entity page MUST be updated, or the new frame is invisible to future briefings and decisions.
+
+Decision rule: if the session produced any of the below, update the entity page:
+- A new diagnosis or framing about someone (e.g. "Matt's behaviour is self-concept mismatch, not laziness" — session 008)
+- A new pattern Bill is noticing in himself (e.g. "anger → action reflex" — session 008)
+- A material change in how to work with the person (e.g. "the question is now role design, not billing management")
+- A new decision window or set of options (e.g. "by mid-May, decide restructure / accept / exit")
+
+How to update the entity page:
+1. Read the current `wiki/entities/<person>.md`
+2. Add a new dated section near the top: `## Current Frame — {short title} *(Updated YYYY-MM-DD, coaching session NNN)*`
+3. Write the new frame in 1–4 paragraphs. Cross-link to `[[wiki/strategic-questions.md]]` if the session opened a strategic question.
+4. Mark the previous frame as superseded but **do not delete it** — append `*(Original frame — YYYY-MM-DD, session NNN — superseded by session NNN above but kept for history)*` to its existing heading.
+5. Update the entity's frontmatter: bump `updated`, add the coaching session to `sources`, add any new pattern tag.
+6. If the session opened a new strategic question, also append it to `wiki/strategic-questions.md` with the decision window.
+
+For Bill himself: the same rules apply to `wiki/entities/bill-maiden.md`. Patterns Bill notices about himself in coaching belong there, in the "Core Psychological Themes" section, dated and source-attributed.
+
+**Append to `wiki/log.md`:** `## [YYYY-MM-DD HH:MM AEST] coaching | session NNN — {one-line theme; entities updated: [Matt Wrigley, Bill Maiden]; strategic questions opened: [Q01]}`
 
 ## What You Are NOT
 

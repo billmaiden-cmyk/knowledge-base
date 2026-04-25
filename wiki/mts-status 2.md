@@ -1,7 +1,7 @@
 ---
 title: MTS Health Dashboard
 created: 2026-04-12 21:00 AEST
-updated: 2026-04-25 09:00 AEST
+updated: 2026-04-26 06:30 AEST
 tags: [mts, status, dashboard, operations, meta]
 ---
 
@@ -18,7 +18,7 @@ MTS at a glance. Five traffic lights. Updated by every agent that touches MTS da
 | **Team** | 🟡 | Keira | 2026-04-25 | Gino handed over mid-April — Toan operational. Matt performance concern active (billing 12hr vs 22.5hr target — Tuesday 1:1 is accountability container). Mary returned from AL 24 Apr. VN ops triage partner launching week of 27 Apr (A73). |
 | **Compliance** | 🟡 | Keira / Mary | 2026-04-25 | **A49 SCHEDULED** — StrataMax three-way trust reconciliation training Tue 28 Apr 14:00 AEST with Lisa McCoustra. Compliance time bomb now has a container. SP102232 Aylie Brutman ATO payment plan still open (A04). |
 | **Billing** | 🟡 | Vy / Toan | 2026-04-25 | **Vy completed April Sch B reconciliation** (24 Apr) — trust account bedding in well post-Gino. Duplicate invoice process in flight (StrataMax permissions needed). SP 80436 BPAY error still unresolved Day 4 (A82). |
-| **Operations** | 🔴 | Bill / Tim | 2026-04-25 | **A90 CRITICAL** — second GoDaddy M365 subscription (Vietnamese account #148478905) faces permanent deletion 26 Apr. Separate from Tim's renewal 23 Apr. Must act TODAY. Strata Staff INV-2795 $1,861.92 now 15 days overdue (A89). |
+| **Operations** | 🔴 | Bill / Tim | 2026-04-26 | **A90 DELETION DAY** — Vietnamese M365 account #148478905 faces permanent deletion TODAY. Two more reminders overnight, still unactioned. Five-minute message to Tim resolves. Strata Staff INV-2795 $1,861.92 now 16 days overdue (A89). |
 | **Growth** | 🟢 | Keira / Khoi | 2026-04-25 | Khoi Nguyen starts 13 May. New HubSpot lead: James Trimble, 10 Eltham St Lewisham (9 lots, Google Ads, A91). Pipeline active. Misha/Dragonfly second meeting proposed Thu 7 May (A87). GTM producing. |
 
 ---
@@ -29,7 +29,7 @@ MTS at a glance. Five traffic lights. Updated by every agent that touches MTS da
 - **Any amber:** Keira is handling it. Review the Notes column — you may want to ask for an update but no decision is needed.
 - **Any red:** Something needs your call. The Notes will say what.
 
-**Operations is RED** because GoDaddy renewal is unconfirmed with 48 hours to domain expiry. One message to Keira resolves this.
+**Operations is RED** because the GoDaddy Vietnamese M365 subscription (A90) faces permanent deletion TODAY (26 Apr). One message to Tim resolves this.
 
 ---
 

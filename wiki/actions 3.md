@@ -1,7 +1,7 @@
 ---
 title: Open Actions Tracker
 created: 2026-04-11 14:30 AEST
-updated: 2026-04-25 08:00 AEST
+updated: 2026-04-26 06:30 AEST
 tags: [actions, tracker, meta, governance]
 ---
 
@@ -9,7 +9,9 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 **How to use the ✓ and Comment columns:** As you read in Obsidian, type `✓` or `x` in the ✓ column when you've done an item. Add a free-form note in the Comment column (e.g. "blocked by X" or "done — sent to Tim 10am"). The next morning briefing reads these inline, moves ✓ items to the Completed table, and captures comments into the next briefing's "Yesterday's reconciliation" line. You don't need to switch out of Obsidian.
 
-*Last synced from: Daily briefing 25 April 2026, 09:00 AEST (Coach's Kickoff run)*
+*Last synced from: Daily briefing 26 April 2026, 06:30 AEST (Coach's Kickoff run)*
+
+**Updates 26 Apr (Sunday):** A90 still open — TODAY is GoDaddy Vietnamese deletion day (2 more renewal reminders overnight, no action yet). Trading pipeline DEGRADED — `/signa-pull` did not produce a file 25 Apr 12:30pm. New action: A95 restore Signa data pipeline (Chrome login + leave running). New action: A96 read March 2026 Modra Board Report before Tue 28 Apr. No calendar today. A82 BPAY Day 5, A83 laptop Day 5, A89 Strata Staff 16 days overdue. Matt cleanup A67–A70 carried — Monday 1:1 is the accountability container. No inline ✓/Comment notes from Bill on yesterday's briefing (all empty).
 
 **Updates 25 Apr (ANZAC Day):** 🔴 NEW CRITICAL: A90 — second GoDaddy M365 subscription (Vietnamese account, customer #148478905) warning permanent deletion 26 Apr. This is separate from the subscription Tim renewed 23 Apr. Renew immediately. A82 BPAY Day 4. A83 laptop Day 4. A89 Strata Staff 15 days overdue. Vy completed Sch B reconciliation — duplicate invoice process in flight (elevated StrataMax permissions needed). New lead: A91 James Trimble, Lewisham 9 lots. Matt A67–A69 now 3 days overdue. A70 due date passed (Fri 24).
 
@@ -27,7 +29,7 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 | # | Owner | Action | Initiative | Due | Days Overdue | ✓ | Comment |
 |---|-------|--------|-----------|-----|-------------|---|---------|
-| A90 | Bill/Tim | **🔴 GoDaddy M365 Vietnamese account — RENEW IMMEDIATELY.** Separate subscription from the one Tim renewed 23 Apr. Customer #148478905. Product: "M365 Email Thiết yếu với Bảo mật" (quarterly). Expired 6 Apr. **Permanent deletion 26 Apr (TOMORROW).** Confirm which accounts are affected and renew today. | MTS | **TODAY 25 Apr** | — |
+| A90 | Bill/Tim | **🔴 GoDaddy M365 Vietnamese account — DELETION DAY.** Customer #148478905. Two more renewal reminders overnight (01:11 + 05:06 AEST 26 Apr). **Permanent deletion 26 Apr (TODAY).** Five-minute message to Tim resolves it. | MTS | **TODAY 26 Apr** | 1 |
 | ~~A86~~ | ~~Bill/Tim~~ | ~~GoDaddy M365 email renewal~~ — **DONE.** Tim renewed (order #3939171714, 23 Apr). New accounts for Khoi + Sebastian provisioned, Power BI Pro purchased. Moved to Completed. | MTS | ✅ 23 Apr | — |
 | A47 | Bill/Keira | **Confirm Gino's actual last day (Tue 14 or Wed 15)** — discrepancy between wiki (14 Apr) and Keira messages (15 Apr). Must know to manage training hours. | MTS | **Today 14 Apr AM** | — |
 | ~~A30~~ | ~~Keira/Tim~~ | ~~GoDaddy renewal~~ — **DONE.** Auto-renewal receipt confirmed 19 Apr (order #4067821280). Moved to Completed. | MTS | ✅ 19 Apr | — |
@@ -76,6 +78,8 @@ Live tracker of open action items across all initiatives. Updated after each bri
 | A92 | Bill | **ABGF data ingest workaround** — ABGF systems locked down (no calendar/email MCP access). Set up weekly drop of board packs / important threads to `raw/abgf/` for `/ingest`. Or forward priority threads to billmaiden@gmail. | ABGF | This week |
 | A93 | Bill / Andrew Tang / Tom Anning | **Liberty M365 migration off Cooper Parry** — Tom wants Liberty on his own instance. Andrew Tang to assist. Once on Tom's instance, Outlook MCP picks up Liberty calendar/email like MTS. Target: end May. | LIBERTY | End May |
 | A94 | Bill | **Design lead follow-up campaign for old MTS leads** — Bill's stated biggest single action item. Khoi tightening Google Ads is downstream; upstream lead nurture is undesigned. | MTS/GTM | This week |
+| A95 | Bill | **Restore Signa data pipeline** — open Chrome and log in to `app.getsigna.ai/dashboard/signals`, leave running so 12:30pm `/signa-pull` captures fresh data tomorrow. Without this, daily `/trading-intel` runs hollow. | TRADING | **Today 26 Apr** |
+| A96 | Bill | **Read March 2026 Modra Board Report** (Patrick Verlaine fwd 24 Apr) — substantive input for Tue 28 Apr Modra all-day. Already filed in `tools/modra-board-prep/`. | ABGF | Mon 27 Apr |
 
 ---
 

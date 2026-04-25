@@ -19,6 +19,26 @@ pages:
 
   # ─── Briefings ─────────────────────────────────────────────────────────────
 
+  - path: wiki/briefings/2026-04-26.md
+    title: "Daily Briefing — 26 April 2026 (Sunday)"
+    type: synthesis
+    tags: [briefing, daily, executive-synthesis, coaching-kickoff]
+    sources:
+      - Outlook (bmaiden@morethanstrata.com.au) last 24h
+      - Gmail (billmaiden@gmail.com) last 24h
+      - Slack (Bill self-DM, MTS channels)
+      - Outlook Calendar (26-28 Apr)
+      - wiki/actions 3.md
+      - wiki/strategic-questions.md
+      - wiki/decisions.md
+      - wiki/briefings/2026-04-25.md
+      - wiki/synthesis/trading-intel-2026-04-26.md
+      - wiki/synthesis/trading-sync-2026-04-25.md
+      - wiki/coaching/2026-04-24-session-008.md
+    source_date: 2026-04-26
+    created: 2026-04-26 06:30 AEST
+    updated: 2026-04-26 06:30 AEST
+
   - path: wiki/briefings/2026-04-25.md
     title: "Daily Briefing — 25 April 2026 (Saturday / ANZAC Day)"
     type: synthesis
@@ -1272,6 +1292,17 @@ pages:
     source_date: 2026-04-24 to 2026-04-25
     created: 2026-04-25 04:00 AEST
     updated: 2026-04-25 04:00 AEST
+
+  - path: wiki/synthesis/trading-intel-2026-04-26.md
+    title: "Trading Intel — 2026-04-26"
+    type: synthesis
+    tags: [trading, intel, daily, signal-aggregation, pipeline-degraded]
+    sources:
+      - wiki/synthesis/trading-intel-2026-04-25.md (carry-forward)
+      - wiki/synthesis/trading-sync-2026-04-25.md (Antonella sync context)
+    source_date: 2026-04-25 to 2026-04-26
+    created: 2026-04-26 04:00 AEST
+    updated: 2026-04-26 04:00 AEST
 
   - path: wiki/concepts/antonella-powerbi-direct-access.md
     title: Antonella — Power BI Direct Access (API & Database Integration)

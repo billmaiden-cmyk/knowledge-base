@@ -1258,6 +1258,21 @@ pages:
     created: 2026-04-25 10:30 AEST
     updated: 2026-04-25 10:30 AEST
 
+  - path: wiki/synthesis/trading-intel-2026-04-25.md
+    title: "Trading Intel — 2026-04-25"
+    type: synthesis
+    tags: [trading, intel, daily, signal-aggregation]
+    sources:
+      - Gmail — DannyTrades (Patreon), 24-25 Apr 2026 (15 emails)
+      - Gmail — AnnualizeThis (Substack), "UPDATED- Photonics Thematic", 24 Apr 2026
+      - Gmail — Hugh Hendry (Substack + Patreon/Bingo), 24 Apr 2026
+      - Gmail — Todd Harrison (Substack), 24 Apr 2026
+      - Gmail — Pomp (Substack), 24 Apr 2026
+      - Gmail — AFR newsletter, 24 Apr 2026
+    source_date: 2026-04-24 to 2026-04-25
+    created: 2026-04-25 04:00 AEST
+    updated: 2026-04-25 04:00 AEST
+
   - path: wiki/concepts/antonella-powerbi-direct-access.md
     title: Antonella — Power BI Direct Access (API & Database Integration)
     type: concept

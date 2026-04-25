@@ -57,7 +57,8 @@ Bill manages four concurrent initiatives across fragmented channels. This briefi
 - If none exist, note it — Bill may need to export and run `/ingest-whatsapp`
 
 **Trading State (always surface in briefing — Bill won't open the file separately):**
-- Read the most recent `wiki/synthesis/trading-sync-*.md` — note its date
+- Read **today's** `wiki/synthesis/trading-intel-{today}.md` if it exists (produced by `/trading-intel` at 4am AEST). This is the freshest daily signal aggregation across DannyTrades, ShardiB2, Sovereign Sense, etc. **Use this as the primary trading content in today's briefing.**
+- Read the most recent `wiki/synthesis/trading-sync-*.md` — note its date (the heavier weekly Antonella synthesis)
 - Read `wiki/concepts/antonella-trading-program-status.md` for current state
 - Compute days since last trading-sync. If **>7 days**, this is a 🔴 fresh-sync needed flag.
 - Search Gmail for recent `from:antonella` (last since-date), and check `wiki/comms/whatsapp-antonella-*.md` for activity since last sync. If non-zero, surface counts in briefing.
@@ -187,8 +188,15 @@ sources:
 
 ## Trading Status
 
-{Always include — Bill should never have to open trading-sync separately to know what's outstanding.}
+{Always include — Bill should never have to open trading-intel or trading-sync separately to know what's outstanding.}
 
+**Today's intel (from /trading-intel 4am run — wiki/synthesis/trading-intel-{today}.md):**
+- **Top picks:** {3-5 highest-conviction tickers with direction + 1-line thesis}
+- **Actionable today:** {1-2 specific moves OR "watch only"}
+- **Continuing themes:** {tickers still being flagged from prior days}
+- **Diff vs portfolio:** {summary if portfolio file exists, else flag "add wiki/trading-portfolio.md"}
+
+**Antonella sync state (from latest /trading-sync — weekly):**
 - **Last sync:** {YYYY-MM-DD, days ago}. {🔴 if >7 days — fresh sync needed.}
 - **Antonella activity since sync:** {N Gmail, N WhatsApp messages — list top thread subjects if non-zero}
 - **Open positions / divergences:** {2–4 bullets from latest sync — what's unresolved}

@@ -1,13 +1,49 @@
 ---
 title: Decisions Log
 created: 2026-04-11 14:30 AEST
-updated: 2026-04-12 22:00 AEST
+updated: 2026-04-25 13:00 AEST
 tags: [decisions, log, meta, governance]
 ---
 
 Running log of significant decisions — strategic, operational, and structural. Newest at the top. Routine or reversible decisions are not logged here; this is for choices that lock in a direction, commit resources, or reflect a material change in strategy.
 
 Format: date | domain | decision | rationale | source
+
+---
+
+## [2026-04-25] MTS/GTM | Lead follow-up campaign design = the single biggest action item
+
+Bill's stated priority — explicitly named in the 25 Apr state-of-nation update as *"probably my biggest action item."* The MTS GTM plan has not advanced even though Khoi is tightening Google Ads. Khoi's work is downstream optimisation; the upstream lead nurture for old MTS leads is undesigned.
+
+**Why:** Without the upstream campaign, every paid lead Khoi generates falls into a leaky bucket. The Google Ads spend ROI is bounded by what happens after the click. This is the conversion-rate lever, not the traffic lever.
+
+**How to apply:** A94 created. Bill owns. Should land before Khoi starts 13 May so he has the campaign in place when his GTM ramp begins.
+
+**Related:** [[Khoi Nguyen]] | A94 in actions tracker
+
+---
+
+## [2026-04-25] MTS/M&A | EQT preferred over Misha for MTS sale; Arun silent
+
+Bill's stated ranking (25 Apr): EQT first (credibility + scale), Misha second (more likely to convert but distrust + scale concern), Arun third (no response).
+
+**Why:** EQT outcome is bigger and more credible; worth the slower cadence. Misha is the convertible deal but Bill doesn't like him personally and the Dragonfly platform may not get the scale needed.
+
+**How to apply:** Misha second meeting Thu 7 May (A87) handled with explicit positioning — not a sales posture. EQT cadence driven by them. Arun: don't chase.
+
+**Related:** Q02 in [[wiki/strategic-questions.md]] | A87 in actions tracker
+
+---
+
+## [2026-04-25] META | Liberty role formally 2.5 days/week with Tom Anning
+
+Bill clarified (25 Apr) that Liberty is a defined 2.5-days-per-week allocation working with Tom Anning. This is the concrete structure underneath "Liberty officially started week of 14 Apr."
+
+**Why:** Operating discipline. The 2.5d/week is the protected time the wealth plan implicitly assumed. Anything that erodes this (e.g. MTS daily ops, Matt situation) trades against Liberty pipeline development.
+
+**How to apply:** Tu-Th protected time. Calendar conflicts (e.g. Modra all-day Tue 28 Apr) need explicit triage. Briefing should flag any week where Liberty time falls below 2.5d.
+
+**Related:** [[Liberty Corporate Finance]] | [[Tom Anning]] | Q03 in strategic-questions.md
 
 ---
 

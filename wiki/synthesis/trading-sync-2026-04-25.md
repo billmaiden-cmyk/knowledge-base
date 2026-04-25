@@ -23,6 +23,21 @@ sources:
   - Outlook "Security Update: Power BI Access & AI Integration" thread, 23 Apr 2026
 ---
 
+## ⚠️ Bill's Corrections (added 2026-04-25 ~13:00 AEST after this sync was generated)
+
+Bill reviewed the sync and supplied corrections that supersede some of what was synthesised:
+
+1. **Antonella in-person — DID happen Thursday (24 Apr).** The "Decision 3: confirm/reschedule in-person" item below is RESOLVED. Next step: autoresearch from Kiet ships today or tomorrow, Bill will run it with Antonella.
+2. **Sebastian–Kiet walkthrough — the fix is connecting Sebastian and Andrew.** Andrew Tang already provisioned Sebastian's mailbox + Power BI Pro on 23 Apr. The walkthrough closes when Sebastian and Andrew connect (not just a Sebastian–Kiet meeting in isolation). Reframe Decision 1 / A01 accordingly.
+3. **Antonella's process** — currently still reading Bill's papers from last week, considering what other metrics to add to the testing system to run autoresearch on. She does deep-dive on query outputs (useful). Bill notes she is *overly* focused on shorts in his opinion — autoresearch should resolve this once the broader setup catalogue runs.
+4. **Bill's real trading capacity gap** — explicitly stated: *"I have just not been able to work on this side of things."* The gap is NOT Antonella drift; it's Bill's hours. Specifically: ShardiB2 recommendations + her new **Signa AI** tool (looks great), DannyTrades emails, Cantonese Cat tweets, Sovereign Sense tweets — all under-integrated. Missed opportunities being noticed.
+5. **Totality account: $2.08M** as of 25 Apr (good recent weeks — context the sync was missing).
+6. **Open ask:** Bill wants help building a synthesis layer over ShardiB2 / Signa AI / DannyTrades / Cantonese Cat / Sovereign Sense — see Q05 in `wiki/strategic-questions.md`.
+
+The body of the sync below still reads as written but should be interpreted with these corrections in mind. Future trading-sync runs should consume Q05 and the inline-notes pattern when added.
+
+---
+
 ## Executive Summary
 
 Major progress since the 6 April sync. Infrastructure is largely unblocked: Kiet's **Setups page went LIVE ~17 Apr** with all three setups implemented, buy/sell rules documented, and VMA-9 + constructive base v1 improvements shipped. Bill reversed his earlier position and **adopted Antonella's sell-rules priority**, writing a "Sell Rule Refinement" document and including it in the 19 Apr research package sent to Antonella. A meaningful new capability: **Sebastian now has a dedicated MTS mailbox with Power BI Pro + MFA** (provisioned by Andrew Tang 23 Apr) — infrastructure for the Sebastian-Kiet walkthrough is in place.

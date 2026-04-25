@@ -102,3 +102,28 @@ Beneath the ambition, Bill describes wanting:
 - Some upside — he does not want to live small
 - Actual joy and ease, not just relief between crises
 - Not to be driven purely by fear and shame
+
+## Current Operating Structure *(Updated 2026-04-25)*
+
+**Liberty:** Formally 2.5 days per week with [[Tom Anning]]. This is the protected allocation. Tu-Th oriented. Tom Anning Partner economics under review (A11): $400k base, 24% bonus pool, 65% MIP, $100k co-invest at $2/share.
+
+**MTS:** Founder/CEO. Wealth plan target: <5 hrs/week by Month 13. Currently far above. Matt role-design question (Q01) is partly a means to reduce this.
+
+**ABGF:** Board role. Modra Technology Pty Ltd is the active portfolio engagement. Systems are locked down — no Outlook/calendar MCP access (A92 workaround needed: drop board packs in `raw/abgf/` for ingest).
+
+**Trading:** Self-directed via Antonella Salinas (synthesis), Kiet (development). Totality account at $2.08M as of 25 Apr. Bill has been under-investing time here despite good recent weeks — explicitly named as a gap in 25 Apr update.
+
+## Personal Life *(Updated 2026-04-25)*
+
+**Body:**
+- Currently doing physio for back issues
+- Needs to start Pilates
+- Going to Vamos (gym) — wants to increase frequency
+- Diet not great — wants to do better
+
+**Family:**
+- **Agnes:** Stressed with work but the relationship is going well. Bill wants her to feel supported.
+- **Tom (14):** Going well.
+- **James (12):** Going well overall but has put on weight. Bill wants the family eating better — connected to his own diet improvement intent.
+
+**Other:** No recent coaching focus on recovery, friendship, or inner-life dimensions — coach should hold space for these in upcoming sessions per the seven-dimension framework in `/coach.md`.

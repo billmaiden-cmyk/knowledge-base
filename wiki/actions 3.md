@@ -70,6 +70,10 @@ Live tracker of open action items across all initiatives. Updated after each bri
 | A87 | Bill | **Misha/Dragonfly second meeting** — proposed Thu 7 May. Await Misha confirmation. Prepare: strategic positioning for standalone partnership or bolt-on conversation. Do NOT commit to anything. | MTS/STRATEGIC | Thu 7 May |
 | A88 | Toan/Keira | **SP 105746/DP1290007 invoice reconciliation** — Toan paid $1,300 April cleaning. Bill questions if invoices are duplicates. Provide reconciliation, cancel any duplicates. | MTS | Today 24 Apr |
 | A89 | Bill | **Strata Staff INV-2795 — $1,861.92 overdue** (due 10 Apr, 14 days past). Process payment or delegate. | MTS | Today 24 Apr |
+| A91 | Bill | **Matt Church email — send money owed.** Personal followup. | PERSONAL | This week |
+| A92 | Bill | **ABGF data ingest workaround** — ABGF systems locked down (no calendar/email MCP access). Set up weekly drop of board packs / important threads to `raw/abgf/` for `/ingest`. Or forward priority threads to billmaiden@gmail. | ABGF | This week |
+| A93 | Bill / Andrew Tang / Tom Anning | **Liberty M365 migration off Cooper Parry** — Tom wants Liberty on his own instance. Andrew Tang to assist. Once on Tom's instance, Outlook MCP picks up Liberty calendar/email like MTS. Target: end May. | LIBERTY | End May |
+| A94 | Bill | **Design lead follow-up campaign for old MTS leads** — Bill's stated biggest single action item. Khoi tightening Google Ads is downstream; upstream lead nurture is undesigned. | MTS/GTM | This week |
 
 ---
 

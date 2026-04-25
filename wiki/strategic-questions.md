@@ -34,17 +34,24 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 
 ---
 
-### Q02 | Misha / Dragonfly — positioning for second meeting
+### Q02 | MTS buyer landscape — EQT vs Misha vs Arun
 
-**Surfaced:** 2026-04-23 (post-meeting follow-up email exchange)
+**Surfaced:** 2026-04-23 (Misha post-meeting); refactored 2026-04-25 with Bill's preference ranking
 
-**The question:** Standalone partnership or bolt-on to a broader strata play?
+**The question:** Of the three live buyer/investor conversations on MTS, which to lean into?
 
-**Decision window:** Thu 7 May 2026 (second meeting target).
+**Bill's stated preference (25 Apr):**
+1. **EQT** — preferred. Has credibility and scale. Slower but more substantial outcome.
+2. **Misha / Dragonfly** — more likely to actually make something happen. But Bill doesn't like him personally, and the platform lacks scale (which it may not get).
+3. **Arun (Genesis Advisory)** — silent. No response after coffee A48 still pending.
 
-**Status:** Open. Don't commit to anything in second meeting — go in with explicit positioning, not a sales posture.
+**Active milestone:** Misha second meeting Thu 7 May (A87). Don't commit to anything — go in with explicit positioning, not a sales posture.
 
-**Related:** [[Misha Dragonfly]] (TBC entity page) | A87 in actions tracker
+**Decision window:** Ongoing. The Misha meeting is the immediate test; EQT cadence is likely slower and on their initiative.
+
+**Status:** Open.
+
+**Related:** [[Misha Dragonfly]] (TBC entity page) | [[EQT Partners]] | A87 in actions tracker
 
 ---
 
@@ -71,6 +78,22 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 **Decision window:** Open — driven by Arun's signal, not Bill's calendar.
 
 **Status:** Open. Coffee A48 still pending confirmation per actions tracker.
+
+---
+
+### Q05 | Trading analysis capacity
+
+**Surfaced:** 2026-04-25 (Bill state-of-nation update)
+
+**The question:** Bill is behind on integrating multiple trading information streams — ShardiB2 recommendations + her new Signa AI tool, DannyTrades emails, Cantonese Cat tweets, Sovereign Sense tweets. Totality account at $2.08M (good weeks recently) but Bill explicitly says *"I have just not been able to work on this side of things."* Missed opportunities being noticed.
+
+**Sub-question:** Build a synthesis agent (`/trading-intel` daily/2x daily) that pre-processes all sources into a Bill-ready brief? Or keep these manual and accept the lag?
+
+**Decision window:** Near-term — current quality of trading decisions is being affected by the gap.
+
+**Status:** Open. Bill asked for help in this area in the 25 Apr update.
+
+**Related:** Q03 (Liberty energy split) — same root cause: Bill's hours are constrained.
 
 ---
 

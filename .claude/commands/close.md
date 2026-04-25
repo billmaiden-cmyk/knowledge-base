@@ -16,10 +16,14 @@ $ARGUMENTS
 
 Read in parallel:
 1. `wiki/PRIMER.md` — for initiative map and psychological context
-2. `wiki/actions.md` — the live tracker. Completed items since this morning are the "wins." New critical items are the "must not slip."
-3. `wiki/mts-status.md` — current MTS health at close of day
+2. `wiki/actions 3.md` (iCloud-corrupted name; this is the live tracker) — completed items since this morning are the "wins." New critical items are the "must not slip."
+3. `wiki/mts-status 2.md` — current MTS health at close of day
 4. Today's briefing (`wiki/briefings/YYYY-MM-DD.md`) — for context on what was open this morning
 5. Today's midday pulse (check `wiki/log.md` for the most recent midday-pulse entry) — to avoid repeating what was already surfaced at noon
+
+**Bill's inbound updates since midday (highest priority):**
+- **Slack DM:** read new messages from Bill (`U05TMQ2MN0H`) since the midday pulse run timestamp. These are likely action confirmations, day-end status, or context for tomorrow. Process and route same as the morning briefing's note-routing logic.
+- **Today's briefing inline notes:** scan today's `wiki/briefings/{today}.md` for any `> **My notes:**` callouts. Process and mark as `_(processed by close — see tomorrow's briefing)_`.
 
 ### Step 2 — Scan for Late-Breaking Items
 
@@ -74,7 +78,24 @@ Evening Close — [Date]
    ```
    ## [YYYY-MM-DD HH:MM AEST] close | [one-line: e.g. "3 items closed, 1 overdue carried, ABGF Day 1 complete"]
    ```
-2. Update `wiki/manifest.yaml` if new pages were created today
+2. Update `wiki/manifest 2.yaml` if new pages were created today
+
+## Step 7 — Slack Outbound (always — this is Bill's end-of-day handoff)
+
+Send the close to Bill via Slack DM (`U05TMQ2MN0H`) using `mcp__7136d8b7-b770-421c-979f-6cfa00415641__slack_send_message`. Same content as the close output above (it's already phone-friendly).
+
+```
+:moon: *Evening Close — {Date}*
+
+*Today's wins:* {bullets or "Quiet day"}
+*Must not slip tonight:* {bullets or "Nothing urgent overnight"}
+*Tomorrow:* {2-3 sentences}
+*MTS:* {one-line status}
+
+Reply with anything you want me to carry into tomorrow's briefing.
+```
+
+If `slack_send_message` fails: log under "Operational notes" but don't fail the run.
 
 ---
 

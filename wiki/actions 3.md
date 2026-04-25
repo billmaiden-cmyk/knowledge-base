@@ -7,6 +7,8 @@ tags: [actions, tracker, meta, governance]
 
 Live tracker of open action items across all initiatives. Updated after each briefing and coaching session. Completed items are marked and removed on the next update cycle. Items without an owner default to Bill.
 
+**How to use the ✓ and Comment columns:** As you read in Obsidian, type `✓` or `x` in the ✓ column when you've done an item. Add a free-form note in the Comment column (e.g. "blocked by X" or "done — sent to Tim 10am"). The next morning briefing reads these inline, moves ✓ items to the Completed table, and captures comments into the next briefing's "Yesterday's reconciliation" line. You don't need to switch out of Obsidian.
+
 *Last synced from: Daily briefing 25 April 2026, 09:00 AEST (Coach's Kickoff run)*
 
 **Updates 25 Apr (ANZAC Day):** 🔴 NEW CRITICAL: A90 — second GoDaddy M365 subscription (Vietnamese account, customer #148478905) warning permanent deletion 26 Apr. This is separate from the subscription Tim renewed 23 Apr. Renew immediately. A82 BPAY Day 4. A83 laptop Day 4. A89 Strata Staff 15 days overdue. Vy completed Sch B reconciliation — duplicate invoice process in flight (elevated StrataMax permissions needed). New lead: A91 James Trimble, Lewisham 9 lots. Matt A67–A69 now 3 days overdue. A70 due date passed (Fri 24).
@@ -23,8 +25,8 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 ## 🔴 Critical / Overdue
 
-| # | Owner | Action | Initiative | Due | Days Overdue |
-|---|-------|--------|-----------|-----|-------------|
+| # | Owner | Action | Initiative | Due | Days Overdue | ✓ | Comment |
+|---|-------|--------|-----------|-----|-------------|---|---------|
 | A90 | Bill/Tim | **🔴 GoDaddy M365 Vietnamese account — RENEW IMMEDIATELY.** Separate subscription from the one Tim renewed 23 Apr. Customer #148478905. Product: "M365 Email Thiết yếu với Bảo mật" (quarterly). Expired 6 Apr. **Permanent deletion 26 Apr (TOMORROW).** Confirm which accounts are affected and renew today. | MTS | **TODAY 25 Apr** | — |
 | ~~A86~~ | ~~Bill/Tim~~ | ~~GoDaddy M365 email renewal~~ — **DONE.** Tim renewed (order #3939171714, 23 Apr). New accounts for Khoi + Sebastian provisioned, Power BI Pro purchased. Moved to Completed. | MTS | ✅ 23 Apr | — |
 | A47 | Bill/Keira | **Confirm Gino's actual last day (Tue 14 or Wed 15)** — discrepancy between wiki (14 Apr) and Keira messages (15 Apr). Must know to manage training hours. | MTS | **Today 14 Apr AM** | — |
@@ -41,8 +43,8 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 ## 🟠 High Priority — This Week
 
-| # | Owner | Action | Initiative | Due |
-|---|-------|--------|-----------|-----|
+| # | Owner | Action | Initiative | Due | ✓ | Comment |
+|---|-------|--------|-----------|-----|---|---------|
 | A45 | Bill | Respond to Andreas Deligiannis — amend SP 93493 proposal (start 1/7/26, review 1/7/27), correct committee error, clarify quote/WO inclusions | MTS/GTM | Today 14 Apr |
 | A46 | Bill | Review and execute Khoi Deel agreement (corrected 16hr cap), book Wed 10am AEST call | MTS/GTM | Today 14 Apr |
 | A49 | Keira | ✅ **SCHEDULED** — StrataMax training confirmed Tue 28 Apr 14:00 AEST (Lisa McCoustra + Toan + Vy + Keira + David Edgerton). Agenda: Financial Year End adjustments/journals + Report Set/Audit Reports. Keira to carry; Bill attending. *(Confirmed 25 Apr second sweep)* | MTS | Tue 28 Apr |
@@ -79,8 +81,8 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 ## 🟡 Medium Priority — Open
 
-| # | Owner | Action | Initiative | Notes |
-|---|-------|--------|-----------|-------|
+| # | Owner | Action | Initiative | Notes | ✓ | Comment |
+|---|-------|--------|-----------|-------|---|---------|
 | A17 | David Edgerton | Confirm new date for StrataMax v5.6.152 release (expedited) | MTS | Bug found affecting report distribution — new release date TBC. |
 | A43 | Bill/Keira | Route Sean D'Souza strata inquiry (Gmail) — Eric's committee requesting info on strata management services. Forward to Thao or Keira for response. | MTS/GTM | Received 13 Apr. |
 | A44 | Bill | Track SP 93493 Memorial Ave proposal — Andreas responded 13 Apr requesting amendments. See A45. | MTS/GTM | Active — response needed. |
@@ -96,8 +98,8 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 ## 🔵 Standing / Structural (No Due Date — Ongoing)
 
-| # | Owner | Action | Initiative | Notes |
-|---|-------|--------|-----------|-------|
+| # | Owner | Action | Initiative | Notes | ✓ | Comment |
+|---|-------|--------|-----------|-------|---|---------|
 | A20 | Bill | Set rule-based stop on WTC position | TRADING | 8+ days without one; active discipline test |
 | A21 | Bill | Write investment policy with hard position limits | WEALTH PLAN | Critical dependency — NOT STARTED |
 | A22 | Bill | Three non-achievement activities identified | COACHING | 90-day sprint personal milestone — NOT STARTED |

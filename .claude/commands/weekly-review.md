@@ -153,9 +153,29 @@ sources:
 
 ### Step 4: Update Wiki Infrastructure
 
-1. Update `wiki/manifest.yaml`
-2. Update `wiki/index.md` — add under "Weekly Reviews" section (create if absent), most recent first
+1. Update `wiki/manifest 2.yaml`
+2. Update `wiki/index 2.md` — add under "Weekly Reviews" section (create if absent), most recent first
 3. Append to `wiki/log.md`: `## [YYYY-MM-DD HH:MM AEST] weekly-review | Week {NN} — {one-line summary}`
+
+### Step 5: Slack Outbound (Sunday-evening summary)
+
+Send a Slack DM to Bill (`U05TMQ2MN0H`) using `mcp__7136d8b7-b770-421c-979f-6cfa00415641__slack_send_message` with the week summary:
+
+```
+:calendar: *Weekly Review — Week {NN} ({Mon DD} – {Fri DD})*
+
+*Week in one sentence:* {the honest one-liner}
+*Strategic signal:* {the one thing that mattered most}
+*Biggest slip:* {the one thing that didn't move}
+*Wiki health flags:* {N stale strategic, N stale entities — or "all fresh"}
+*Monday intention:* {the one specific thing}
+
+Full review → wiki/synthesis/weekly-review-{YYYY}-W{NN}.md
+
+Reply with anything you want me to carry into Monday.
+```
+
+If `slack_send_message` fails: log under "Operational notes" but don't fail the run.
 
 ## Rules
 

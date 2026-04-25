@@ -74,6 +74,18 @@ Bill manages four concurrent initiatives across fragmented channels. This briefi
 **Yesterday's Evening Close (for continuity):**
 - Read `wiki/log.md` — find the most recent `close |` entry. The "must not slip" items from last night should be top-of-mind in today's Decisions Needed.
 
+**Bill's inbound updates (highest-priority read — these are direct from Bill):**
+- **Slack DM channel:** read new messages in Bill's self-DM (user `U05TMQ2MN0H`) since the last briefing's run timestamp. Use `slack_search_public_and_private` or `slack_read_channel` against that user. Bill uses this channel to send updates, corrections, voice memos, and quick action confirmations between scheduled runs.
+- **Yesterday's briefing inline notes:** read the most recent `wiki/briefings/*.md` and scan EVERY `## section` for `> **My notes:**` callouts. These are Bill's inline updates added in Obsidian as he read yesterday. For each non-empty note, route as follows:
+  - Note in **Decisions Needed** with "decided X / chose Y" → append entry to `wiki/decisions.md`
+  - Note in **Trading Status** → feed to next `/trading-sync` and `/trading-intel` runs
+  - Note in **Strategic Questions** → update `wiki/strategic-questions.md` (status, new option, resolution)
+  - Note in **Actions Update / Critical & Overdue** → update `wiki/actions 3.md` (mark ✓ done, capture comment, add new action)
+  - Note in **Coach's Kickoff** → carry into context for tomorrow's coach kickoff
+  - Note in **Stale References** → if Bill said "refresh X", do it (entity/synthesis page update)
+  - Anything else → capture as a `## [date] update | ...` entry in `wiki/log.md`
+- After processing, archive the previous briefing's notes by replacing each `> **My notes:**` content with `> **My notes:** _(processed YYYY-MM-DD HH:MM AEST — see today's briefing)_`
+
 **Wiki State:**
 - Read `wiki/synthesis/bill-maiden-generational-wealth-plan.md` — the master strategic context
 - Read `wiki/synthesis/mts-one-page-plan-2026.md` — MTS operating milestones
@@ -171,6 +183,8 @@ sources:
 
 {If no decisions needed, say so — that's a good day.}
 
+> **My notes:** _(empty — Bill fills inline in Obsidian; next briefing parses)_
+
 ## Trading Status
 
 {Always include — Bill should never have to open trading-sync separately to know what's outstanding.}
@@ -181,6 +195,8 @@ sources:
 - **Kiet blockers:** {count and brief}
 - **Action:** {if fresh sync needed: "Run /trading-sync today (Sun 6pm Windows task will run anyway)". Otherwise: "Status holds — no trading action today."}
 
+> **My notes:** _(empty)_
+
 ## Strategic Questions
 
 {Open non-tactical questions awaiting Bill's call. These live in `wiki/strategic-questions.md` and are NOT the same as actions tracker items. Examples: role-design, M&A positioning, energy split between initiatives.}
@@ -190,6 +206,8 @@ sources:
 | Q01 | {short question} | {date} | {e.g. "decide by mid-May per coaching session 008"} |
 
 {If no open strategic questions, omit this section.}
+
+> **My notes:** _(empty)_
 
 ## Critical & High Priority
 
@@ -210,19 +228,25 @@ sources:
 ### Personal
 {Same format — include coaching insights if relevant}
 
+> **My notes:** _(empty)_
+
 ## Action Items
 
+**New columns: `✓` = Bill marks done inline in Obsidian. `Comment` = Bill notes status/blocker inline. Briefing parses both next morning: ✓ moves to Completed in `wiki/actions 3.md`; comments captured into next briefing's "Yesterday's reconciliation" line.**
+
 ### New Today
-| # | Owner | Action | Initiative | Priority | Due | Source |
-|---|-------|--------|-----------|----------|-----|--------|
+| # | Owner | Action | Initiative | Priority | Due | Source | ✓ | Comment |
+|---|-------|--------|-----------|----------|-----|--------|---|---------|
 
 ### Carried Forward (from previous briefing)
-| # | Owner | Action | Initiative | Priority | Due | Status Update |
-|---|-------|--------|-----------|----------|-----|---------------|
+| # | Owner | Action | Initiative | Priority | Due | Status Update | ✓ | Comment |
+|---|-------|--------|-----------|----------|-----|---------------|---|---------|
 
 ### Overdue
-| # | Owner | Action | Initiative | Originally Due | Days Overdue |
-|---|-------|--------|-----------|---------------|-------------|
+| # | Owner | Action | Initiative | Originally Due | Days Overdue | ✓ | Comment |
+|---|-------|--------|-----------|---------------|-------------|---|---------|
+
+> **My notes:** _(empty)_
 
 ## Wealth Plan Health
 
@@ -254,6 +278,8 @@ sources:
 
 {If no decisions in last 7 days AND nothing uncaptured, say "No material decisions this week."}
 
+> **My notes:** _(empty)_
+
 ## Time & Energy Check
 
 **Outlook emails:** {count, key senders}
@@ -271,6 +297,8 @@ sources:
 ## Tomorrow's Setup
 
 {1-3 things Bill could do today to make tomorrow smoother}
+
+> **My notes:** _(empty)_
 
 ## Stale References (audit only — do not auto-rewrite)
 
@@ -294,6 +322,34 @@ sources:
 4. **Decisions append** — for any uncaptured decision identified in the "Decisions Logged" section above, append to the TOP of `wiki/decisions.md` using the existing format (date | domain | decision | rationale | source). Use coaching session number or wiki page as source.
 5. **Strategic Questions update** — if `wiki/strategic-questions.md` doesn't exist, create it with frontmatter and seed with current open questions. If it exists, append any new strategic questions and update status of existing ones (resolved → strikethrough; decision-window updated based on new info).
 6. **Stale References** — write the staleness audit list as a new section at the end of today's briefing file. Do NOT automatically modify the stale pages — surface them for Bill to refresh manually or via /weekly-review on Sunday.
+
+### Step 6: Slack Outbound (phone-friendly summary to Bill)
+
+Send a Slack message to Bill (user `U05TMQ2MN0H`) using `mcp__7136d8b7-b770-421c-979f-6cfa00415641__slack_send_message`. Format:
+
+```
+:sunrise: *Morning Briefing — {Day, DD Mon}*
+
+*Today's permission:* {one line from Coach's Kickoff}
+
+*Decisions needed:*
+{1-3 bullets — first line of each Decisions Needed item}
+
+*Critical/overdue:*
+{up to 3 of the reddest items}
+
+*Trading status:* {one line — e.g. "🔴 sync 8d stale" or "✅ holds, autoresearch tomorrow"}
+
+*Today's calendar:* {3-4 line summary}
+
+Full briefing → wiki/briefings/{YYYY-MM-DD}.md
+
+Reply here with updates, corrections, or notes — I'll route them.
+```
+
+Keep under ~12 lines. This is the phone-readable trigger; the full briefing in Obsidian is the deep read.
+
+If `slack_send_message` fails (API down, auth lapsed), log it under "Operational notes" in today's briefing but don't fail the run.
 
 ## Important Rules
 

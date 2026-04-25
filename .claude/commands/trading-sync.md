@@ -173,12 +173,33 @@ sources:
 
 ### Step 8: Update Wiki Infrastructure
 
-1. Update `wiki/manifest.yaml` with the new sync page
-2. Update `wiki/index.md` — add under a "Trading" or "Communications" section
+1. Update `wiki/manifest 2.yaml` with the new sync page
+2. Update `wiki/index 2.md` — add under a "Trading" or "Communications" section
 3. Append to `wiki/log.md`:
    ```
    ## [YYYY-MM-DD] trading-sync | {N} new messages processed, {N} divergences identified, {N} decisions pending
    ```
+
+### Step 9: Slack Outbound (top-of-week trading brief)
+
+Send a Slack DM to Bill (`U05TMQ2MN0H`) using `mcp__7136d8b7-b770-421c-979f-6cfa00415641__slack_send_message` with the top of the sync:
+
+```
+:chart_with_upwards_trend: *Trading Sync — {date}*
+
+*Top decisions:*
+{1-3 lines from Decisions Needed section}
+
+*Open divergences:* {count}
+*Kiet blockers:* {count + brief}
+*Antonella status:* {one sentence}
+
+Full sync → wiki/synthesis/trading-sync-{date}.md
+
+Reply with corrections or context.
+```
+
+If `slack_send_message` fails: log under "Operational notes" but don't fail the run.
 
 ## Important Rules
 

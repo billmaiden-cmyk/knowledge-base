@@ -16,9 +16,13 @@ $ARGUMENTS
 
 Read in parallel:
 1. `wiki/PRIMER.md` — Bill's profile, key people, psychological patterns, initiative map
-2. `wiki/actions.md` — the live open actions tracker. This is the baseline for what's open.
-3. `wiki/mts-status.md` — current MTS health dashboard. You will update this before writing output.
+2. `wiki/actions 3.md` (the live tracker; iCloud-corrupted name) — the live open actions tracker. This is the baseline for what's open.
+3. `wiki/mts-status 2.md` — current MTS health dashboard. You will update this before writing output.
 4. Most recent `wiki/briefings/YYYY-MM-DD.md` — what was already known at 7am. Do not repeat it.
+
+**Bill's inbound updates since briefing (highest priority — direct from Bill):**
+- **Slack DM:** read new messages from Bill (`U05TMQ2MN0H`) since the morning briefing's run timestamp. Use `mcp__7136d8b7-b770-421c-979f-6cfa00415641__slack_read_channel` against his DM. These often contain action confirmations ("done X"), corrections, or new context. Process exactly like the morning briefing's note-routing logic.
+- **This morning's briefing inline notes:** scan today's `wiki/briefings/{today}.md` for any `> **My notes:**` callouts Bill added between 6:30am and now. Process and route same as briefing.
 
 ### Step 2 — Scan All Channels (since 7am only)
 
@@ -100,7 +104,25 @@ Do not include anything that hasn't changed since 7am. Do not repeat the morning
    ```
    ## [YYYY-MM-DD HH:MM AEST] midday-pulse | [one-line summary: e.g. "Clear" or "1 Keira escalation, 2 items updated"]
    ```
-2. Update `wiki/manifest.yaml` if any new pages were created
+2. Update `wiki/manifest 2.yaml` if any new pages were created
+
+## Step 7 — Slack Outbound (silent unless urgent)
+
+Send a Slack message to Bill (`U05TMQ2MN0H`) ONLY if there is something urgent — Keira escalation, escalated item, or material new action since 7am. Use `mcp__7136d8b7-b770-421c-979f-6cfa00415641__slack_send_message`.
+
+If clear: do NOT send any message. The pulse is silent. Bill should not be interrupted in his Liberty/ABGF meeting for "no news."
+
+If urgent, use this format (max ~6 lines):
+```
+:warning: *Midday Pulse — {time}*
+{Single sentence on the urgent item}
+{Recommendation: reply now / can wait until 5:30pm / decision needed}
+{If multiple: list with one line each, max 3}
+
+→ wiki/log.md for full pulse
+```
+
+If `slack_send_message` fails: log under "Operational notes" and continue.
 
 ---
 

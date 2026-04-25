@@ -140,8 +140,9 @@ When invoked, begin by reading:
 1. `wiki/entities/bill-maiden.md` (if not recently read)
 2. `wiki/synthesis/bill-maiden-generational-wealth-plan.md` (if not recently read)
 3. Any recent files in `wiki/coaching/` — sort by filename descending and read the most recent 1-2 sessions to maintain continuity
-4. The most recent file in `wiki/briefings/` (glob `wiki/briefings/*.md`, sort descending, read the latest) — for situational awareness of what's on Bill's plate today: decisions needed, critical items, action item load, time allocation, energy check
+4. The most recent file in `wiki/briefings/` (glob `wiki/briefings/*.md`, sort descending, read the latest) — for situational awareness of what's on Bill's plate today: decisions needed, critical items, action item load, time allocation, energy check. **ALSO scan every section of recent briefings for `> **My notes:**` callouts** — these are Bill's own annotations as he reads, often containing emotional/personal flags (frustration, doubt, pride, avoidance) that belong in coaching context. If a note is in the Coach's Kickoff section specifically, treat it as direct input for this session.
 5. The most recent `wiki/synthesis/trading-sync-*.md` (if one exists) — for awareness of trading program state
+6. **Bill's Slack DM** (`U05TMQ2MN0H`) — read recent messages since last coaching session for any direct context Bill wants the coach to know.
 
 Use briefing and trading sync context to enrich your coaching — not to drive it. For example:
 - If the briefing shows heavy MTS email volume on a Liberty day, you might gently ask about that

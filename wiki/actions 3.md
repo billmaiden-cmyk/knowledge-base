@@ -30,6 +30,7 @@ Live tracker of open action items across all initiatives. Updated after each bri
 | # | Owner | Action | Initiative | Due | Days Overdue | ✓ | Comment |
 |---|-------|--------|-----------|-----|-------------|---|---------|
 | A90 | Bill/Tim | **🔴 GoDaddy M365 Vietnamese account — DELETION DAY.** Customer #148478905. Two more renewal reminders overnight (01:11 + 05:06 AEST 26 Apr). **Permanent deletion 26 Apr (TODAY).** Five-minute message to Tim resolves it. | MTS | **TODAY 26 Apr** | 1 |
+| A97 | Bill | **🔴 EQT NDA — Michael Johnston (Fri 24 Apr 14:25 AEST).** Draft NDA to share strata opportunity info. Michael in Vietnam this week, suggests catch-up week of 5 May. **MISSED by Sat + Sun briefings — surfaced manually 26 Apr.** Review NDA, respond to Michael, schedule. EQT is preferred MTS buyer (Q02). | MTS/M&A | This week — respond by Tue 28 Apr | | Briefing window failure — Sat 25 Apr used 18h not 24h |
 | ~~A86~~ | ~~Bill/Tim~~ | ~~GoDaddy M365 email renewal~~ — **DONE.** Tim renewed (order #3939171714, 23 Apr). New accounts for Khoi + Sebastian provisioned, Power BI Pro purchased. Moved to Completed. | MTS | ✅ 23 Apr | — |
 | A47 | Bill/Keira | **Confirm Gino's actual last day (Tue 14 or Wed 15)** — discrepancy between wiki (14 Apr) and Keira messages (15 Apr). Must know to manage training hours. | MTS | **Today 14 Apr AM** | — |
 | ~~A30~~ | ~~Keira/Tim~~ | ~~GoDaddy renewal~~ — **DONE.** Auto-renewal receipt confirmed 19 Apr (order #4067821280). Moved to Completed. | MTS | ✅ 19 Apr | — |
@@ -40,6 +41,18 @@ Live tracker of open action items across all initiatives. Updated after each bri
 | A05 | Bill | Confirm Matt: SP102232 Federal Court Day 2 outcome | MTS | Overdue | — |
 | A10 | Bill | Superannuation Standard Choice Form — send SMSF details to Jason Knott | ABGF | Mon 13 Apr | 1 day |
 | A66 | Matt | **SP 87409 Fire Order ticket 123829** — 31 days past 24hr KPI, compliance risk, client re-engaged 17 Apr. Respond before any other ticket work. See [[wiki/synthesis/matt-ticket-review-shared-2026-04-19.md]]. | MTS | **Mon 20 Apr AM** | — |
+
+---
+
+## 🔵 Liberty CF — CRM Setup (post-26 Apr session)
+
+| # | Owner | Action | Initiative | Due | ✓ | Comment |
+|---|-------|--------|-----------|-----|---|---------|
+| A97 | Bill | **Send HubSpot/outreach email to Tom Anning + Ty Harbour** — Gmail draft ready, subject "Deal pipeline — contact research complete, HubSpot upload ready." Add Tom and Ty's email addresses and attach: Liberty_Master_Reference.xlsx, Liberty_CRM_Setup_Overview.pdf, 4 x hs_upload CSV files. | LIBERTY | Mon 27 Apr | | |
+| A98 | Ty Harbour | **Run HubSpot upload sequence** — 4 CSV files in order: 01 companies portfolio → 02 PE firms → 03 CEO contacts (Create only) → 04 deals. Create custom properties first (Deal Sector, Action Owner). Confirm "Prospect" = pipeline stage name. See PDF for full instructions. | LIBERTY | This week | | |
+| A99 | Ty Harbour | **Set Parent Company associations in HubSpot UI** — ~47 PE firm → portfolio company links. Relationships panel → Add relationship → Parent Company. Cannot be done via CSV. | LIBERTY | This week | | |
+| A100 | Bill + Tom | **Assign owners to 7 unassigned P1 deals** — Aurora, Hall Contracting, StraitNZ Shipping, Ambrose Construct Group, Alliance Nursing, HSBC consumer book. CEO contacts confirmed for most. | LIBERTY | Mon 27 Apr | | |
+| A101 | Bill + Tom | **Research 23 gap companies** — no email found via Apollo. Priority: Alliance Nursing (P1), CBOE, Cardinal Group. Method: LinkedIn Sales Navigator → company website → adviser → switchboard. See [[wiki/synthesis/liberty-crm-setup-2026-04-26.md]]. | LIBERTY | This week | | |
 
 ---
 

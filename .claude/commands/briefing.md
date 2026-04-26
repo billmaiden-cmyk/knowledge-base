@@ -17,7 +17,22 @@ Bill manages four concurrent initiatives across fragmented channels. This briefi
 ### Step 1: Gather Inputs
 
 **Outlook — MTS (bmaiden@morethanstrata.com.au):**
-- Use `outlook_email_search` to pull emails from the last 24 hours
+- Use `outlook_email_search` to pull emails from the last 24 hours. **HARD FLOOR: never narrow to less than 24h** — even on weekends or public holidays. Strategic emails arrive on Friday afternoons and must not be filtered out by an arbitrarily-shortened window.
+
+**Strategic-relationship sender sweep (CRITICAL — these are NEVER filtered out):**
+
+After the 24h sweep, ALSO search the last **7 days** for emails from these senders. Any new email (sent or received, not yet surfaced in a prior briefing) is HIGH or CRITICAL priority by default:
+
+- `michael.johnston@eqtpartners.com` (EQT — Q02 preferred MTS buyer)
+- `jacob.vanderwiel@eqtpartners.com` (EQT — secondary contact)
+- `tom.anning@liberty-cf.com` (Liberty — Bill's 2.5d/wk Partner)
+- Any sender containing `dragonfly` or `misha` (Q02 active conversation)
+- Any sender containing `arun` or `genesis` (Q04)
+- Any sender containing `antonella` or `salinas` (trading)
+- Any sender ending `@abgf` or containing `verlaine`, `lyari`, `knott` (ABGF)
+- Any sender at `@morethanstrata.com.au` from `keira`, `tim`, `kat`, `matt`, `quang` (direct reports — DECISION:/URGENT:/🚨 escalations)
+
+For each strategic-sender hit, surface in Decisions Needed (if requires Bill's input) or in the relevant initiative section. **Never silently drop these.** If a strategic-sender email was surfaced in a prior briefing AND still has no follow-through, escalate to Critical & Overdue.
 - Use `read_resource` for full email content on important threads
 - Use `outlook_calendar_search` to check today's and tomorrow's meetings
 - Classify each email by initiative (MTS, Liberty, ABGF, Trading, Personal)

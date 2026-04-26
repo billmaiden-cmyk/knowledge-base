@@ -1,7 +1,7 @@
 ---
 title: Open Actions Tracker
 created: 2026-04-11 14:30 AEST
-updated: 2026-04-26 06:30 AEST
+updated: 2026-04-27 06:30 AEST
 tags: [actions, tracker, meta, governance]
 ---
 
@@ -9,7 +9,11 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 **How to use the ✓ and Comment columns:** As you read in Obsidian, type `✓` or `x` in the ✓ column when you've done an item. Add a free-form note in the Comment column (e.g. "blocked by X" or "done — sent to Tim 10am"). The next morning briefing reads these inline, moves ✓ items to the Completed table, and captures comments into the next briefing's "Yesterday's reconciliation" line. You don't need to switch out of Obsidian.
 
-*Last synced from: Daily briefing 26 April 2026, 06:30 AEST (Coach's Kickoff run)*
+*Last synced from: Daily briefing 27 April 2026, 06:30 AEST (Monday morning)*
+
+**Updates 27 Apr (Monday morning):** No new actions overnight. No inline ✓/Comment notes from Bill on Sunday's evening close (all empty). Strategic-sender 7d sweep clean (0 fresh hits). Day-counter bumps for carry items: A82 BPAY Day 7, A83 laptop Day 7, A89 Strata Staff 17 days overdue, A11 Tom Anning Partner economics 14 days uncommitted, A97 EQT NDA 3 days since arrival (must respond by Tue), A66/A67–A70 Matt cleanup 5–7 days overdue (1:1 today is the container), A45 Andreas SP 93493 13 days carry. Trading: FDV Day 6 undecided; CAT decision pending today before US open.
+
+**Updates 26 Apr evening:** Reconciled Bill's morning inline notes — 10 items resolved (A90, A76, A04, A05, A10, A02, A01, A47, A20, A95). A90 GoDaddy Vietnamese deletion was INTENTIONAL (Andrew-prompted; "this is what we want — close"). Signa pipeline RESTORED 12:35 AEST (54 signals). Trading: KAMA/VMA resolved (same), Kiet blockers resolved, autoresearch running (2022 data requested). A48 Arun/Genesis: coffee held, awaiting Arun Outlook response. Liberty CRM session produced A97–A101 (79 deals, 4 HubSpot CSVs ready). New: A102 Sean D'Souza/Eric MTS meeting Thu 30 Apr 2pm, A103 Deel payroll, A104 Hendry Patreon. Sean D'Souza forwarded Google Meet invite from Eric Okawa — 6 committee members.
 
 **Updates 26 Apr (Sunday):** A90 still open — TODAY is GoDaddy Vietnamese deletion day (2 more renewal reminders overnight, no action yet). Trading pipeline DEGRADED — `/signa-pull` did not produce a file 25 Apr 12:30pm. New action: A95 restore Signa data pipeline (Chrome login + leave running). New action: A96 read March 2026 Modra Board Report before Tue 28 Apr. No calendar today. A82 BPAY Day 5, A83 laptop Day 5, A89 Strata Staff 16 days overdue. Matt cleanup A67–A70 carried — Monday 1:1 is the accountability container. No inline ✓/Comment notes from Bill on yesterday's briefing (all empty).
 
@@ -29,18 +33,9 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 | # | Owner | Action | Initiative | Due | Days Overdue | ✓ | Comment |
 |---|-------|--------|-----------|-----|-------------|---|---------|
-| A90 | Bill/Tim | **🔴 GoDaddy M365 Vietnamese account — DELETION DAY.** Customer #148478905. Two more renewal reminders overnight (01:11 + 05:06 AEST 26 Apr). **Permanent deletion 26 Apr (TODAY).** Five-minute message to Tim resolves it. | MTS | **TODAY 26 Apr** | 1 |
-| A97 | Bill | **🔴 EQT NDA — Michael Johnston (Fri 24 Apr 14:25 AEST).** Draft NDA to share strata opportunity info. Michael in Vietnam this week, suggests catch-up week of 5 May. **MISSED by Sat + Sun briefings — surfaced manually 26 Apr.** Review NDA, respond to Michael, schedule. EQT is preferred MTS buyer (Q02). | MTS/M&A | This week — respond by Tue 28 Apr | | Briefing window failure — Sat 25 Apr used 18h not 24h |
-| ~~A86~~ | ~~Bill/Tim~~ | ~~GoDaddy M365 email renewal~~ — **DONE.** Tim renewed (order #3939171714, 23 Apr). New accounts for Khoi + Sebastian provisioned, Power BI Pro purchased. Moved to Completed. | MTS | ✅ 23 Apr | — |
-| A47 | Bill/Keira | **Confirm Gino's actual last day (Tue 14 or Wed 15)** — discrepancy between wiki (14 Apr) and Keira messages (15 Apr). Must know to manage training hours. | MTS | **Today 14 Apr AM** | — |
-| ~~A30~~ | ~~Keira/Tim~~ | ~~GoDaddy renewal~~ — **DONE.** Auto-renewal receipt confirmed 19 Apr (order #4067821280). Moved to Completed. | MTS | ✅ 19 Apr | — |
-| A01 | Sebastian + Kiet | Data walkthrough meeting | TRADING | 1 Apr 2026 | 13 days |
-| A02 | Bill | Totality corporate action — log in and respond | TRADING | ~5 Apr 2026 | 9 days |
-| A03 | Kat | Oppenheimer SP 36335 — insurance installment. Bill messaged Kat: levies paid, can now process insurance. **In progress.** | MTS | 9 Apr 2026 | 5 days |
-| A04 | Bill | Follow up Aylie Brutman re: SP102232 ATO payment plan | MTS | Overdue | — |
-| A05 | Bill | Confirm Matt: SP102232 Federal Court Day 2 outcome | MTS | Overdue | — |
-| A10 | Bill | Superannuation Standard Choice Form — send SMSF details to Jason Knott | ABGF | Mon 13 Apr | 1 day |
-| A66 | Matt | **SP 87409 Fire Order ticket 123829** — 31 days past 24hr KPI, compliance risk, client re-engaged 17 Apr. Respond before any other ticket work. See [[wiki/synthesis/matt-ticket-review-shared-2026-04-19.md]]. | MTS | **Mon 20 Apr AM** | — |
+| A97 | Bill | **🔴 EQT NDA — Michael Johnston (Fri 24 Apr 14:25 AEST).** Draft NDA to share strata opportunity info. Michael in Vietnam this week, suggests catch-up week of 5 May. EQT is preferred MTS buyer (Q02). | MTS/M&A | Respond by Tue 28 Apr | 2 | |
+| A03 | Kat | Oppenheimer SP 36335 — insurance installment. Bill messaged Kat: levies paid, can now process insurance. **In progress.** | MTS | 9 Apr 2026 | 17 days | |
+| A66 | Matt | **SP 87409 Fire Order ticket 123829** — 31+ days past 24hr KPI, compliance risk. Confirm at Mon 1:1. See [[wiki/synthesis/matt-ticket-review-shared-2026-04-19.md]]. | MTS | **Mon 20 Apr AM** | 6 days | |
 
 ---
 
@@ -91,8 +86,11 @@ Live tracker of open action items across all initiatives. Updated after each bri
 | A92 | Bill | **ABGF data ingest workaround** — ABGF systems locked down (no calendar/email MCP access). Set up weekly drop of board packs / important threads to `raw/abgf/` for `/ingest`. Or forward priority threads to billmaiden@gmail. | ABGF | This week |
 | A93 | Bill / Andrew Tang / Tom Anning | **Liberty M365 migration off Cooper Parry** — Tom wants Liberty on his own instance. Andrew Tang to assist. Once on Tom's instance, Outlook MCP picks up Liberty calendar/email like MTS. Target: end May. | LIBERTY | End May |
 | A94 | Bill | **Design lead follow-up campaign for old MTS leads** — Bill's stated biggest single action item. Khoi tightening Google Ads is downstream; upstream lead nurture is undesigned. | MTS/GTM | This week |
-| A95 | Bill | **Restore Signa data pipeline** — open Chrome and log in to `app.getsigna.ai/dashboard/signals`, leave running so 12:30pm `/signa-pull` captures fresh data tomorrow. Without this, daily `/trading-intel` runs hollow. | TRADING | **Today 26 Apr** |
-| A96 | Bill | **Read March 2026 Modra Board Report** (Patrick Verlaine fwd 24 Apr) — substantive input for Tue 28 Apr Modra all-day. Already filed in `tools/modra-board-prep/`. | ABGF | Mon 27 Apr |
+| ~~A95~~ | ~~Bill~~ | ~~Restore Signa data pipeline~~ — **DONE 26 Apr 12:35 AEST.** 54 signals captured. Pipeline GREEN. | TRADING | ✅ 26 Apr |
+| A96 | Bill | **Read March 2026 Modra Board Report** (Patrick Verlaine fwd 24 Apr) — substantive input for Tue 28 Apr Modra all-day. Already filed in `tools/modra-board-prep/`. Model v2 completed with build-to-order corrections + forward coverage section. | ABGF | Mon 27 Apr |
+| A102 | Bill | **Sean D'Souza / Eric Okawa MTS committee meeting** — Thu 30 Apr 2pm AEST, Google Meet (`meet.google.com/edp-yyax-gxu`). 6 committee members. Prepare building brief + proposal framework. Confirm attendance with Sean. | MTS/GTM | Thu 30 Apr |
+| A103 | Bill | **Deel payroll — process Vietnam team payment.** Reminder received 25 Apr. | MTS/VN | Mon 27 Apr |
+| A104 | Bill | **Hugh Hendry Patreon — update Apple Pay** (ending 3412 declined). Membership expires 26 Apr. | PERSONAL | When convenient |
 
 ---
 
@@ -117,14 +115,13 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 | # | Owner | Action | Initiative | Notes | ✓ | Comment |
 |---|-------|--------|-----------|-------|---|---------|
-| A20 | Bill | Set rule-based stop on WTC position | TRADING | 8+ days without one; active discipline test |
 | A21 | Bill | Write investment policy with hard position limits | WEALTH PLAN | Critical dependency — NOT STARTED |
 | A22 | Bill | Three non-achievement activities identified | COACHING | 90-day sprint personal milestone — NOT STARTED |
 | A23 | Bill | One conversation/week with Tom and/or James not about performance | COACHING | Not tracked |
 | A24 | Bill | One person to be honest with about how he's actually feeling | COACHING | Not actioned |
 | A25 | Bill | GM hire for MTS | MTS | Hard condition by Month 13. Not started. |
 | A75 | Bill / Matt | Ticket management standing 1:1 item (Section 3) — light-touch conversation: queue health, escalations from VN ops, anything stuck. Not a metrics review. | MTS | Standing — weekly |
-| A76 | Bill | Reply to Sean D'Souza — confirm 24 Apr Zoom for Maroubra committee (30 min) | MTS/GTM | Thu 24 Apr |
+| ~~A76~~ | ~~Bill~~ | ~~Sean D'Souza Maroubra meeting~~ — **RESOLVED.** Meeting confirmed Thu 30 Apr 2pm Google Meet (not Zoom). See A102. | MTS/GTM | ✅ 26 Apr |
 | A82 | Bill | **Process SP 80436 BPAY payment** — 4 invoices remaining, details correct. Keira needs confirmation of success. 5 min. | MTS | **Today** |
 | A83 | Bill | **Approve Keira laptop purchase** — carrying two laptops daily, old StrataMax laptop dying. Yes/no reply needed. | MTS | **Today** |
 | A84 | Linh/Kat | **Carol Shami SP 4743 Lot 9 follow-up** — HIGH IMPORTANCE. Missing AGM Minutes 25.02.2026 + AFSS, plus 5 questions re remedial works, balcony timeline, levies, insurance. Delegate to team. | MTS | This week |
@@ -134,10 +131,21 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 ## ✅ Recently Completed
 
-*Week of 21 April 2026.*
+*Week of 21 April 2026 + Sunday 26 Apr reconciliation.*
 
 | # | Action | Completed | Initiative |
 |---|--------|-----------|-----------|
+| A90 | GoDaddy Vietnamese M365 deletion — INTENTIONAL, prompted by Andrew. Accounts decommissioned as planned. | 26 Apr | MTS |
+| A95 | Signa data pipeline restored — 54 signals captured 12:35 AEST | 26 Apr | TRADING |
+| A76 | Sean D'Souza meeting confirmed — Thu 30 Apr 2pm Google Meet with Eric Okawa committee (6 members) | 26 Apr | MTS/GTM |
+| A01 | Sebastian data walkthrough — DONE, Sebastian has access | 26 Apr | TRADING |
+| A02 | Totality corporate action — NOT APPLICABLE per Bill | 26 Apr | TRADING |
+| A04 | Aylie Brutman ATO payment plan — resolved per Bill | 26 Apr | MTS |
+| A05 | Matt SP102232 Federal Court Day 2 — resolved per Bill | 26 Apr | MTS |
+| A10 | SMSF details to Jason Knott — done per Bill | 26 Apr | ABGF |
+| A20 | WTC rule-based stop — NOT APPLICABLE per Bill | 26 Apr | TRADING |
+| A47 | Gino last day confirmation — complete per Bill | 26 Apr | MTS |
+| A38 | Message Sebastian re walkthrough — closed by A01 resolution | 26 Apr | TRADING |
 | A86 | GoDaddy M365 renewal — Tim renewed (order #3939171714), Khoi + Sebastian accounts provisioned, Power BI Pro purchased | 23 Apr | MTS |
 | A81 | Blaxland EGM conflict — MOOT, proposal lost (Kathy Badaoui rejected) | 22 Apr | MTS |
 | A77 | Devin Kaplan trust interest — replied | 21 Apr | MTS |

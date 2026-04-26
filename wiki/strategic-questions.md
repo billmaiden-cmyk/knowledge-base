@@ -1,7 +1,7 @@
 ---
 title: Strategic Questions Tracker
 created: 2026-04-25 09:30 AEST
-updated: 2026-04-26 06:30 AEST
+updated: 2026-04-27 06:30 AEST
 tags: [strategic, decisions, tracker, meta, governance]
 ---
 

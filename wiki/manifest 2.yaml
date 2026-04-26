@@ -1,5 +1,15 @@
 pages:
 
+  - path: wiki/synthesis/signa-2026-04-26.md
+    title: "Signa Daily Signals — 2026-04-26"
+    type: synthesis
+    tags: [trading, signa, signals, daily, quant]
+    sources:
+      - https://app.getsigna.ai/dashboard/signals (scraped via Chrome MCP, 2026-04-26 12:31 AEST)
+    source_date: 2026-04-26
+    created: 2026-04-26 12:35 AEST
+    updated: 2026-04-26 12:35 AEST
+
   # ─── Weekly Reviews ────────────────────────────────────────────────────────
 
   - path: wiki/synthesis/weekly-review-2026-W17.md
@@ -7,37 +17,60 @@ pages:
     type: synthesis
     tags: [weekly-review, executive-synthesis, 2026-Q2]
     sources:
-      - wiki/briefings/2026-04-20.md to 2026-04-25.md
+      - wiki/briefings/2026-04-20.md to 2026-04-26.md
       - wiki/coaching/2026-04-24-session-008.md
+      - wiki/coaching/2026-04-26-session-009.md
       - wiki/synthesis/bill-maiden-generational-wealth-plan.md
       - wiki/synthesis/mts-one-page-plan-2026 2.md
-      - wiki/synthesis/trading-sync-2026-04-06.md
+      - wiki/synthesis/trading-sync-2026-04-25.md
+      - wiki/synthesis/liberty-crm-setup-2026-04-26.md
+      - wiki/synthesis/modra-board-mar2026-analysis.md
+      - wiki/synthesis/signa-2026-04-26.md
       - wiki/strategic-questions.md
-    source_date: 2026-04-20 to 2026-04-25
+    source_date: 2026-04-20 to 2026-04-26
     created: 2026-04-25 12:30 AEST
-    updated: 2026-04-25 12:30 AEST
+    updated: 2026-04-26 19:30 AEST
 
   # ─── Briefings ─────────────────────────────────────────────────────────────
 
-  - path: wiki/briefings/2026-04-26.md
-    title: "Daily Briefing — 26 April 2026 (Sunday)"
+  - path: wiki/briefings/2026-04-27.md
+    title: "Daily Briefing — 27 April 2026 (Monday)"
     type: synthesis
-    tags: [briefing, daily, executive-synthesis, coaching-kickoff]
+    tags: [briefing, daily, executive-synthesis]
     sources:
-      - Outlook (bmaiden@morethanstrata.com.au) last 24h
-      - Gmail (billmaiden@gmail.com) last 24h
-      - Slack (Bill self-DM, MTS channels)
-      - Outlook Calendar (26-28 Apr)
+      - Outlook (bmaiden@morethanstrata.com.au) 26-27 Apr
+      - Gmail (billmaiden@gmail.com) 26-27 Apr
+      - Slack DM channel U05TMQ2MN0H
+      - Outlook Calendar 27 Apr
+      - wiki/briefings/2026-04-26.md
       - wiki/actions 3.md
-      - wiki/strategic-questions.md
-      - wiki/decisions.md
-      - wiki/briefings/2026-04-25.md
-      - wiki/synthesis/trading-intel-2026-04-26.md
-      - wiki/synthesis/trading-sync-2026-04-25.md
+      - wiki/synthesis/trading-intel-2026-04-27.md
+      - wiki/synthesis/trading-sync-2026-04-26.md
+      - wiki/coaching/2026-04-26-session-009.md
       - wiki/coaching/2026-04-24-session-008.md
+      - wiki/decisions.md
+      - wiki/strategic-questions.md
+    source_date: 2026-04-26 to 2026-04-27
+    created: 2026-04-27 06:30 AEST
+    updated: 2026-04-27 06:30 AEST
+
+  - path: wiki/briefings/2026-04-26.md
+    title: "Daily Briefing — 26 April 2026 (Sunday) — Evening Close"
+    type: synthesis
+    tags: [briefing, daily, executive-synthesis, evening-close]
+    sources:
+      - Outlook (bmaiden@morethanstrata.com.au) 25-26 Apr
+      - Gmail (billmaiden@gmail.com) 25-26 Apr
+      - Slack (MTS workspace)
+      - Outlook Calendar (26-30 Apr)
+      - wiki/actions 3.md
+      - wiki/briefings/2026-04-26(1).md (morning + Bill inline notes)
+      - wiki/synthesis/signa-2026-04-26.md
+      - wiki/synthesis/liberty-crm-setup-2026-04-26.md
+      - wiki/coaching/2026-04-26-session-009.md
     source_date: 2026-04-26
     created: 2026-04-26 06:30 AEST
-    updated: 2026-04-26 06:30 AEST
+    updated: 2026-04-26 19:00 AEST
 
   - path: wiki/briefings/2026-04-25.md
     title: "Daily Briefing — 25 April 2026 (Saturday / ANZAC Day)"
@@ -91,6 +124,26 @@ pages:
     updated: 2026-04-22 21:30 AEST
 
   # ─── Entities ───────────────────────────────────────────────────────────────
+
+  - path: wiki/entities/misha-sol.md
+    title: Misha Sol
+    type: entity
+    tags: [person, strata, ai, acquisition, dragonfly, med, potential-partner]
+    sources:
+      - Bill Maiden coaching debrief, 2026-04-26
+    source_date: 2026-04-26
+    created: 2026-04-26 14:00 AEST
+    updated: 2026-04-26 14:00 AEST
+
+  - path: wiki/entities/dragonfly.md
+    title: DragonFly
+    type: entity
+    tags: [business, strata, ai, acquisition, roll-up, potential-partner, mts]
+    sources:
+      - Bill Maiden coaching debrief, 2026-04-26
+    source_date: 2026-04-26
+    created: 2026-04-26 14:00 AEST
+    updated: 2026-04-26 14:00 AEST
 
   - path: wiki/entities/genesis-advisory.md
     title: Genesis Advisory Australia
@@ -667,6 +720,15 @@ pages:
     source_date: 2026-04-08
     created: 2026-04-08
     updated: 2026-04-08
+
+  - path: wiki/coaching/2026-04-26-session-009.md
+    title: "Coaching Session 009 — 2026-04-26"
+    type: coaching
+    tags: [coaching, session, misha-sol, dragonfly, strata, exit-planning, validation-comparison, med, achievement-based-self-worth, opportunity]
+    sources: []
+    source_date: 2026-04-26
+    created: 2026-04-26 14:00 AEST
+    updated: 2026-04-26 14:00 AEST
 
   - path: wiki/coaching/2026-04-24-session-008.md
     title: "Coaching Session 008 — 2026-04-24"
@@ -1278,6 +1340,23 @@ pages:
     created: 2026-04-25 10:30 AEST
     updated: 2026-04-25 10:30 AEST
 
+  - path: wiki/synthesis/trading-sync-2026-04-26.md
+    title: "Trading Sync — 2026-04-26"
+    type: synthesis
+    tags: [trading, sync, antonella, position-synthesis]
+    sources:
+      - wiki/synthesis/trading-sync-2026-04-25.md
+      - wiki/briefings/2026-04-26.md
+      - wiki/briefings/2026-04-26(1).md
+      - wiki/synthesis/trading-intel-2026-04-26.md
+      - wiki/synthesis/signa-2026-04-26.md
+      - wiki/concepts/antonella-trading-program-status.md
+      - wiki/strategic-questions.md
+      - Gmail searches (antonella, kiet, trading newer_than:7d) — no new Antonella threads
+    source_date: 2026-04-25 to 2026-04-26
+    created: 2026-04-26 19:30 AEST
+    updated: 2026-04-26 19:30 AEST
+
   - path: wiki/synthesis/trading-intel-2026-04-25.md
     title: "Trading Intel — 2026-04-25"
     type: synthesis
@@ -1303,6 +1382,19 @@ pages:
     source_date: 2026-04-25 to 2026-04-26
     created: 2026-04-26 04:00 AEST
     updated: 2026-04-26 04:00 AEST
+
+  - path: wiki/synthesis/trading-intel-2026-04-27.md
+    title: "Trading Intel — 2026-04-27"
+    type: synthesis
+    tags: [trading, intel, daily, signal-aggregation, signa-led]
+    sources:
+      - wiki/synthesis/signa-2026-04-26.md (54 signals, primary spine)
+      - wiki/synthesis/trading-sync-2026-04-26.md (DannyTrades Sunday dump cross-reference)
+      - wiki/synthesis/trading-intel-2026-04-26.md (continuity)
+      - wiki/synthesis/trading-intel-2026-04-25.md (fade detection)
+    source_date: 2026-04-26 to 2026-04-27
+    created: 2026-04-27 04:00 AEST
+    updated: 2026-04-27 04:00 AEST
 
   - path: wiki/concepts/antonella-powerbi-direct-access.md
     title: Antonella — Power BI Direct Access (API & Database Integration)

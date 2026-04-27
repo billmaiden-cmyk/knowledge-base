@@ -1,7 +1,7 @@
 ---
 title: Open Actions Tracker
 created: 2026-04-11 14:30 AEST
-updated: 2026-04-27 06:30 AEST
+updated: 2026-04-28 06:30 AEST
 tags: [actions, tracker, meta, governance]
 ---
 
@@ -9,7 +9,11 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 **How to use the ✓ and Comment columns:** As you read in Obsidian, type `✓` or `x` in the ✓ column when you've done an item. Add a free-form note in the Comment column (e.g. "blocked by X" or "done — sent to Tim 10am"). The next morning briefing reads these inline, moves ✓ items to the Completed table, and captures comments into the next briefing's "Yesterday's reconciliation" line. You don't need to switch out of Obsidian.
 
-*Last synced from: Daily briefing 27 April 2026, 06:30 AEST (Monday morning)*
+*Last synced from: Morning briefing 28 April 2026, 06:30 AEST (Tuesday morning)*
+
+**Updates 28 Apr (Tuesday morning):** A97 EQT NDA **RESOLVED** — Bill responded to Michael Johnston 08:34 AEST: "Will get this executed. How is Wednesday week for us to get together?" Proposes ~Wed 7 May meeting. A103 Deel payroll **IN PROGRESS** — "Next steps for your payment" confirmation received (bank transfer pending). A88 duplicate invoice — StrataMax support responded with credit note guidance ($227.70 for 08200002, case SMKBVXL); Vy to action. Bill also: responded to Philippa on custody calendar (weekends 23-24 May, 6-7 Jun requested), sent Liberty revisions notes to self, created Matt 1:1 Zendesk ticket. New Matt 1:1 on calendar at 6pm AEST today — confirm intentional. New: A105 Upwork rate increase (Johnny Joseph, 10%, FYI), A106 HubSpot lead (LP - Call back guarantee B), A107 Kassem CA $660 GoCardless. Day-counter bumps: A82 BPAY Day 9, A83 laptop Day 9, A89 Strata Staff 19 days overdue, A11 Tom Anning 15 days uncommitted. StrataMax training confirmed 2pm AEST today (Lisa McCoustra); Keira leads, Bill at Modra.
+
+**Updates 27 Apr evening close:** Silent day from Bill — no inline ✓/Comment notes on today's briefing, no Slack DMs to AI, no triage signals from Keira, no #urgent-tasks posts. No items confirmed closed. Matt 1:1 4:15–5:15pm should have happened but no debrief yet (carry to tomorrow's briefing). All carry items roll forward to Tuesday: A97 EQT NDA now last day before Tue deadline, A97 Liberty HubSpot now 1 day past target send window, A82 BPAY Day 8, A83 laptop Day 8, A89 Strata Staff 18 days overdue, A11 Tom Anning Partner economics 15 days uncommitted, A66 SP 87409 Fire Order 7 days overdue, A67–A70 Matt cleanup 5–8 days overdue, A103 Deel Vietnam payroll still open (was due today), A104 Hendry Patreon still open (membership now expired), A102 Sean D'Souza confirm-attendance still open. **Tonight's must-do:** A96 Modra Board Report read for tomorrow's all-day. **Tomorrow conflict flag:** Modra board (1pm Melbourne) and StrataMax training (2pm AEST, A49) overlap — Bill cannot do both; Keira leads StrataMax per A49 spec.
 
 **Updates 27 Apr (Monday morning):** No new actions overnight. No inline ✓/Comment notes from Bill on Sunday's evening close (all empty). Strategic-sender 7d sweep clean (0 fresh hits). Day-counter bumps for carry items: A82 BPAY Day 7, A83 laptop Day 7, A89 Strata Staff 17 days overdue, A11 Tom Anning Partner economics 14 days uncommitted, A97 EQT NDA 3 days since arrival (must respond by Tue), A66/A67–A70 Matt cleanup 5–7 days overdue (1:1 today is the container), A45 Andreas SP 93493 13 days carry. Trading: FDV Day 6 undecided; CAT decision pending today before US open.
 
@@ -33,9 +37,9 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 | # | Owner | Action | Initiative | Due | Days Overdue | ✓ | Comment |
 |---|-------|--------|-----------|-----|-------------|---|---------|
-| A97 | Bill | **🔴 EQT NDA — Michael Johnston (Fri 24 Apr 14:25 AEST).** Draft NDA to share strata opportunity info. Michael in Vietnam this week, suggests catch-up week of 5 May. EQT is preferred MTS buyer (Q02). | MTS/M&A | Respond by Tue 28 Apr | 2 | |
-| A03 | Kat | Oppenheimer SP 36335 — insurance installment. Bill messaged Kat: levies paid, can now process insurance. **In progress.** | MTS | 9 Apr 2026 | 17 days | |
-| A66 | Matt | **SP 87409 Fire Order ticket 123829** — 31+ days past 24hr KPI, compliance risk. Confirm at Mon 1:1. See [[wiki/synthesis/matt-ticket-review-shared-2026-04-19.md]]. | MTS | **Mon 20 Apr AM** | 6 days | |
+| A105 | Bill | **🔴 Execute EQT NDA & return signed PDF + propose Wed 6 May time** — verbal commitment sent 28 Apr 08:34 AEST. Sign and return promptly so the gap doesn't read like the prior 3-day delay. | MTS/M&A | Tonight or Wed 29 Apr AM | 0 | |
+| A03 | Kat | Oppenheimer SP 36335 — insurance installment. Bill messaged Kat: levies paid, can now process insurance. **In progress.** | MTS | 9 Apr 2026 | 19 days | |
+| A66 | Matt | **SP 87409 Fire Order ticket 123829** — 31+ days past 24hr KPI, compliance risk. Confirm at Mon 1:1. See [[wiki/synthesis/matt-ticket-review-shared-2026-04-19.md]]. | MTS | **Mon 20 Apr AM** | 8 days | |
 
 ---
 
@@ -135,6 +139,8 @@ Live tracker of open action items across all initiatives. Updated after each bri
 
 | # | Action | Completed | Initiative |
 |---|--------|-----------|-----------|
+| A97 (M&A) | EQT NDA — Bill responded to Michael Johnston, proposed Wed 7 May catch-up. NDA to be executed. | 28 Apr | MTS/M&A |
+| A103 | Deel payroll — payment process started, bank transfer pending | 27 Apr | MTS/VN |
 | A90 | GoDaddy Vietnamese M365 deletion — INTENTIONAL, prompted by Andrew. Accounts decommissioned as planned. | 26 Apr | MTS |
 | A95 | Signa data pipeline restored — 54 signals captured 12:35 AEST | 26 Apr | TRADING |
 | A76 | Sean D'Souza meeting confirmed — Thu 30 Apr 2pm Google Meet with Eric Okawa committee (6 members) | 26 Apr | MTS/GTM |

@@ -1,5 +1,30 @@
 pages:
 
+  - path: wiki/briefings/2026-04-28.md
+    title: "Daily Briefing — 28 April 2026 (Tuesday)"
+    type: synthesis
+    tags: [briefing, daily, executive-synthesis]
+    sources:
+      - Outlook (bmaiden@morethanstrata.com.au) — 27–28 Apr
+      - Gmail (billmaiden@gmail.com) — 27–28 Apr
+      - Slack DM + #general + #urgent-tasks
+      - Outlook Calendar (28 Apr – 2 May)
+      - wiki/briefings/2026-04-27.md
+      - wiki/actions 3.md
+    source_date: 2026-04-28
+    created: 2026-04-28 06:30 AEST
+    updated: 2026-04-28 06:30 AEST
+
+  - path: wiki/synthesis/signa-2026-04-27.md
+    title: "Signa Daily Signals — 2026-04-27"
+    type: synthesis
+    tags: [trading, signa, signals, daily, quant]
+    sources:
+      - https://app.getsigna.ai/dashboard/signals (scraped via Chrome MCP, 2026-04-27 12:34 AEST)
+    source_date: 2026-04-27
+    created: 2026-04-27 12:34 AEST
+    updated: 2026-04-27 12:34 AEST
+
   - path: wiki/synthesis/signa-2026-04-26.md
     title: "Signa Daily Signals — 2026-04-26"
     type: synthesis
@@ -352,13 +377,14 @@ pages:
   - path: wiki/concepts/liberty-management-advisory-messaging.md
     title: Liberty — Management-Side Advisory Key Messages & Objection Handling
     type: concept
-    tags: [liberty, management-advisory, objection-handling, key-messages, sales, m-and-a, private-equity, positioning, conviction-chain, process-mechanics, email-architecture]
+    tags: [liberty, management-advisory, objection-handling, key-messages, sales, m-and-a, private-equity, positioning, conviction-chain, process-mechanics, email-architecture, principal-counsel]
     sources:
       - Bill Maiden verbal (15 April 2026) — Ausgrid smart meters spin-out context
       - Bill Maiden — Project ES email iteration session (15 April 2026) — process corrections, conviction chain, email architecture
-    source_date: 2026-04-15
+      - Bill Maiden — Estia/Freehills positioning session (27 April 2026) — principal-counsel vs professional-counsel framing
+    source_date: 2026-04-15 to 2026-04-27
     created: 2026-04-15 12:00 AEST
-    updated: 2026-04-15 18:30 AEST
+    updated: 2026-04-27 19:30 AEST
 
   # ─── Concepts: Wealth & Finance ──────────────────────────────────────────────
 
@@ -824,6 +850,18 @@ pages:
     source_date: 2026-04-14 to 2026-04-15
     created: 2026-04-15 12:30 AEST
     updated: 2026-04-15 12:30 AEST
+
+  - path: wiki/synthesis/liberty-working-with-lawyers.md
+    title: "Liberty — Working with Legal Counsel"
+    type: synthesis
+    tags: [liberty, management-advisory, principal-counsel, legal-counsel, positioning, estia, freehills, m-and-a, private-equity]
+    sources:
+      - Bill Maiden — Estia/Freehills positioning session (27 April 2026)
+      - tools/liberty-positioning/generate_briefing.py
+      - wiki/synthesis/liberty-working-with-lawyers.pdf
+    source_date: 2026-04-27
+    created: 2026-04-27 19:30 AEST
+    updated: 2026-04-27 19:30 AEST
 
   - path: wiki/synthesis/bill-maiden-generational-wealth-plan.md
     title: Bill Maiden — Generational Wealth Plan
@@ -1395,6 +1433,20 @@ pages:
     source_date: 2026-04-26 to 2026-04-27
     created: 2026-04-27 04:00 AEST
     updated: 2026-04-27 04:00 AEST
+
+  - path: wiki/synthesis/trading-intel-2026-04-28.md
+    title: "Trading Intel — 2026-04-28"
+    type: synthesis
+    tags: [trading, intel, daily, signal-aggregation, signa-led, fomc-day]
+    sources:
+      - wiki/synthesis/signa-2026-04-27.md (55 signals, primary spine, FOMC-eve pull)
+      - wiki/synthesis/trading-intel-2026-04-27.md (continuity + reversal detection)
+      - wiki/synthesis/trading-intel-2026-04-26.md (lineage)
+      - wiki/synthesis/trading-sync-2026-04-26.md (DannyTrades Sunday dump cross-reference, 2 days stale)
+      - wiki/trading-portfolio.md (still empty template)
+    source_date: 2026-04-27 to 2026-04-28
+    created: 2026-04-28 04:00 AEST
+    updated: 2026-04-28 04:00 AEST
 
   - path: wiki/concepts/antonella-powerbi-direct-access.md
     title: Antonella — Power BI Direct Access (API & Database Integration)

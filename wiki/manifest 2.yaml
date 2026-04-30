@@ -1,5 +1,53 @@
 pages:
 
+  - path: wiki/briefings/2026-05-01.md
+    title: "Daily Briefing — 1 May 2026 (Friday)"
+    type: synthesis
+    tags: [briefing, daily, executive-synthesis]
+    sources:
+      - Outlook (bmaiden@morethanstrata.com.au) — 30 Apr–1 May
+      - Gmail (billmaiden@gmail.com) — 30 Apr–1 May
+      - Slack MTS workspace — 30 Apr–1 May
+      - Outlook Calendar (1–8 May)
+      - wiki/briefings/2026-04-30.md
+      - wiki/actions 4.md (30 Apr evening close)
+      - wiki/log 2.md
+    source_date: 2026-05-01
+    created: 2026-05-01 06:30 AEST
+    updated: 2026-05-01 06:30 AEST
+
+  - path: wiki/briefings/2026-04-30.md
+    title: "Daily Briefing — 30 April 2026 (Thursday)"
+    type: synthesis
+    tags: [briefing, daily, executive-synthesis]
+    sources:
+      - Outlook (bmaiden@morethanstrata.com.au) — 29–30 Apr
+      - Gmail (billmaiden@gmail.com) — 29–30 Apr
+      - Slack DM + #dailystand-up + #urgent-tasks
+      - Outlook Calendar (30 Apr – 4 May)
+      - wiki/briefings/2026-04-28.md
+      - wiki/coaching/2026-04-29-session-010.md
+      - wiki/actions 3.md
+      - wiki/strategic-questions.md
+      - wiki/synthesis/trading-intel-2026-04-30.md
+      - wiki/decisions.md
+    source_date: 2026-04-30
+    created: 2026-04-30 06:30 AEST
+    updated: 2026-04-30 06:30 AEST
+
+  - path: wiki/entities/nz-motor-vehicle-register.md
+    title: "NZ Motor Vehicle Register (NZTA)"
+    type: entity
+    tags: [entity, liberty, deal-pipeline, nz, government, registry, infrastructure, privatisation, nzta]
+    sources:
+      - https://www.nbr.co.nz/politics/private-sector-called-on-to-help-modernise-motor-vehicle-registry/
+      - https://www.nzta.govt.nz/about-us/about-nz-transport-agency-waka-kotahi/our-executive-leadership-team
+      - https://www.nzta.govt.nz/media-releases/brett-gliddon-appointed-nz-transport-agency-chief-executive
+      - Bill Maiden verbal — Liberty origination, 30 Apr 2026
+    source_date: 2025-02 to 2026-04
+    created: 2026-04-30 18:30 AEST
+    updated: 2026-04-30 18:30 AEST
+
   - path: wiki/briefings/2026-04-28.md
     title: "Daily Briefing — 28 April 2026 (Tuesday)"
     type: synthesis
@@ -14,6 +62,26 @@ pages:
     source_date: 2026-04-28
     created: 2026-04-28 06:30 AEST
     updated: 2026-04-28 06:30 AEST
+
+  - path: wiki/synthesis/signa-2026-04-30.md
+    title: "Signa Daily Signals — 2026-04-30"
+    type: synthesis
+    tags: [trading, signa, signals, daily, quant]
+    sources:
+      - https://app.getsigna.ai/dashboard/signals (scraped via Chrome MCP, 2026-04-30 12:38 AEST)
+    source_date: 2026-04-30
+    created: 2026-04-30 12:38 AEST
+    updated: 2026-04-30 12:38 AEST
+
+  - path: wiki/synthesis/signa-2026-04-28.md
+    title: "Signa Daily Signals — 2026-04-28"
+    type: synthesis
+    tags: [trading, signa, signals, daily, quant]
+    sources:
+      - https://app.getsigna.ai/dashboard/signals (scraped via Chrome MCP, 2026-04-28 12:35 AEST)
+    source_date: 2026-04-28
+    created: 2026-04-28 12:35 AEST
+    updated: 2026-04-28 12:35 AEST
 
   - path: wiki/synthesis/signa-2026-04-27.md
     title: "Signa Daily Signals — 2026-04-27"
@@ -333,12 +401,15 @@ pages:
   - path: wiki/entities/matt-wrigley.md
     title: Matt Wrigley
     type: entity
-    tags: [person, mts, team, senior-strata-manager, fire, defects, special-projects, direct-report]
+    tags: [person, mts, team, senior-strata-manager, fire, defects, special-projects, direct-report, role-design-question, exit-path-forming]
     sources:
       - raw/Organisation Structure_20250701.pdf
-    source_date: 2025-07
+      - Coaching session 2026-04-12 (session 006)
+      - Coaching session 2026-04-24 (session 008)
+      - Coaching session 2026-04-29 (session 010)
+    source_date: 2025-07 to 2026-04
     created: 2026-04-09 10:00 AEST
-    updated: 2026-04-09 10:00 AEST
+    updated: 2026-04-29 21:30 AEST
 
   - path: wiki/entities/quang.md
     title: Quang
@@ -755,6 +826,19 @@ pages:
     source_date: 2026-04-26
     created: 2026-04-26 14:00 AEST
     updated: 2026-04-26 14:00 AEST
+
+  - path: wiki/coaching/2026-04-29-session-010.md
+    title: "Coaching Session 010 — 2026-04-29"
+    type: coaching
+    tags: [coaching, session, matt-wrigley, role-design, exit-planning, performed-vs-clean-anger, tolerance-loop, achievement-based-self-worth, 1on1-debrief, pip-path]
+    sources:
+      - wiki/entities/matt-wrigley.md
+      - wiki/coaching/2026-04-24-session-008.md
+      - wiki/synthesis/matt-weekly-status-tool-2026-04-22.md
+      - wiki/strategic-questions.md
+    source_date: 2026-04-28 to 2026-04-29
+    created: 2026-04-29 21:30 AEST
+    updated: 2026-04-29 21:30 AEST
 
   - path: wiki/coaching/2026-04-24-session-008.md
     title: "Coaching Session 008 — 2026-04-24"
@@ -1447,6 +1531,21 @@ pages:
     source_date: 2026-04-27 to 2026-04-28
     created: 2026-04-28 04:00 AEST
     updated: 2026-04-28 04:00 AEST
+
+  - path: wiki/synthesis/trading-intel-2026-04-30.md
+    title: "Trading Intel — 2026-04-30"
+    type: synthesis
+    tags: [trading, intel, daily, signal-aggregation, signa-stale, post-fomc, gmail-unbound]
+    sources:
+      - wiki/synthesis/signa-2026-04-28.md (58 signals, ~40h stale at this brief; 29 Apr pull missed)
+      - wiki/synthesis/trading-intel-2026-04-28.md (last brief — carry-forward source)
+      - wiki/synthesis/trading-intel-2026-04-27.md (lineage)
+      - wiki/synthesis/trading-sync-2026-04-26.md (DannyTrades Sunday dump cross-reference, 4 days stale)
+      - wiki/trading-portfolio.md (still empty template, 6th consecutive day blocking diff)
+    source_date: 2026-04-28
+    created: 2026-04-30 04:00 AEST
+    updated: 2026-04-30 04:00 AEST
+    stale: true
 
   - path: wiki/concepts/antonella-powerbi-direct-access.md
     title: Antonella — Power BI Direct Access (API & Database Integration)

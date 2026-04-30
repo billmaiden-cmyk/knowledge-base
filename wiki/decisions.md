@@ -1,13 +1,25 @@
 ---
 title: Decisions Log
 created: 2026-04-11 14:30 AEST
-updated: 2026-04-25 13:00 AEST
+updated: 2026-04-30 06:30 AEST
 tags: [decisions, log, meta, governance]
 ---
 
 Running log of significant decisions — strategic, operational, and structural. Newest at the top. Routine or reversible decisions are not logged here; this is for choices that lock in a direction, commit resources, or reflect a material change in strategy.
 
 Format: date | domain | decision | rationale | source
+
+---
+
+## [2026-04-29] MTS | Matt Wrigley — exit path via PIP; 6-week sequence to mid-June
+
+After the Tue 28 Apr 6pm Matt 1:1 produced Version B (per session 008's prediction — strata search and ticket cleanup as context not plan; project tracker not delivered "too busy"; affect indifferent), and after the matt-status-report tool test demonstrated that every excuse Matt offered already had a structural answer in the tool he's had for a week, Q01 narrowed to one live option: clean exit. Option 2 (accept the gap) is structurally dead — cannot accept a gap whose cause is refusal to engage with the system designed to remove the obstacles he names. Option 1 (restructure to principal/P&L) is technically alive but the data argues against it (cherry-picking, ducking routine, indifference to billing targets — none of these traits match a P&L leader; restructure gives him the title and hopes the discipline follows). Option 3 (clean exit) is the live path, sequenced as a documented PIP rather than an abrupt termination.
+
+**Why:** Three months of carrying Matt while being thumbed at — the tolerance loop named in session 008 has now closed. The strategic call is execution discipline, not deciding. Performed-anger ("hit harder") would feel louder to Bill but land shallower; clean documented sequencing is what produces a defensible record. Cost of carrying through ≈ $20k (6 weeks × $3,368/week) — cheap for clean exit + paper trail.
+
+**How to apply:** 6-week sequence: (1) Wed 30 Apr — four-line written reinforcement to Matt (billing 22.5 by Friday, project tracker via tool by Friday — calm, no editorial); (2) this week — observe; (3) 5/6 May — next 1:1 same frame, document; (4) w/c 12 May — brief NSW employment lawyer (~$3–5k), lawyer drafts PIP (not Bill); (5) w/c 19 May — deliver PIP in person, 30-day clock; (6) ~16–19 June — clean exit if PIP fails, capability rebuilt around Keira + contractor + external hire. Confidentiality: PIP framework not shared with anyone (incl. Keira) until delivery. **Q01 closes formally when PIP outcome lands mid-June, not now.**
+
+**Related:** [[coaching/2026-04-29-session-010.md]] | [[coaching/2026-04-24-session-008.md]] | [[Matt Wrigley]] | [[Matt Wrigley — Weekly Status Report Tool (2026-04-22)]] | Q01 in strategic-questions.md
 
 ---
 

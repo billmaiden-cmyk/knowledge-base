@@ -1,7 +1,7 @@
 ---
 title: Strategic Questions Tracker
 created: 2026-04-25 09:30 AEST
-updated: 2026-04-27 06:30 AEST
+updated: 2026-04-30 06:30 AEST
 tags: [strategic, decisions, tracker, meta, governance]
 ---
 
@@ -15,22 +15,37 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 
 ## Open
 
-### Q01 | Matt Wrigley — role design
+### Q01 | Matt Wrigley — role design — **DIRECTION SET 2026-04-29**
 
 **Surfaced:** 2026-04-24 (coaching session 008)
+**Direction set:** 2026-04-29 (coaching session 010, post Tue 28 Apr 1:1)
 
 **The question:** Is this a role I can reshape to fit a specialist who needs to see himself as a principal, or do I need to rebuild this capability around someone else?
 
-**Three options on the table:**
-1. Restructure role — Practice Leader with P&L responsibility for fire/defects specialist team
-2. Accept the gap — pay $161k for ~13 hrs/week, drop the billing-target conversation, shift to project quality
-3. Exit over 60–90 days — clean PIP, rebuild capability via internal promotion + external hire
+**Status:** **Direction set — exit path active.** Q01 has not been formally closed (it closes when the PIP runs and the outcome lands), but the option set has narrowed and the 6-week sequence is in motion. Move to `wiki/decisions.md` once the PIP outcome is known (mid-June).
 
-**Decision window:** Mid-May 2026 (~3 weeks). Bill needs to see Tuesday 28 Apr 1:1 outcome and ~2 weeks of post-conversation behaviour.
+**Decision after the 28 Apr 1:1:**
 
-**Status:** Open. Tuesday 28 Apr 1:1 is the immediate container. Don't decide before then.
+- **Option 2 (accept) — dead.** The [[Matt Wrigley — Weekly Status Report Tool (2026-04-22)]] removed every legitimate excuse for status reporting. Matt's "the system inhibits me from reporting status" response is structural evidence the obstacle is internal, not tooling. Cannot accept a gap whose cause is refusal to engage with a system designed to remove the friction he names.
+- **Option 1 (restructure to principal/P&L) — technically alive, structurally weak.** Cherry-picking, ducking routine reporting, indifference to billing targets — none of those traits match a P&L leader. Restructure would give him the title and hope the discipline follows. The data argues it won't.
+- **Option 3 (clean exit) — the live path.** PIP-documented over a 30-day window. Mid-June exit trigger if targets aren't met.
 
-**Related:** [[Matt Wrigley]] | [[coaching/2026-04-24-session-008.md]]
+**6-week sequence (from coaching session 010):**
+
+| Date | Action |
+|---|---|
+| 30 Apr (Wed AM) | Four-line written reinforcement to Matt. Paper trail. |
+| 30 Apr – 4 May | Observe. Bank Friday's billing + whether tracker arrives. |
+| 5/6 May | Next 1:1, same frame. Document. |
+| w/c 12 May | Brief NSW employment lawyer. Lawyer drafts PIP. ~$3–5k. |
+| w/c 19 May | Deliver PIP in person. 30-day clock. |
+| ~16–19 June | Clean exit if PIP failed. Capability rebuilt — Keira + contractor + external hire. |
+
+**Cost of carrying through:** ~$20k (6 weeks × $3,368/week). Cheap for clean exit + defensible record.
+
+**Confidentiality:** PIP framework not shared with anyone (including Keira) until delivery. Operational frustration with Matt is normal — Keira already shares it. The structural plan stays confidential.
+
+**Related:** [[Matt Wrigley]] | [[coaching/2026-04-24-session-008.md]] | [[coaching/2026-04-29-session-010.md]] | [[Matt Wrigley — Weekly Status Report Tool (2026-04-22)]]
 
 ---
 
@@ -49,7 +64,7 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 
 **Decision window:** Ongoing. The Misha meeting is the immediate test; EQT cadence is likely slower and on their initiative.
 
-**Status:** Open.
+**Status:** Open. EQT NDA verbally committed 28 Apr 08:34 AEST (Wed 7 May proposed); execution still pending Day 3 (A105). Misha second meeting confirmation pending.
 
 **Related:** [[Misha Dragonfly]] (TBC entity page) | [[EQT Partners]] | A87 in actions tracker
 
@@ -63,7 +78,7 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 
 **Decision window:** Ongoing — review monthly. Next checkpoint: end of May.
 
-**Status:** Open. Tom Anning Partner economics under review (A11). Liberty Tu-Th protected time is the operating discipline.
+**Status:** Open. **🟢 Liberty has its first live mandate — Tom Anning sent Estia engagement letter 29 Apr 19:39 AEST; Bill replied with drafting question 19:47.** Energy is now flowing where the wealth plan wants it. Tom Anning Partner economics (A11) reframed: read terms in light of "deal is happening". Liberty Tu-Th protected time is the operating discipline.
 
 **Related:** [[wiki/synthesis/bill-maiden-generational-wealth-plan.md]] | [[Liberty Corporate Finance]]
 
@@ -91,7 +106,7 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 
 **Decision window:** Near-term — current quality of trading decisions is being affected by the gap.
 
-**Status:** Open. Bill asked for help in this area in the 25 Apr update.
+**Status:** Open. **🔴 Pipeline degradation worsened.** Signa missed 29 Apr pull entirely (40h stale at 30 Apr brief). Gmail/Slack MCPs unbound 5th consecutive day at 4am run. Pipeline triage now competes with synthesis-layer build for priority — base infrastructure must be reliable before synthesis is worth building.
 
 **Related:** Q03 (Liberty energy split) — same root cause: Bill's hours are constrained.
 

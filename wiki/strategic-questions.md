@@ -1,7 +1,7 @@
 ---
 title: Strategic Questions Tracker
 created: 2026-04-25 09:30 AEST
-updated: 2026-04-30 06:30 AEST
+updated: 2026-05-02 06:30 AEST
 tags: [strategic, decisions, tracker, meta, governance]
 ---
 
@@ -64,7 +64,7 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 
 **Decision window:** Ongoing. The Misha meeting is the immediate test; EQT cadence is likely slower and on their initiative.
 
-**Status:** Open. EQT NDA verbally committed 28 Apr 08:34 AEST (Wed 7 May proposed); execution still pending Day 3 (A105). Misha second meeting confirmation pending.
+**Status:** Open. EQT NDA verbally committed 28 Apr 08:34 AEST (Wed 7 May proposed); execution still pending **Day 5 (A105)** — Mon 4 May AM is the last clean window before Wed credibility erodes. Misha/Dragonfly second meeting **CONFIRMED Wed 7 May 10am** in-person, 17–19 Bridge St Sydney (Misha + Mitch + Ben). **Both pivotal meetings now on the same day.**
 
 **Related:** [[Misha Dragonfly]] (TBC entity page) | [[EQT Partners]] | A87 in actions tracker
 
@@ -78,7 +78,7 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 
 **Decision window:** Ongoing — review monthly. Next checkpoint: end of May.
 
-**Status:** Open. **🟢 Liberty has its first live mandate — Tom Anning sent Estia engagement letter 29 Apr 19:39 AEST; Bill replied with drafting question 19:47.** Energy is now flowing where the wealth plan wants it. Tom Anning Partner economics (A11) reframed: read terms in light of "deal is happening". Liberty Tu-Th protected time is the operating discipline.
+**Status:** Open. **🟢 Strongest Liberty week on record (W18, 27 Apr–1 May).** Estia engagement letter (Tue) + Craig Napier (Camp Australia CEO) **CONVERTED** on Spread+Trap+Banker framing (Fri) + One Investment Group + First AML research filed (Fri) + Antonella synthesis advanced (Fri). Energy is demonstrably flowing where the wealth plan wants it. Tom Anning Partner economics (A11) reframed: now reading "what am I actually earning from work I'm already doing." Liberty cold-reply architecture (Spread+Trap+Banker) now validated as repeatable IP — see decisions.md 2026-05-01.
 
 **Related:** [[wiki/synthesis/bill-maiden-generational-wealth-plan.md]] | [[Liberty Corporate Finance]]
 
@@ -106,7 +106,7 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 
 **Decision window:** Near-term — current quality of trading decisions is being affected by the gap.
 
-**Status:** Open. **🔴 Pipeline degradation worsened.** Signa missed 29 Apr pull entirely (40h stale at 30 Apr brief). Gmail/Slack MCPs unbound 5th consecutive day at 4am run. Pipeline triage now competes with synthesis-layer build for priority — base infrastructure must be reliable before synthesis is worth building.
+**Status:** Open. **🟡 Pipeline partially restored.** Signa pulled cleanly 30 Apr (56 signals) and 1 May 02:42 AEST off-cadence (59 signals); 1 May 12:30 standard pull missed (2nd miss in 5 days). Antonella synthesis advancing on the strategy-side (left-side cross + position scoring + ATR reconciliation + 8 autoresearch hypotheses filed 1 May 19:30 AEST). Sun 3 May 6pm `/trading-sync` Windows task will close 7-day Antonella sync gap. Gmail/Slack MCPs still intermittent at 4am runs.
 
 **Related:** Q03 (Liberty energy split) — same root cause: Bill's hours are constrained.
 

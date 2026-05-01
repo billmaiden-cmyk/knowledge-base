@@ -1,13 +1,25 @@
 ---
 title: Decisions Log
 created: 2026-04-11 14:30 AEST
-updated: 2026-04-30 06:30 AEST
+updated: 2026-05-02 06:30 AEST
 tags: [decisions, log, meta, governance]
 ---
 
 Running log of significant decisions — strategic, operational, and structural. Newest at the top. Routine or reversible decisions are not logged here; this is for choices that lock in a direction, commit resources, or reflect a material change in strategy.
 
 Format: date | domain | decision | rationale | source
+
+---
+
+## [2026-05-01] LIBERTY/META | Spread + Trap + Banker as validated cold-reply conversion architecture
+
+The Craig Napier (Camp Australia CEO) cold-reply iteration on 1 May produced a converted prospect on three positioning arguments crystallised over five drafts: **Spread Argument** (the market for management incentives is not orderly — limited deal flow means even a lawyer cannot argue what's market, let alone why this asset/buyer/cycle/team should be different); **Political Capital Trap** (without principal counsel, CEO advocates for own package face-to-face with future boss — push hard burns capital, hold back compromises economics, either way the team loses); **Banker Analogy** ("we do for management what the banker does for the asset: we are in the deal; the lawyer documents"). Opening reframe: "happy vs possible" — *we find the reps reveal what we're happy with, not necessarily what is possible* — disarms the lawyer-experience objection without contradicting it. Craig replied within hours: *"Thanks Bill. Agree with all. Will be in touch."* — substantive agreement on the analytical content, with active posture replacing passive "circle back as required."
+
+**Why:** This is the first cold-converted Liberty prospect on the new framing. Conversion happened on the strength of the IDEAS alone — Craig had no Liberty credibility to lean on. The architecture is therefore not a one-off; it is a repeatable cold-reply pattern that can be reached for in future conversations. Locking it into a decision (rather than leaving it as session-only output) is what turns it into reusable IP.
+
+**How to apply:** When responding to a sceptical "I've used lawyers for this before" objection from a CEO/management team, use the Spread + Trap + Banker triad with the "happy vs possible" reframe. The architecture is documented at `wiki/synthesis/liberty-cold-reply-craig-napier-2026-05-01.md` (full reply text + decision memo) and reflected in `wiki/concepts/liberty-working-with-lawyers.md` (Spread Argument and Political Capital Trap sections) and `wiki/concepts/liberty-management-advisory-messaging.md` (Email Architecture section). Tom Anning to be briefed Mon AM with the worked example so he can use the same architecture in his own conversations. Posture on Craig himself: do NOT chase — Camp Australia monthly process-watch routine reads silence as "no trigger yet" vs "lost momentum."
+
+**Related:** [[wiki/synthesis/liberty-cold-reply-craig-napier-2026-05-01.md]] | [[wiki/concepts/liberty-working-with-lawyers.md]] | [[wiki/concepts/liberty-management-advisory-messaging.md]] | [[wiki/comms/liberty-tom-anning-craig-conversion-2026-05-01.md]] | [[wiki/entities/liberty-cf-deal-pipeline.md]]
 
 ---
 

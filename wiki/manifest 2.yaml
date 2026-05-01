@@ -1,5 +1,53 @@
 pages:
 
+  - path: wiki/briefings/2026-05-02.md
+    title: "Daily Briefing — 2 May 2026 (Saturday)"
+    type: synthesis
+    tags: [briefing, daily, executive-synthesis, weekend]
+    sources:
+      - wiki/briefings/2026-05-01.md
+      - wiki/log 2.md
+      - wiki/actions 4.md
+      - wiki/mts-status 2.md
+      - wiki/coaching/2026-04-29-session-010.md
+      - wiki/strategic-questions.md, wiki/decisions.md
+      - wiki/synthesis/signa-2026-05-01.md, wiki/synthesis/trading-intel-2026-05-02.md
+      - wiki/synthesis/liberty-cold-reply-craig-napier-2026-05-01.md
+      - wiki/synthesis/one-investment-group-research-2026-05-01.md
+      - wiki/synthesis/antonella-left-side-cross-and-position-scoring-2026-05-01.md
+      - wiki/entities/first-aml.md
+    source_date: 2026-05-02
+    created: 2026-05-02 06:30 AEST
+    updated: 2026-05-02 06:30 AEST
+
+  - path: wiki/synthesis/antonella-left-side-cross-and-position-scoring-2026-05-01.md
+    title: "Antonella — Left-Side Cross Labelling, ATR Baseline & Position Scoring (APX Window Analysis, 2026-05-01)"
+    type: synthesis
+    tags: [trading, antonella, apx, appen, constructive-base, ma-cross, atr, position-scoring, autoresearch, synthesis]
+    sources:
+      - Bill's note 2026-05-01 (left-side cross labelling proposal, APX 7/12/26-week window comparison)
+      - Antonella's chat note on ATR compression formula (ATR2 / ATR_6M_AVG; integrated multiplicative score)
+      - https://docs.google.com/spreadsheets/d/1-mC7qiqSSimhp4Ua9xqk_lQ11C1c0kK-igl_NAu2RfI/edit
+    source_date: 2026-05-01
+    created: 2026-05-01 14:30 AEST
+    updated: 2026-05-01 14:30 AEST
+
+  - path: wiki/synthesis/one-investment-group-research-2026-05-01.md
+    title: "One Investment Group — Liberty Deal Research"
+    type: synthesis
+    tags: [liberty, deal-pipeline, prospects, fund-services, responsible-entity, trustee, australian-funds, management-side-advisory, frank-tearle, forsite-capital]
+    sources:
+      - https://www.oneinvestment.com.au/
+      - https://www.forsitecapital.com.au/investments/one-investment-group
+      - https://pitchbook.com/profiles/company/147011-50
+      - https://www.bloomberg.com/profile/company/1329290D:AU
+      - https://www.bloomberg.com/profile/person/15416951
+      - https://www.perpetual.com.au/corporate-trust/responsible-entity/
+      - https://www.eqt.com.au/corporates-and-fund-managers/fund-managers/australia
+    source_date: 2026-05-01
+    created: 2026-05-01 17:45 AEST
+    updated: 2026-05-01 17:45 AEST
+
   - path: wiki/briefings/2026-05-01.md
     title: "Daily Briefing — 1 May 2026 (Friday)"
     type: synthesis
@@ -48,6 +96,20 @@ pages:
     created: 2026-04-30 18:30 AEST
     updated: 2026-04-30 18:30 AEST
 
+  - path: wiki/entities/first-aml.md
+    title: "First AML"
+    type: entity
+    tags: [entity, regtech, aml, kyc, saas, new-zealand, blackbird-ventures, tranche-2, m-and-a, deal-flow]
+    sources:
+      - raw/First_AML_Valuation_Analysis_Manus_2026-05-01.pdf
+      - AFR authenticated search 1 May 2026 (2 articles confirmed; no active sale coverage)
+      - https://www.austrac.gov.au/amlctf-reform (Tranche 2 timeline)
+      - https://www.blackbird.vc/portfolio/first-aml
+      - https://techcrunch.com/2021/11/01/new-zealand-based-customer-due-diligence-platform-first-aml-gets-21m-series-b/
+    source_date: 2021-11 to 2026-05
+    created: 2026-05-01 14:30 AEST
+    updated: 2026-05-01 14:30 AEST
+
   - path: wiki/briefings/2026-04-28.md
     title: "Daily Briefing — 28 April 2026 (Tuesday)"
     type: synthesis
@@ -62,6 +124,16 @@ pages:
     source_date: 2026-04-28
     created: 2026-04-28 06:30 AEST
     updated: 2026-04-28 06:30 AEST
+
+  - path: wiki/synthesis/signa-2026-05-01.md
+    title: "Signa Daily Signals — 2026-05-01"
+    type: synthesis
+    tags: [trading, signa, signals, daily, quant]
+    sources:
+      - https://app.getsigna.ai/dashboard/signals (scraped via Chrome MCP, 2026-05-01 02:42 AEST)
+    source_date: 2026-05-01
+    created: 2026-05-01 02:42 AEST
+    updated: 2026-05-01 02:42 AEST
 
   - path: wiki/synthesis/signa-2026-04-30.md
     title: "Signa Daily Signals — 2026-04-30"
@@ -289,13 +361,18 @@ pages:
   - path: wiki/entities/liberty-cf-deal-pipeline.md
     title: Liberty CF Deal Pipeline
     type: entity
-    tags: [liberty, deal-pipeline, corporate-finance, prospects, m-and-a, pe, fintech, public-to-private, takeover-targets]
+    tags: [liberty, deal-pipeline, corporate-finance, prospects, m-and-a, pe, fintech, public-to-private, takeover-targets, nz, infrastructure, education, camp-australia, fund-services, responsible-entity]
     sources:
       - Bill Maiden verbal debrief, 14 April 2026
       - raw/whatsapp/antonella-260415.txt
-    source_date: 2026-04-14 to 2026-04-15
+      - Bill Maiden verbal — Liberty origination, 30 Apr 2026
+      - https://www.nbr.co.nz/politics/private-sector-called-on-to-help-modernise-motor-vehicle-registry/
+      - Craig Napier reply to cold outreach, 30 Apr 2026 14:02 AEST (Gmail thread)
+      - Bill Maiden — Craig Napier cold reply iteration, 1 May 2026
+      - Bill Maiden research request — One Investment Group, 1 May 2026
+    source_date: 2026-04-14 to 2026-05-01
     created: 2026-04-14 17:45 AEST
-    updated: 2026-04-15 12:30 AEST
+    updated: 2026-05-01 17:45 AEST
 
   - path: wiki/entities/chris-thorndyke.md
     title: Chris Thorndyke
@@ -448,14 +525,15 @@ pages:
   - path: wiki/concepts/liberty-management-advisory-messaging.md
     title: Liberty — Management-Side Advisory Key Messages & Objection Handling
     type: concept
-    tags: [liberty, management-advisory, objection-handling, key-messages, sales, m-and-a, private-equity, positioning, conviction-chain, process-mechanics, email-architecture, principal-counsel]
+    tags: [liberty, management-advisory, objection-handling, key-messages, sales, m-and-a, private-equity, positioning, conviction-chain, process-mechanics, email-architecture, principal-counsel, spread-argument, political-capital-trap, banker-analogy]
     sources:
       - Bill Maiden verbal (15 April 2026) — Ausgrid smart meters spin-out context
       - Bill Maiden — Project ES email iteration session (15 April 2026) — process corrections, conviction chain, email architecture
       - Bill Maiden — Estia/Freehills positioning session (27 April 2026) — principal-counsel vs professional-counsel framing
-    source_date: 2026-04-15 to 2026-04-27
+      - Bill Maiden — Craig Napier cold reply iteration (1 May 2026) — spread argument, political capital trap, banker analogy crystallized, "happy vs possible" reframe
+    source_date: 2026-04-15 to 2026-05-01
     created: 2026-04-15 12:00 AEST
-    updated: 2026-04-27 19:30 AEST
+    updated: 2026-05-01 15:30 AEST
 
   # ─── Concepts: Wealth & Finance ──────────────────────────────────────────────
 
@@ -938,14 +1016,27 @@ pages:
   - path: wiki/synthesis/liberty-working-with-lawyers.md
     title: "Liberty — Working with Legal Counsel"
     type: synthesis
-    tags: [liberty, management-advisory, principal-counsel, legal-counsel, positioning, estia, freehills, m-and-a, private-equity]
+    tags: [liberty, management-advisory, principal-counsel, legal-counsel, positioning, estia, freehills, m-and-a, private-equity, spread-argument, political-capital-trap, banker-analogy]
     sources:
       - Bill Maiden — Estia/Freehills positioning session (27 April 2026)
+      - Bill Maiden — Craig Napier cold reply iteration (1 May 2026) — spread argument, political capital trap, banker analogy crystallized
       - tools/liberty-positioning/generate_briefing.py
       - wiki/synthesis/liberty-working-with-lawyers.pdf
-    source_date: 2026-04-27
+    source_date: 2026-04-27 to 2026-05-01
     created: 2026-04-27 19:30 AEST
-    updated: 2026-04-27 19:30 AEST
+    updated: 2026-05-01 15:30 AEST
+
+  - path: wiki/synthesis/liberty-cold-reply-craig-napier-2026-05-01.md
+    title: "Liberty — Craig Napier Cold Reply Worked Example (1 May 2026)"
+    type: synthesis
+    tags: [liberty, management-advisory, cold-outreach, email-architecture, principal-counsel, spread-argument, political-capital-trap, banker-analogy, craig-napier, camp-australia, worked-example, positioning]
+    sources:
+      - Craig Napier reply to Bill Maiden, 30 April 2026 14:02 AEST (Gmail thread)
+      - Bill Maiden — reply iteration session, 1 May 2026 (~14:00–15:30 AEST)
+      - Bill Maiden cold outreach to Craig Napier, 30 April 2026 13:20 AEST (HubSpot via bill.maiden@liberty-cf.com)
+    source_date: 2026-05-01
+    created: 2026-05-01 15:30 AEST
+    updated: 2026-05-01 15:30 AEST
 
   - path: wiki/synthesis/bill-maiden-generational-wealth-plan.md
     title: Bill Maiden — Generational Wealth Plan
@@ -1249,6 +1340,18 @@ pages:
     created: 2026-04-15 15:00 AEST
     updated: 2026-04-15 18:30 AEST
 
+  - path: wiki/comms/liberty-tom-anning-craig-conversion-2026-05-01.md
+    title: "Liberty — Partner Update to Tom Anning (Craig Napier conversion, 1 May 2026)"
+    type: synthesis
+    tags: [liberty, partner-update, tom-anning, craig-napier, camp-australia, cold-conversion, comms, principal-counsel, spread-argument, political-capital-trap, banker-analogy]
+    sources:
+      - Bill Maiden — Craig Napier reply iteration, 1 May 2026
+      - Craig Napier reply 1 May 2026 ~16:00 AEST (Gmail thread)
+      - wiki/synthesis/liberty-cold-reply-craig-napier-2026-05-01.md
+    source_date: 2026-05-01
+    created: 2026-05-01 16:30 AEST
+    updated: 2026-05-01 16:30 AEST
+
   - path: wiki/comms/slack-digest-mts-2026-04-06.md
     title: "Slack Digest — MTS — 30 Mar to 6 Apr 2026"
     type: synthesis
@@ -1546,6 +1649,20 @@ pages:
     created: 2026-04-30 04:00 AEST
     updated: 2026-04-30 04:00 AEST
     stale: true
+
+  - path: wiki/synthesis/trading-intel-2026-05-02.md
+    title: "Trading Intel — 2026-05-02"
+    type: synthesis
+    tags: [trading, intel, daily, signal-aggregation, gmail-unbound, slack-unbound, signa-25h-stale]
+    sources:
+      - wiki/synthesis/signa-2026-05-01.md (59 signals, 02:42 AEST off-cadence pull — ~25h stale at this brief; 12:30 PM 1 May standard pull missed)
+      - wiki/synthesis/signa-2026-04-30.md (56 signals, 12:38 AEST — for day-over-day comparison)
+      - wiki/synthesis/trading-intel-2026-04-30.md (last brief — degraded carry-forward)
+      - wiki/synthesis/trading-sync-2026-04-26.md (DannyTrades Sunday dump cross-reference, now 6 days stale)
+      - wiki/trading-portfolio.md (still empty template, 8th consecutive day blocking diff)
+    source_date: 2026-05-01
+    created: 2026-05-02 04:00 AEST
+    updated: 2026-05-02 04:00 AEST
 
   - path: wiki/concepts/antonella-powerbi-direct-access.md
     title: Antonella — Power BI Direct Access (API & Database Integration)

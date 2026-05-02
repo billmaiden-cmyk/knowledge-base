@@ -1,5 +1,36 @@
 pages:
 
+  - path: wiki/briefings/2026-05-03.md
+    title: "Daily Briefing — 3 May 2026 (Sunday)"
+    type: synthesis
+    tags: [briefing, daily, executive-synthesis, weekend, matt-observation-day-3]
+    sources:
+      - wiki/briefings/2026-05-02.md
+      - wiki/actions.md, wiki/actions 4.md
+      - wiki/mts-status 2.md
+      - wiki/decisions.md, wiki/strategic-questions.md
+      - wiki/coaching/2026-04-29-session-010.md
+      - wiki/synthesis/trading-intel-2026-05-03.md
+      - wiki/synthesis/signa-2026-05-02.md
+      - Outlook (24h + 7d strategic-sender sweep), Gmail (24h), Slack (live, 24h, all four HIGH channels + Bill DM)
+      - Outlook Calendar (today + Mon 4 May)
+    source_date: 2026-05-03
+    created: 2026-05-03 06:30 AEST
+    updated: 2026-05-03 06:30 AEST
+
+  - path: wiki/synthesis/30pct-90day-gainer-driver-analysis-2026-05-02.md
+    title: "30%+ in 90 Days — What Drives the Gainers (4-Year Parquet Analysis, 2026-05-02)"
+    type: synthesis
+    tags: [trading, antonella, autoresearch, parquet, feature-mining, runner, drawdown-bounce, kiet, 30pct]
+    sources:
+      - OneDrive/Documents/AI Hedge Fund/autoresearch/data/asx_daily_with_per_window_cs.parquet
+      - OneDrive/Documents/AI Hedge Fund/autoresearch/find_30pct_drivers.py
+      - OneDrive/Documents/AI Hedge Fund/autoresearch/find_30pct_drivers_v2.py
+      - OneDrive/Documents/AI Hedge Fund/autoresearch/verify_v4_approx.py
+    source_date: 2026-05-02
+    created: 2026-05-02 09:30 AEST
+    updated: 2026-05-02 09:30 AEST
+
   - path: wiki/briefings/2026-05-02.md
     title: "Daily Briefing — 2 May 2026 (Saturday)"
     type: synthesis
@@ -124,6 +155,16 @@ pages:
     source_date: 2026-04-28
     created: 2026-04-28 06:30 AEST
     updated: 2026-04-28 06:30 AEST
+
+  - path: wiki/synthesis/signa-2026-05-02.md
+    title: "Signa Daily Signals — 2026-05-02"
+    type: synthesis
+    tags: [trading, signa, signals, daily, quant]
+    sources:
+      - https://app.getsigna.ai/dashboard/signals (scraped via Chrome MCP, 2026-05-02 12:35 AEST; run timestamp 10:31 PM ET overnight)
+    source_date: 2026-05-02
+    created: 2026-05-02 12:35 AEST
+    updated: 2026-05-02 12:35 AEST
 
   - path: wiki/synthesis/signa-2026-05-01.md
     title: "Signa Daily Signals — 2026-05-01"
@@ -1663,6 +1704,20 @@ pages:
     source_date: 2026-05-01
     created: 2026-05-02 04:00 AEST
     updated: 2026-05-02 04:00 AEST
+
+  - path: wiki/synthesis/trading-intel-2026-05-03.md
+    title: "Trading Intel — 2026-05-03"
+    type: synthesis
+    tags: [trading, intel, daily, signal-aggregation, gmail-unbound, slack-unbound, signa-fresh, weekend-brief]
+    sources:
+      - wiki/synthesis/signa-2026-05-02.md (55 signals, 12:35 PM AEST on-cadence pull — captures Friday 1 May US close, ~16h stale at this brief)
+      - wiki/synthesis/signa-2026-05-01.md (59 signals, for day-over-day comparison)
+      - wiki/synthesis/trading-intel-2026-05-02.md (yesterday's brief — for follow-through + reversal lineage)
+      - wiki/synthesis/trading-sync-2026-04-26.md (DannyTrades Sunday dump cross-reference, now 7 days stale)
+      - wiki/trading-portfolio.md (still empty template, 9th consecutive day blocking diff)
+    source_date: 2026-05-02
+    created: 2026-05-03 04:00 AEST
+    updated: 2026-05-03 04:00 AEST
 
   - path: wiki/concepts/antonella-powerbi-direct-access.md
     title: Antonella — Power BI Direct Access (API & Database Integration)

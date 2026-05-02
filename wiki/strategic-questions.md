@@ -1,7 +1,7 @@
 ---
 title: Strategic Questions Tracker
 created: 2026-04-25 09:30 AEST
-updated: 2026-05-02 06:30 AEST
+updated: 2026-05-03 06:30 AEST
 tags: [strategic, decisions, tracker, meta, governance]
 ---
 
@@ -64,7 +64,7 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 
 **Decision window:** Ongoing. The Misha meeting is the immediate test; EQT cadence is likely slower and on their initiative.
 
-**Status:** Open. EQT NDA verbally committed 28 Apr 08:34 AEST (Wed 7 May proposed); execution still pending **Day 5 (A105)** — Mon 4 May AM is the last clean window before Wed credibility erodes. Misha/Dragonfly second meeting **CONFIRMED Wed 7 May 10am** in-person, 17–19 Bridge St Sydney (Misha + Mitch + Ben). **Both pivotal meetings now on the same day.**
+**Status:** Open. EQT NDA verbally committed 28 Apr 08:34 AEST (Wed 7 May proposed); execution still pending **Day 6 (A105)** — Mon 4 May AM is the last clean window before Wed credibility erodes. Misha/Dragonfly second meeting **CONFIRMED Wed 7 May 10am** in-person, 17–19 Bridge St Sydney (Misha + Mitch + Ben). **Both pivotal meetings now on the same day, 4 working days out.**
 
 **Related:** [[Misha Dragonfly]] (TBC entity page) | [[EQT Partners]] | A87 in actions tracker
 
@@ -106,7 +106,7 @@ Format: Q## | Question | Surfaced (date + source) | Decision window | Status
 
 **Decision window:** Near-term — current quality of trading decisions is being affected by the gap.
 
-**Status:** Open. **🟡 Pipeline partially restored.** Signa pulled cleanly 30 Apr (56 signals) and 1 May 02:42 AEST off-cadence (59 signals); 1 May 12:30 standard pull missed (2nd miss in 5 days). Antonella synthesis advancing on the strategy-side (left-side cross + position scoring + ATR reconciliation + 8 autoresearch hypotheses filed 1 May 19:30 AEST). Sun 3 May 6pm `/trading-sync` Windows task will close 7-day Antonella sync gap. Gmail/Slack MCPs still intermittent at 4am runs.
+**Status:** Open. **🟢 Quant pipeline largely restored.** Signa 2 May 12:35 PM AEST pull captured Friday US close on-cadence (55 signals — cleanest data in 8 days). Antonella synthesis still advancing on the strategy-side (left-side cross + position scoring + ATR reconciliation + 8 autoresearch hypotheses filed 1 May 19:30 AEST). **Sun 3 May 6pm `/trading-sync` Windows task closes 7-day Antonella sync gap today** — sanity-check produced file at 6:30pm. **🔴 Newsletter side Day 7 dark** — Gmail MCP unbound for full week (DannyTrades, AnnualizeThis, Hendry, Pomp, MacroEdge, Weldon, TMAD all silent at brief layer). `wiki/trading-portfolio.md` empty Day 9 — five-minute populate unblocks LLY/AVGO/QCOM trim signals. Investment Policy v0.1 (A21) still NOT STARTED at 6 weeks into 90-day sprint.
 
 **Related:** Q03 (Liberty energy split) — same root cause: Bill's hours are constrained.
 
